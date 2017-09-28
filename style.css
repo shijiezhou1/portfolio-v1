@@ -1,0 +1,12 @@
+* { margin: 0px; padding: 0px; }
+body {  margin: 100px}
+
+#nav1 { margin: 0px; padding: 0; float: left; }
+#nav1 li { list-style: none; background: #eeeeee; width: auto; }
+#nav1 li a { display: -webkit-box; padding: 1px; border-left: 3px solid #444; text-decoration: none; box-shadow: 2px 2px 5px #ccc; color: #000000; }
+#nav1 li a:hover { border-left: 4px solid #000000; background: #ffffff; }
+#nav1 li ul { display: none; }
+#nav1 li:hover ul { display: block; }
+#nav1 li:hover ul li { background:  #eeeeee; }
+#nav1 li:hover ul li a { color: #000000; }
+#nav1 li:hover ul li a:hover { background: #ffffff; border-left: 4px solid #000000; }

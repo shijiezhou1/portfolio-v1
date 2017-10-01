@@ -27,6 +27,76 @@ define("DB_PASS", "root");
 define("DB_NAME", "MCBOOK");
 ?>
 	
+<?
+
+$con = mysql_connect("localhost:8889","root","root");
+
+if (!$con)
+{
+  die('Could not connect: ' . mysql_error());
+}
+
+mysql_select_db("MCBOOK", $con);
+
+$article_id = $_GET['id'];
+
+
+if( ! is_numeric($article_id) )
+  die('invalid article id');
+
+
+$query = "SELECT * FROM `comments` WHERE `articleid` =$article_id LIMIT 0 , 30";
+
+
+$comments = mysql_query($query);
+
+echo "<h1>User Comments</h1>";
+
+
+while($row = mysql_fetch_array($comments, MYSQL_ASSOC))
+{
+
+  // As we loop through each comment, the specific comment we're working
+  // with right now is stored in the $row variable.
+
+  // for example, to print the commenter's name, we would use:
+  // $row['name']
+  
+  // if we want to print the user's comment, we would use:
+  // $row['comment']
+  
+  // As this is a beginner tutorial, to make our code easier to read
+  // we will take the values above (from our array) and put them into
+  // individual variables
+
+  $id = $row['id'];
+  $email = $row['link'];
+  $website = $row['image'];
+  $comment = $row['comment'];
+  $timestamp = $row['timestamp'];
+
+
+  $name = htmlspecialchars($row['id'],ENT_QUOTES);
+  $email = htmlspecialchars($row['title'],ENT_QUOTES);
+  $website = htmlspecialchars($row['image'],ENT_QUOTES);
+  $comment = htmlspecialchars($row['link'],ENT_QUOTES);
+  
+  // We will now print the comment to the screen
+  
+  echo "  <div style='margin:30px 0px;'>
+      Name: $name<br />
+      Email: $email<br />
+      Website: $website<br />
+      Comment: $comment<br />
+      Timestamp: $timestamp
+    </div>
+  ";
+}
+
+mysql_close($con);
+
+?>
+	
 	
 </body>
 </head>

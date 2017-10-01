@@ -27,7 +27,6 @@ define("DB_PASS", "root");
 define("DB_NAME", "MCBOOK");
 
 $rec_limit = 9; 
- //we set it to 9 beacause we want 3 by 3 image
 $conn      = mysql_connect(DB_SERVER, DB_USER, DB_PASS);
 $selectdb= mysql_select_db('MCBOOK');
 $sql    = "SELECT count(id) FROM inventory";
@@ -37,37 +36,11 @@ if (!$retval) {
     die('Could not get data: ' . mysql_error());
 }
 
-/* Get all the number of records */
-$row       = mysql_fetch_array($retval, MYSQL_NUM);
-$rec_count = $row[0];
-$count     = mysql_num_rows(mysql_query("SELECT * FROM inventory WHERE title LIKE '%$keyword%'"));
-//print "Total items on the database: ".$count;
-
-/* determine the current page  */
-
-$page     = $_GET["page"]; //variable of assign current page
-$prev     = $page - 1; //variable of the previous page 
-$next     = $page + 1; //variable of the next page 
-$lastpage = ceil($rec_count / $rec_limit); //trigger lastpage
-
-
-if ($page == "" || $page == "1") {
-    $page   = 1;
-    $offset = 0; //offset is 0 if we are on the first page
-} else {
-    //offset is recalculated when we move to the next page. 
-    $offset = ($page * $rec_limit) - $rec_limit;
-}
-
-//uncomment the line below to printing on current page
-//print "<br/>"."Current rec_count number is " . $page;
 
 
 $left_rec = $rec_count - ($page * $rec_limit);
 
-$skw = "SELECT * FROM inventory WHERE title LIKE '%$keyword%'" . "LIMIT $offset, $rec_limit"; /////////////////////////////////////for keyword
-
-
+$skw = "SELECT * FROM inventory WHERE title LIKE '%$keyword%'" . "LIMIT $offset, $rec_limit"; 
 $retval = mysql_query($skw, $conn);
 
 if (!$retval) {
@@ -79,7 +52,6 @@ $dyn_table = '<table class="ex2" border="1" bgcolor=#eeeeee cellpadding="10">';
 
 while ($row = mysql_fetch_array($retval)) {
  
-    
     if ($i % 3 == 0) { // if $i is divisible by our target number (in this case "3") it means 3x3 per page
         
         $dyn_table .= '<tr><td width=140 height=210 style="text-align:center; vertical-align:top">' . "<a href='{$row['link']}' target='parent'>" . "<img width=140px height=210px src='{$row['image']}'><br>" . '<p class="ellipsis" style="font-size: 15px">'. "{$row['title']}" . '</p>' . '</td>';

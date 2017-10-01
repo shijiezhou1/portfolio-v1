@@ -7,18 +7,18 @@
 <h1 id="header">Shijie Zhou</h1>
 
 <body>
-	<div id="navigation">
-		<ul>
-				<li><a href="/Works.html">Works</a></li>
-				<li><a href="/Music.html">Music</a></li>
-				<li><a href="/Article.html">Article</a></li>
-				<li><a href="/Project.html">Project</a></li>
-				<li><a href="/Collaboration.html">Collaboration</a></li>
-				<li><a href="/Workshop.html">Workshop</a></li>
-				<li><a href="/About.html">About</a></li>
-				<li><a href="/CV.html">CV</a></li>
-		</ul>	
-	</div>
+<div id="navigation">
+    <ul>
+	<li><a href="/Works.html">Works</a></li>
+	<li><a href="/Music.html">Music</a></li>
+	<li><a href="/Article.html">Article</a></li>
+	<li><a href="/Project.html">Project</a></li>
+	<li><a href="/Collaboration.html">Collaboration</a></li>
+	<li><a href="/Workshop.html">Workshop</a></li>
+	<li><a href="/About.html">About</a></li>
+	<li><a href="/CV.html">CV</a></li>
+    </ul>	
+</div>
 
 <?php
 define("DB_SERVER", "localhost:8889");
@@ -26,11 +26,11 @@ define("DB_USER", "root");
 define("DB_PASS", "root");
 define("DB_NAME", "MCBOOK");
 
-$rec_limit = 9; 
+$rec_limit = 9;
 $conn      = mysql_connect(DB_SERVER, DB_USER, DB_PASS);
-$selectdb= mysql_select_db('MCBOOK');
-$sql    = "SELECT count(id) FROM inventory";
-$retval = mysql_query($sql, $conn);
+$selectdb  = mysql_select_db('MCBOOK');
+$sql       = "SELECT count(id) FROM inventory";
+$retval    = mysql_query($sql, $conn);
 
 if (!$retval) {
     die('Could not get data: ' . mysql_error());
@@ -40,25 +40,25 @@ if (!$retval) {
 
 $left_rec = $rec_count - ($page * $rec_limit);
 
-$skw = "SELECT * FROM inventory WHERE title LIKE '%$keyword%'" . "LIMIT $offset, $rec_limit"; 
+$skw    = "SELECT * FROM inventory WHERE title LIKE '%$keyword%'" . "LIMIT $offset, $rec_limit";
 $retval = mysql_query($skw, $conn);
 
 if (!$retval) {
     die('Could not get data: ' . mysql_error());
 }
 
-$i = 0;
+$i         = 0;
 $dyn_table = '<table class="ex2" border="1" bgcolor=#eeeeee cellpadding="10">';
 
 while ($row = mysql_fetch_array($retval)) {
- 
-    if ($i % 3 == 0) { // if $i is divisible by our target number (in this case "3") it means 3x3 per page
+    
+    if ($i % 3 == 0) { 
         
-        $dyn_table .= '<tr><td width=140 height=210 style="text-align:center; vertical-align:top">' . "<a href='{$row['link']}' target='parent'>" . "<img width=140px height=210px src='{$row['image']}'><br>" . '<p class="ellipsis" style="font-size: 15px">'. "{$row['title']}" . '</p>' . '</td>';
+        $dyn_table .= '<tr><td width=140 height=210 style="text-align:center; vertical-align:top">' . "<a href='{$row['link']}' target='parent'>" . "<img width=140px height=210px src='{$row['image']}'><br>" . '<p class="ellipsis" style="font-size: 15px">' . "{$row['title']}" . '</p>' . '</td>';
         
     } else {
         
-        $dyn_table .= '<td width=140 height=210 style="text-align:center; vertical-align:top">' . "<a href='{$row['link']}' target='parent'>" . "<img width=140px height=210px src='{$row['image']}'><br>" . '<p class="ellipsis" style="font-size: 15px">'. "{$row['title']}" . '</p>' . '</td>';
+        $dyn_table .= '<td width=140 height=210 style="text-align:center; vertical-align:top">' . "<a href='{$row['link']}' target='parent'>" . "<img width=140px height=210px src='{$row['image']}'><br>" . '<p class="ellipsis" style="font-size: 15px">' . "{$row['title']}" . '</p>' . '</td>';
         
     }
     $i++;
@@ -68,7 +68,9 @@ $dyn_table .= '</tr></table>';
 
 mysql_close($conn);
 ?>
-<?php echo $dyn_table; ?>
+<?php
+echo $dyn_table;
+?>
 	
 	
 </body>

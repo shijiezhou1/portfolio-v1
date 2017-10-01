@@ -25,51 +25,6 @@ define("DB_SERVER", "localhost:8889");
 define("DB_USER", "root");
 define("DB_PASS", "root");
 define("DB_NAME", "MCBOOK");
-
-$rec_limit = 9;
-$conn      = mysql_connect(DB_SERVER, DB_USER, DB_PASS);
-$selectdb  = mysql_select_db('MCBOOK');
-$sql       = "SELECT count(id) FROM inventory";
-$retval    = mysql_query($sql, $conn);
-
-if (!$retval) {
-    die('Could not get data: ' . mysql_error());
-}
-
-
-
-$left_rec = $rec_count - ($page * $rec_limit);
-
-$skw    = "SELECT * FROM inventory WHERE title LIKE '%$keyword%'" . "LIMIT $offset, $rec_limit";
-$retval = mysql_query($skw, $conn);
-
-if (!$retval) {
-    die('Could not get data: ' . mysql_error());
-}
-
-$i         = 0;
-$dyn_table = '<table class="ex2" border="1" bgcolor=#eeeeee cellpadding="10">';
-
-while ($row = mysql_fetch_array($retval)) {
-    
-    if ($i % 3 == 0) { 
-        
-        $dyn_table .= '<tr><td width=140 height=210 style="text-align:center; vertical-align:top">' . "<a href='{$row['link']}' target='parent'>" . "<img width=140px height=210px src='{$row['image']}'><br>" . '<p class="ellipsis" style="font-size: 15px">' . "{$row['title']}" . '</p>' . '</td>';
-        
-    } else {
-        
-        $dyn_table .= '<td width=140 height=210 style="text-align:center; vertical-align:top">' . "<a href='{$row['link']}' target='parent'>" . "<img width=140px height=210px src='{$row['image']}'><br>" . '<p class="ellipsis" style="font-size: 15px">' . "{$row['title']}" . '</p>' . '</td>';
-        
-    }
-    $i++;
-}
-
-$dyn_table .= '</tr></table>';
-
-mysql_close($conn);
-?>
-<?php
-echo $dyn_table;
 ?>
 	
 	

@@ -45,7 +45,7 @@ if( ! is_numeric($article_id) )
   die('invalid article id');
 
 
-$query = "SELECT * FROM `comments` WHERE `articleid` =$article_id LIMIT 0 , 30";
+$query = "SELECT * FROM 'inventory' WHERE 'articleid' =$article_id LIMIT 0 , 30";
 
 
 $comments = mysql_query($query);

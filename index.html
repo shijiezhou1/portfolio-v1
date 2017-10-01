@@ -19,10 +19,7 @@
 				<li><a href="/CV.html">CV</a></li>
 		</ul>	
 	</div>
-	<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-	<p>this is for paragraph for what you are looking for</p>
 
-	
 <?php
 define("DB_SERVER", "localhost:8889");
 define("DB_USER", "root");
@@ -77,16 +74,11 @@ if (!$retval) {
     die('Could not get data: ' . mysql_error());
 }
 
-/*----   making 3x3 grids ------   */
-
-$i         = 0;
+$i = 0;
 $dyn_table = '<table class="ex2" border="1" bgcolor=#eeeeee cellpadding="10">';
 
 while ($row = mysql_fetch_array($retval)) {
-    //$id       = $row["id"];
-    //$category = $row["category"];
-    //$link     = $row["link"];
-    //$image    = $row["image"];
+ 
     
     if ($i % 3 == 0) { // if $i is divisible by our target number (in this case "3") it means 3x3 per page
         
@@ -99,13 +91,12 @@ while ($row = mysql_fetch_array($retval)) {
     }
     $i++;
 }
-/* this is counting for page */
+
 $dyn_table .= '</tr></table>';
 
 mysql_close($conn);
 ?>
 <?php echo $dyn_table; ?>
-	
 	
 	
 </body>

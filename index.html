@@ -1,7 +1,11 @@
 <html>
 <head>
-  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Telegram_alternative_logo.svg/256px-Telegram_alternative_logo.svg.png"/>	
-	
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Telegram_alternative_logo.svg/256px-Telegram_alternative_logo.svg.png"/>
+<script type="text/javascript">
+  function resizeIframe(iframe) {
+    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+  }
+</script>     
 <style>
 #header{text-align:center;}
 #navigation{position:fixed;}
@@ -20,9 +24,9 @@
 </style>
 
 <h1 id="header">Shijie Zhou</h1>
-
+</head>
 <body>
-	<iframe name="iframe" height="1500" width="80%" align="right" frameborder="0" src="/About.html" ></iframe>
+	<iframe name="iframe" onload="resizeIframe(this)" width="80%" align="right" frameborder="0" src="/About.html" ></iframe>
 <div id="navigation">
     <ul>
 	<li><a href="/Works.html" target="iframe">Works</a></li>
@@ -40,5 +44,4 @@
 <p>All Rights Reserved © 2016-2017 Shijie Zhou San Diego</p>
 </div>
 </body>
-</head>
 </html>

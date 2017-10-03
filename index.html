@@ -6,7 +6,7 @@
 #header{text-align:center;}
 #navigation{position:fixed;}
 #foot{text-align: bottom; } 
-.copyright1{ 
+#copyright{ 
 	text-align: center; 
 	background: #fff; 
 	font-size: 8px;
@@ -22,44 +22,21 @@
 <h1 id="header">Shijie Zhou</h1>
 
 <body>
-	<iframe name="iframe_a" height="auto" width="80%" align="right" frameborder="0" src="/About.html" ></iframe>
+	<iframe name="iframe" height="1500" width="80%" align="right" frameborder="0" src="/About.html" ></iframe>
 <div id="navigation">
     <ul>
-	<li><a href="/Works.html" target="iframe_a">Works</a></li>
-	<li><a href="/Music.html" target="iframe_a">Music</a></li>
-	<li><a href="/Article.html" target="iframe_a">Article</a></li>
-	<li><a href="/Project.html" target="iframe_a">Project</a></li>
-	<li><a href="/Collaboration.html" target="iframe_a">Collaboration</a></li>
-	<li><a href="/Workshop.html" target="iframe_a">Workshop</a></li>
-	<li><a href="/About.html" target="iframe_a">About</a></li>
-	<li><a href="/CV.html" target="iframe_a">CV</a></li>
+	<li><a href="/Works.html" target="iframe">Works</a></li>
+	<li><a href="/Music.html" target="iframe">Music</a></li>
+	<li><a href="/Article.html" target="iframe">Article</a></li>
+	<li><a href="/Project.html" target="iframe">Project</a></li>
+	<li><a href="/Collaboration.html" target="iframe">Collaboration</a></li>
+	<li><a href="/Workshop.html" target="iframe">Workshop</a></li>
+	<li><a href="/About.html" target="iframe">About</a></li>
+	<li><a href="/CV.html" target="iframe">CV</a></li>
     </ul>	
 </div>
 	
-	
-<?php
-define("DB_SERVER", "localhost:8889");
-define("DB_USER", "root");
-define("DB_PASS", "root");
-define("DB_NAME", "MCBOOK");
-?>
-	
-<?php
-echo 'diu';
-echo "one";
- //create connection
- $connect=mysqli_connect('localhost:8889','root','root','MCBOOK');
-	
-//check connection
- if(mysqli_connect_errno($connect))
- {
-	echo 'Failed to connect to database: '.mysqli_connect_error();
-}
-else
-	echo 'Connected Successfully!!';
-?>
-	
-<div class="copyright1">
+<div id="copyright">
 <p>All Rights Reserved © 2016-2017 Shijie Zhou San Diego</p>
 </div>
 </body>

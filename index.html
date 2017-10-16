@@ -16,9 +16,9 @@
 function myFunction() {
     var x = document.getElementById("myDIV");
     if (x.style.display === "none") {
-	    x.style.display = "none";
+	    x.style.display = "block";
     } else {
-        x.style.display = "block";
+        x.style.display = "none";
     }
 }
 </script>
@@ -38,6 +38,7 @@ function myFunction() {
 	bottom:0;
 	}
 #myDIV {
+	display: none;
     width: 100%;
 }
 </style>
@@ -45,21 +46,17 @@ function myFunction() {
 
 </head>
 <body>
-	<h1 id="header" font-family="Righteous", cursive; style="text-align: left" position: absolute>Shijie Zhou</h1>
+	<div>&nbsp;<b>SHIJIE ZHOU</b></div>
 	<iframe name="iframe" onload="resizeIframe(this)" width="80%" align="right" frameborder="0" src="/Works.html" ></iframe>
 <div id="navigation">
     <img src="images/logo%20j.gif" width="100" height="100" border="0">
     <ul>
 	<li><a href="/Works.html" target="iframe" onclick="myFunction()">Works</a></li>
 	    <div id="myDIV">
-	    
 	    <li><a href="/147A.html" target="iframe">VIS 147A</a></li>
-	    <br />
 	    <li><a href="/160A.html" target="iframe">VIS 160A</a></li>
 	    <li><a href="/160A.html" target="iframe">VIS 160A Timeline</a></li>
-	    
 	    </div>
-	  <li class="divider"></li>
 	<li><a href="/Music.html" target="iframe" >Music</a></li>
 	<li><a href="/Article.html" target="iframe">Article</a></li>
 	<li><a href="/Project.html" target="iframe">Project</a></li>

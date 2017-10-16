@@ -21,6 +21,12 @@ function popupMenu() {
         x.style.display = "block";
     }
 }
+function showModal(id) {
+    $("#" + id).fadeIn('slow');
+}
+function hideModal(id) {
+    $("#" + id).fadeOut('slow');
+}
 </script>
 <style>
 	
@@ -49,6 +55,9 @@ function popupMenu() {
    text-align: left;
    width: 100%;
 }
+div.delModal {
+    
+}
 </style>
 
 
@@ -59,8 +68,8 @@ function popupMenu() {
 <div id="navigation">
     <img src="images/logo%20j.gif" width="100" height="100" border="0">
     <ul>
-	<li><a href="/Works.html" onclick="popupMenu()" target="iframe">Works</a></li>
-	    <div id="myDIV">
+	<li><a href="/Works.html" onclick="popupMenu()" onclick="showModal('delAll1')" target="iframe">Works</a></li>
+	    <div class="delModal" id="myDIV" >
 	    <li><a href="/147A.html" target="iframe">VIS 147A</a></li>
 	    <li><a href="/160A.html" target="iframe">VIS 160A</a></li>
 	    <li><a href="/160A.html" target="iframe">VIS 160A Timeline</a></li>

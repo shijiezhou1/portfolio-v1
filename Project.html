@@ -1,12 +1,62 @@
 <html>
 	<style >
+
 	#big{
 		font-size: 100px;	
 	}
+	
 	</style>
+	
+	<style>
+	
+	#test p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+	</style>
+
 <body>
+	<div id="test">
 <center id = big>Shijie Zhou</center>
 <center><p>Hello, welcome!</p></center>
-<center><img id="logo" src="images/logo%20j.gif" width="300" border="0"></center>
+<center><img id="img" src="images/logo%20j.gif" width="300" border="0"></center>
+	</div>
 </body>
 <html>

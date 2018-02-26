@@ -1,125 +1,138 @@
+<!DOCTYPE html>
 <html>
-<head>
-	
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113408753-1"></script>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <title>Index menus</title>
 
-  gtag('config', 'UA-113408753-1');
-</script>
-	
-		
-<link rel="icon" href="images/logo%20j.gif"/>
-<script type="text/javascript">
-  function resizeIframe(iframe) {
-    iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
-  }
-   $(function() {     
-    $('.nav').on('click',function(e) {
-        e.preventDefault();
-        $(".side-categories").slideToggle();
-    });
-});
-</script>     
+         <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="indexstyle.css">
+    </head>
+    <body>
 
-
-<script>
-function popupMenu() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "block") {
-	    x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-}
-</script>
-
-	
-<style>
-#header{text-align:center;}
-#navigation{
-	font-family: Verdana !important;
-	position:fixed;}
-#foot{text-align: bottom; } 
-#copyright{ 
-	text-align: center; 
-	background: #fff; 
-	font-size: 5px;  
-	color: #778899;
-	position:fixed;
-	width: 100%;
-  	clear: both;
-	z-index: 10;
-	bottom:0;
-	}
-#myDIV {
-	display: none;
-    width: 100%;
-}
-#myname {
-   position: fixed;
-   clear: both;
-   bottom: 15px;
-   text-align: left;
-   width: 100%;
-   padding: 0px 0px 0px 15px
-}
-ul {
-  list-style-type: none;
-}
-#logo{
-	
-}
-</style>
-
-
-</head>
-<body>
-	<div class="container-fluid">
-	
-	<div id="myname"><b>SHIJIE ZHOU</b></div>
-	<iframe name="iframe" onload="resizeIframe(this)" width="80%" align="right" frameborder="0" src="/Main.html" onload="scroll(0,0);"></iframe>
-
-
-<div id="navigation">
-    <center><a href="http://www.shijiezhou.com" /a><img id="logo" src="images/logo%20j.gif" width="100" height="100" border="0">
-	</center>
         
-    <ul>
 
-	<li><a href="/Logo.html" onclick="popupMenu()" target="iframe" onload="scroll(0,0);">Logo Design</a></li>
-	    
-		<!--<div id="myDIV" >-->
-		<li><a href="/Bristlebot.html" target="iframe" onload="scroll(0,0);">Bristlebot</a></li>
-		<li><a href="/creativeswitch.html" target="iframe" onload="scroll(0,0);">Creative Switch</a></li>
-    		<!--</div>-->
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Shijie Zhou</h3>
+                    <strong>SZ</strong>
+                    
+                      
+                </div>
 
-	<li><a href="/music/musicindex.html" target="iframe" height="600px" onload="scroll(0,0);">Music</a></li>
-		<!--<div id = "myDIV">
-		<li><a href="#" target="iframe" onload="scroll(0,0);">Electronic Music</a></li>
-		<li><a href="#" target="iframe" onload="scroll(0,0);">Traditional Music</a></li>
-		</div>-->
-	<li><a href="/unitygame.html" target="iframe" onload="scroll(0,0);">Unity Design</a></li>
-	<li><a href="/thecup.html" target="iframe" onload="scroll(0,0);">The cup</a></li>
-	<li><a href="/Papercage.html" target="iframe" onload="scroll(0,0);">Paper Cage</a></li>
-	<li><a href="https://shz145.wixsite.com/telesignalization" target="_blank" onload="scroll(0,0);">Telesignalization</a></li>
-	<li><a href="https://hlou29.wixsite.com/coconutfactrory" target="_blank" onload="scroll(0,0);">Coconut Factory</a></li>
-	<li><a href="/Collaboration.html" target="iframe" onload="scroll(0,0);">Collaboration</a></li>
-	<li><a href="/Workshop.html" target="iframe" onload="scroll(0,0);">Workshop</a></li>
-	<li><a href="/About.html" target="iframe" onload="scroll(0,0);">About</a></li>
-	<li><a href="/CV.html" target="iframe" onload="scroll(0,0);">CV</a></li>
-    </ul>
+                <ul class="list-unstyled components">
+                    
+                    
+                    <li>
+                   		<a href="/Logo.html" onclick="popupMenu()" target="iframe" onload="scroll(0,0);">
+                    		<i class="glyphicon glyphicon-link"></i> 
+							 Logo Design 
+						</a>
+                  	</li>
+                   	    
+                    <li><a href="/Bristlebot.html" target="iframe" onload="scroll(0,0);">  <i class="glyphicon glyphicon-link"></i> Bristlebot </a>
+
+                    <!--<ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Page 1</a></li>
+                            <li><a href="#">Page 2</a></li>
+                            <li><a href="#">Page 3</a></li>
+                        </ul>
+                    <li class="active">
+                        <a href="#homeSubmenu">
+                            <i class="glyphicon glyphicon-home"></i>
+                            Home
+                        </a>
+                    </li>    
+                        
     
-</div>  <!--the end of navigation id-->
-	
-<div id="copyright">
-<p>All Rights Reserved © 2016-2017 Shijie Zhou San Diego</p>
-</div>
-	
-	</div> <!--end of container fluid-->
-</body>
+                        
+                    -->
+                    </li>
+                    <li>
+                        <a href="/music/musicindex.html" target="iframe" height="600px" onload="scroll(0,0);">
+                            <i class="glyphicon glyphicon-link"></i>
+                            Music
+                        </a>
+                    </li>
+                    
+                    <li>
+					<a href="/unitygame.html" target="iframe" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>Unity Design</a>
+					</li>
+					<li>
+					<a href="/thecup.html" target="iframe" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>The cup</a>
+					</li>
+					<li>
+					<a href="/Papercage.html" target="iframe" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>Paper Cage</a>
+					</li>
+					<li>
+					<a href="https://shz145.wixsite.com/telesignalization" target="_blank" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>Telesignalization</a>
+					</li>
+					<li>
+					<a href="https://hlou29.wixsite.com/coconutfactrory" target="_blank" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>Coconut Factory</a>
+					</li>
+					<li>
+					<a href="/Collaboration.html" target="iframe" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>Collaboration</a>
+					</li>
+					<li>
+					<a href="/Workshop.html" target="iframe" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>Workshop</a>
+					</li>
+					<li>
+					<a href="/About.html" target="iframe" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>About</a>
+					</li>
+					<li>
+					<a href="/CV.html" target="iframe" onload="scroll(0,0);">
+					<i class="glyphicon glyphicon-link"></i>CV</a>
+					</li>
+
+          </ul>
+          
+                
+          <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav>
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+                
+               
+            </nav>
+            <iframe name="iframe" onload="resizeIframe(this)" width="80%" align="right" frameborder="0" src="/Main.html" onload="scroll(0,0);"></iframe>
+        </div>
+
+        <!-- jQuery CDN -->
+         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+         <!-- Bootstrap Js CDN -->
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    </body>
 </html>

@@ -1,16 +1,16 @@
 /*
     DEMO STYLE
 */
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Helvetica:300,400,500,600,700";
 
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     background: #fafafa;
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: 1.1em;
     font-weight: 300;
     line-height: 1.7em;
@@ -20,7 +20,7 @@ p {
 a, a:hover, a:focus {
     color: inherit;
     text-decoration: none;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 .navbar {
@@ -55,12 +55,13 @@ i, span {
 .wrapper {
     display: flex;
     align-items: stretch;
+
 }
 
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: rgba(255, 112, 0, 0.45); 
     color: #fff;
     transition: all 0.3s;
 }
@@ -111,7 +112,7 @@ i, span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #fd6200;
 }
 
 #sidebar .sidebar-header strong {
@@ -121,7 +122,7 @@ i, span {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #ffffff;
 }
 
 #sidebar ul li a {
@@ -130,7 +131,7 @@ i, span {
     display: block;
 }
 #sidebar ul li a:hover {
-    color: #7386D5;
+    color: #e12b2b;
     background: #fff;
 }
 #sidebar ul li a i {
@@ -163,7 +164,7 @@ a[aria-expanded="true"]::before {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #fc6704;
 }
 
 ul.CTAs {
@@ -178,15 +179,6 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-
-a.article, a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
 
 
 
@@ -196,7 +188,7 @@ a.article, a.article:hover {
 #content {
     padding: 20px;
     min-height: 100vh;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 

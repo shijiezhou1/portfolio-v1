@@ -88,10 +88,10 @@ function popupMenu() {
 #myname {
    position: fixed;
    clear: both;
-   bottom: 20px;
+   bottom: 30px;
    text-align: left;
    width: 100%;
-   padding: 0px 0px 0px 15px
+   padding: 0px 0px 0px 40px
 }
 ul {
   list-style-type: none;
@@ -117,17 +117,17 @@ $(document).ready(function() {
 <body>
 
   
-	<div class="container-fluid">
+<div class="container-fluid">
 	
 	<div id="myname"><b>SHIJIE ZHOU</b></div>
 	<iframe name="iframe" onload="resizeIframe(this)" width="80%" align="right" frameborder="0" src="/Main.html"></iframe>
 
 
 <div id="navigation">
-    <center><a href="http://www.shijiezhou.com" /a><img id="logo" src="images/logo%20j.gif" width="100px" height="80px" border="10px">
+    <center>
+      <a href="http://www.shijiezhou.com" /a><img id="logo" src="images/logo%20j.gif" width="100px" height="80px" border="10px">
 	  </center>
 
-    
     <ul class="resp-tabs-list">
     
     <!--<div id="myDIV" >-->
@@ -152,12 +152,16 @@ $(document).ready(function() {
     <li><a href="/CV2.html" target="iframe" onload="scroll(0,0);">CV</a></li>
     </ul>
     
-    </div>  <!--the end of navigation id-->
-    
-    <div id="copyright">
-    <p>All Rights Reserved © 2016-2017 Shijie Zhou in San Diego</p>
-    </div>
+</div>  <!--the end of navigation id-->
+</div> <!--end of container fluid-->
+	  
 	
-	</div> <!--end of container fluid-->
 </body>
+
+<footer class="page-footer font-small blue pt-4 mt-4">
+    <div id="copyright" class="footer-copyright py-3 text-center">
+      <p>All Rights Reserved © 2016-2017 Shijie Zhou in San Diego</p>
+    </div>
+</footer>
+    
 </html>

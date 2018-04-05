@@ -12,6 +12,9 @@
 
   gtag('config', 'UA-113408753-1');
 </script>
+
+<!--JQuery Fade down-->
+
 	
 <!--Google Firebase-->
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
@@ -80,7 +83,7 @@ function popupMenu() {
 	}
 #myDIV {
 	display: none;
-    width: 100%;
+  width: 100%;
 }
 #myname {
    position: fixed;
@@ -97,6 +100,19 @@ ul {
 </style>
 
 
+<style>
+#logo{
+display: none;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#logo').delay(0).fadeIn(1000);
+});
+</script>
+
+
 </head>
 <body>
 
@@ -104,7 +120,7 @@ ul {
 	<div class="container-fluid">
 	
 	<div id="myname"><b>SHIJIE ZHOU</b></div>
-	<iframe name="iframe" onload="resizeIframe(this)" width="80%" align="right" frameborder="0" src="/Main.html" onload="scroll(0,0);"></iframe>
+	<iframe name="iframe" onload="resizeIframe(this)" width="80%" align="right" frameborder="0" src="/Main.html"></iframe>
 
 
 <div id="navigation">

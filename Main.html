@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
-<!-- Quantcast Tag -->
-<script type="text/javascript">
-var _qevents = _qevents || [];
+  <!-- Quantcast Tag -->
+  <script type="text/javascript">
+    var _qevents = _qevents || [];
 
-(function() {
-var elem = document.createElement('script');
-elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
-elem.async = true;
-elem.type = "text/javascript";
-var scpt = document.getElementsByTagName('script')[0];
-scpt.parentNode.insertBefore(elem, scpt);
-})();
+    (function () {
+      var elem = document.createElement('script');
+      elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+      elem.async = true;
+      elem.type = "text/javascript";
+      var scpt = document.getElementsByTagName('script')[0];
+      scpt.parentNode.insertBefore(elem, scpt);
+    })();
 
-_qevents.push({
-qacct:"p-q5fcRqnnTyE-7"
-});
-</script>
+    _qevents.push({
+      qacct: "p-q5fcRqnnTyE-7"
+    });
+  </script>
 
-<noscript>
-<div style="display:none;">
-<img src="//pixel.quantserve.com/pixel/p-q5fcRqnnTyE-7.gif" border="0" height="1" width="1" alt="Quantcast"/>
-</div>
-</noscript>
-<!-- End Quantcast tag -->
+  <noscript>
+    <div style="display:none;">
+      <img src="//pixel.quantserve.com/pixel/p-q5fcRqnnTyE-7.gif" border="0" height="1" width="1" alt="Quantcast" />
+    </div>
+  </noscript>
+  <!-- End Quantcast tag -->
 
-<!-- Crazy Egg tag-->
-<script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0075/1929.js" async="async"></script>
-<!-- Crazy Egg tag End-->
-  
+  <!-- Crazy Egg tag-->
+  <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0075/1929.js" async="async"></script>
+  <!-- Crazy Egg tag End-->
+
   <title>Home Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,139 +40,167 @@ qacct:"p-q5fcRqnnTyE-7"
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <style>
-  #test h2 {
-  margin-top: 25px;
-  padding: 0px 0px 100px 0px
-  font-size: 22px;
-  animation: fadein 4s;
-  -moz-animation: fadein 4s; /* Firefox */
-  -webkit-animation: fadein 4s; /* Safari and Chrome */
-  -o-animation: fadein 4s; /* Opera */
-  }
-  @keyframes fadein {
-  from {
-  opacity:0;
-  }
-  to {
-  opacity:1;
-  }
-  }
-  @-moz-keyframes fadein { /* Firefox */
-  from {
-  opacity:0;
-  }
-  to {
-  opacity:1;
-  }
-  }
-  @-webkit-keyframes fadein { /* Safari and Chrome */
-  from {
-  opacity:0;
-  }
-  to {
-  opacity:1;
-  }
-  }
-  @-o-keyframes fadein { /* Opera */
-  from {
-  opacity:0;
-  }
-  to {
-  opacity: 1;
-  }
-  }
-  
-  body {
-  margin: 0px;
-  
-  }
-  
-  .center-block{
-    box-shadow: 6px 6px 11px 0px rgba(0,0,0,0.75);
-  }
-	</style>
-	
-<!--fade in fade out JQuery-->
+    #test h2 {
+      margin-top: 25px;
+      padding: 0px 0px 100px 0px font-size: 22px;
+      animation: fadein 4s;
+      -moz-animation: fadein 4s;
+      /* Firefox */
+      -webkit-animation: fadein 4s;
+      /* Safari and Chrome */
+      -o-animation: fadein 4s;
+      /* Opera */
+    }
 
-<script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript"></script>
-<script type="text/javascript">
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
 
-$("#img").hide();//hide the image first 
+    @-moz-keyframes fadein {
+      /* Firefox */
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
 
-$(document).ready(function() { //display all the image 
-    $('img').each(function() {
+    @-webkit-keyframes fadein {
+      /* Safari and Chrome */
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-o-keyframes fadein {
+      /* Opera */
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    body {
+      margin: 0px;
+
+    }
+
+    .center-block {
+      box-shadow: 6px 6px 11px 0px rgba(0, 0, 0, 0.75);
+    }
+  </style>
+
+  <!--fade in fade out JQuery-->
+
+  <script src="http://code.jquery.com/jquery-1.4.4.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+    $("#img").hide();//hide the image first 
+
+    $(document).ready(function () { //display all the image 
+      $('img').each(function () {
         $(this).css({
-            opacity: 0  //start from 0 to 1 
-        }).bind('load', function() {
-            $(this).animate({
-                opacity: 1
-            }, 'slow');
+          opacity: 0  //start from 0 to 1 
+        }).bind('load', function () {
+          $(this).animate({
+            opacity: 1
+          }, 'slow');
         });
+      });
     });
-});
-</script>
+  </script>
 
 
 </head>
+
 <body>
   <center>
-  <div class="container-fluid">  
-    <div id="test">
-      <br>
+    <div class="container-fluid">
+      <div id="test">
+        <br>
+      </div>
     </div>
-  </div>
-  
 
- <div class="container">
-  <div class="row">
-    <div class="col-sm-3">
-      <!--image size -->
-      <a href="/Bristlebot.html"><img class="center-block" id="img" src="9images/1.png" style="width:100%" height="100%" border="0">
-        <div class="caption">
-          <h5>Bristlebot Model</h5>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <!--image size -->
+          <a href="/Bristlebot.html">
+            <img class="center-block" id="img" src="9images/1.png" style="width:100%" height="100%" border="0">
+            <div class="caption">
+              <h5>Bristlebot Model</h5>
+            </div>
         </div>
-    </div>
-    
-    <div class="col-sm-3">
-     <a href="https://shz145.wixsite.com/telesignalization" target="_blank"><img class="center-block" id="img" src="9images/2.png"  style="width:100%" height="100%" border="0"><h5>Telesignalization</h5>
-    </div>
-    
-    <div class="col-sm-3">
-      <a href="/music/musicindex.html"><img class="center-block" id="img" src="9images/3.png"  style="width:100%" height="100%" border="0"><h5>Online Player</h5>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <a href="/Papercage.html"><img class="center-block" id="img" src="9images/4.png"  style="width:100%" height="100%" border="0"><h5>Paper Cage</h5>
-    </div>
-    
-    <div class="col-sm-3">
-     <a href="/CV.html"><img class="center-block" id="img" src="9images/5.png"  style="width:100%" height="100%" border="0"><h5>Info</h5>
-    </div>
-    
-    <div class="col-sm-3">
-      <a href="https://hlou29.wixsite.com/coconutfactrory" target="_blank"><img class="center-block" id="img" src="9images/6.png"  style="width:100%" height="100%" border="0"><h5>Coconut Factory</h5>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-3">
-      <a href="/creativeswitch.html"><img class="center-block" id="img" src="9images/7.png"  style="width:100%" height="100%" border="0"><h5>Creative Switch</h5>
-    </div>
-    
-    <div class="col-sm-3">
-     <a href="/unitygame.html"><img class="center-block" id="img" src="9images/8.png"  style="width:100%" height="100%" border="0"><h5>Escape City</h5>
-    </div>
-    
-    <div class="col-sm-3">
-      <a href="/Bristlebot.html"><img class="center-block" id="img" src="9images/9.png"  style="width:100%" height="100%" border="0"><h5>Bristlebot</h5>
-    </div>
-  </div>
+
+        <div class="col-sm-3">
+          <a href="https://shz145.wixsite.com/telesignalization" target="_blank">
+            <img class="center-block" id="img" src="9images/2.png" style="width:100%" height="100%" border="0">
+            <h5>Telesignalization</h5>
+        </div>
+
+        <div class="col-sm-3">
+          <a href="/music/musicindex.html">
+            <img class="center-block" id="img" src="9images/3.png" style="width:100%" height="100%" border="0">
+            <h5>Online Player</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="/Papercage.html">
+            <img class="center-block" id="img" src="9images/4.png" style="width:100%" height="100%" border="0">
+            <h5>Paper Cage</h5>
+        </div>
+
+        <div class="col-sm-3">
+          <a href="/CV.html">
+            <img class="center-block" id="img" src="9images/5.png" style="width:100%" height="100%" border="0">
+            <h5>Info</h5>
+        </div>
+
+        <div class="col-sm-3">
+          <a href="https://hlou29.wixsite.com/coconutfactrory" target="_blank">
+            <img class="center-block" id="img" src="9images/6.png" style="width:100%" height="100%" border="0">
+            <h5>Coconut Factory</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <a href="/creativeswitch.html">
+            <img class="center-block" id="img" src="9images/7.png" style="width:100%" height="100%" border="0">
+            <h5>Creative Switch</h5>
+        </div>
+
+        <div class="col-sm-3">
+          <a href="/unitygame.html">
+            <img class="center-block" id="img" src="9images/8.png" style="width:100%" height="100%" border="0">
+            <h5>Escape City</h5>
+        </div>
+
+        <div class="col-sm-3">
+          <a href="/Bristlebot.html">
+            <img class="center-block" id="img" src="9images/9.png" style="width:100%" height="100%" border="0">
+            <h5>Bristlebot</h5>
+        </div>
+      </div>
 
 
 
 
-</div>
-</center>
+    </div>
+  </center>
 
 </body>
+
 </html>

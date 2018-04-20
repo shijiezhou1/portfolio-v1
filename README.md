@@ -2,6 +2,6 @@ Hello!
 
 The content is about my personal portfolio website, and it contains all of my projects, works, articles, videos, music and etc. 
 
-Let me know if you have any other question or any information to share with me
+Contact: 253-204-3188
 
 Email : shz145@ucsd.edu

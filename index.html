@@ -33,11 +33,24 @@
     firebase.initializeApp(config);
   </script>
 
+  <!--iframe-->
+  <script type="text/javascript">
+    function resizeIframe(iframe) {
+      iframe.height = iframe.contentWindow.document.body.scrollHeight + "px";
+    }
+    $(function () {
+      $('.nav').on('click', function (e) {
+        e.preventDefault();
+        $(".side-categories").slideToggle();
+      });
+    });
+  </script>
+
 </head>
 
 <body>
 
-  <iframe name="iframe" onload="resizeIframe(this)" width="100%" align="right" frameborder="0" src="/Main.html"></iframe>
+  <iframe name="iframe" onload="resizeIframe(this)" width="100%" height="100%" align="right" frameborder="0" src="/Main.html"></iframe>
 
 
   <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">

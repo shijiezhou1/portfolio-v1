@@ -4,7 +4,8 @@ The content is about my personal portfolio website, and it contains all of my pr
 
 Location: Utah
 \
-Contact: 253-204-3188
+Tel: 253-204-3188
 \
 Email : shz145@ucsd.edu
 \
+Address: Salt Lake City

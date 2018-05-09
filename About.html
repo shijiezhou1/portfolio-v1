@@ -9,6 +9,25 @@
   <link rel="stylesheet" type="text/css" href="css/basis.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
+
+  <!-- toggle img using ajax  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  
+  $(document).ready(function(){
+      $("button").click(function(){
+          $(".keyword").toggle();
+      });
+  });
+  </script>
+  
+
+  <style>
+  .keyword {
+      display: none;
+  }
+  </style>
+
 </head>
 
 </head>
@@ -18,22 +37,53 @@
      <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-12 col-md-12 col-xs-12 text-center">
-                <h3>About me</h3> 
+                <h3>About me</h3>
+                
+                <!-- personal profile picture -->
+                <p class="text-left" style="float: right;"><img src="images/profile.png" height="150px" width="150px" border="2px"></p>
+                
                 <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary Computer in Arts. He is also the member for design and construct web developer at the Worldview project organization.
+                
                 <br>
                 <br>
                 He was working on programming artist and digital image designer at the Digital Gym Cinema. He obtains Associate degree in Green River College, and also finish the B.A. degree at UCSD. <br>
           He gained experience in media use and computer art. He also familiar with web design and selling ebay stuffs at leisure time..
                 </p>
+                <button type="button" class="btn btn-info pull-left">Toggle to show the keyword about me</button>
+                
+                
+            </div>
+            
+            <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                <br>
+              <button type="button" class="btn btn-info pull-left">Toggle to show UI Scratch</button>
             </div>
             
         </div>
     </div>
+    
+
+    
 
     <!-- skills list and level  -->
     <div class="container">
-        <embed type="image/svg+xml" src="wordcloud.svg" />
+      
+        
+      <div class="col-lg-8">
+        <embed class="keyword" type="image/svg+xml" src="wordcloud.svg" />
+      </div>
+      <br>
     </div>
+
+    <div class="container">
+      
+        
+        <div class="col-lg-8">
+          <embed class="keyword" type="image/svg+xml" src="wordcloud.svg" />
+        </div>
+        <br>
+      </div>
+
 
 
      <!-- img start here -->

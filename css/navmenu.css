@@ -5,16 +5,14 @@ body {
   padding: 50px 0 0 0;
 }
 
+/* This is navmenu without on the desktop style */
 .navmenu {
-  bottom: 300px;
-  width: 320px;
-  font-size: smaller;
   padding-top: 50px;
 }
 
 .navbar {
   display: block;
-  text-align: center;
+  text-align: right;
 }
 .navbar-brand {
   display: inline-block;
@@ -33,6 +31,15 @@ body {
 @media (min-width: 1px) {
   .navbar-toggle {
     display: block !important;
+  }
+}
+/* Mobile size such as iphone se/5/5s/5c */
+@media (min-width: 200px) and (max-width: 480px ) {
+  .navmenu {
+    height: 400px;
+    width: 100%;
+    font-size: smaller;
+    padding-top: 50px;
   }
 }
 

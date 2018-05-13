@@ -38,9 +38,14 @@ body {
   .navmenu {
     height: 400px;
     width: 100%;
-    font-size: smaller;
+    font-size: inherit;
     padding-top: 50px;
   }
+  .navbar-toggle {
+    border: 1px solid black;
+    background: transparent !important;
+  }
+
 }
 
 @media (min-width: 992px) {

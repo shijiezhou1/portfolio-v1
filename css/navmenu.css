@@ -6,13 +6,15 @@ body {
 }
 
 .navmenu {
+  bottom: 300px;
+  width: 320px;
+  font-size: smaller;
   padding-top: 50px;
 }
 
 .navbar {
   display: block;
   text-align: center;
-  
 }
 .navbar-brand {
   display: inline-block;
@@ -20,7 +22,7 @@ body {
 }
 .navbar-toggle {
   position: absolute;
-  float: right;
+  float: left;
   margin-left: 15px;
 }
 

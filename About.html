@@ -11,7 +11,22 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />  
 
-</head>
+  <script>
+  
+  //make new function that can call up the id
+  function toggler(divId) {
+    $("#" + divId ).toggle();
+  }
+
+  </script>
+
+  <style>
+  
+  .keyword {
+     display:none;
+  }
+
+  </style>
 
 </head>
 <body>
@@ -34,7 +49,6 @@
           He gained experience in media use and computer art. He also familiar with web design and selling ebay stuffs at leisure time..
                 </p>
                
-                
             </div>
             
           
@@ -57,15 +71,14 @@
     <!--Article End-->
     <!--Article End-->
     <!--Article End-->
-
-    
-
+  
     <!-- skills list and level  -->
     <div class="container">
-      
-        
       <div class="col-lg-8">
-        <embed class="keyword" type="image/svg+xml" src="wordcloud.svg" />
+        <a onclick="toggler('myTalent');">Show my talent list: </a>
+        
+        <embed id="myTalent" class="keyword" type="image/svg+xml" src="wordcloud.svg" />
+        
       </div>
       <br>
     </div>

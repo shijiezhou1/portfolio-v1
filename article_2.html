@@ -1,37 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" /> 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-  
-  </head>
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <body>
-    
-<div class="container">
-      <h1>CSS Cheat Sheet Links</h1>
-      <p class="text-left">
-        <ul>
-          <li><a href="http://htmlcheatsheet.com/css/">HTML Cheat Sheet</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/PHP">Hypertext Preprocessor</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/Active_Server_Pages">Active Server Page</a></li>
-          <li><a href="https://en.wikipedia.org/wiki/.NET_Framework">.NET Framework</a></li>
-          <li><a href="http://htmlcheatsheet.com/css/">HTML Cheat Sheet</a></li> 
-        </ul>
-      </p>
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+  <!-- css sprites  -->
+  <style>
+    .bg-back {
+      width: 50px;
+      height: 50px;
+      background: url('back.png') 0px 0px;
+    }
+     a:hover .bg-back{
+      width: 50px;
+      height: 50px;
+      background: url('back hover.png') 0 0px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+
+
+  <div class="container">
+    <h1>CSS Cheat Sheet Links</h1>
+
+    <p class="text-left">
+      <div class="list-group">
+        <button onclick="location.href = 'http://htmlcheatsheet.com/css/';" type="button" class="list-group-item list-group-item-action">HTML Cheat Sheet</button>
+        <button onclick="location.href = 'https://en.wikipedia.org/wiki/PHP';" type="button" class="list-group-item list-group-item-action">Hypertext Preprocessor</button>
+        <button onclick="location.href = 'https://en.wikipedia.org/wiki/Active_Server_Pages';" type="button" class="list-group-item list-group-item-action">Active Server Page</button>
+        <button onclick="location.href = 'https://en.wikipedia.org/wiki/.NET_Framework';" type="button" class="list-group-item list-group-item-action">.NET Framework</button>
+        <button onclick="location.href = 'https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller';" type="button" class="list-group-item list-group-item-action">MVC Definition</button>
+      </div>
+    </p>
+  </div>
+
+  <div class="container">
+    <a onclick="window.history.back()">
+      <div class="bg-back"></div>
+    </a>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

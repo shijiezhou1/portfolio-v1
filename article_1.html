@@ -1,58 +1,82 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />  
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
+
+  <!-- css sprites  -->
+  <style>
+      .bg-back {
+        width: 50px;
+        height: 50px;
+        background: url('sprites/back.png') 0px 0px;
+      }
   
-  </head>
+      a:hover .bg-back {
+        width: 50px;
+        height: 50px;
+        background: url('sprites/back hover.png') 0 0px;
+      }
+    </style>
 
-  <body>
-<div class="container">
-      <h1>Frond-End and Back-End Split Practice</h1>
-      <p class="text-left">
-      Since the development of the Nodejs is more popular now, many companies had applied the Nodejs technologies to their service. 
-      <br>
-      For example, Alibaba companies applied the Nodejs on some of the insignificant work on the Back End. Traditionally, most programmers determine the browser to be the Frond End, and determine the operating server to be the Back End.
-      <br>
-      For many people, they just hear about the concept of Frond-End and Back-End Split, there are still a lot of misunderstanding on it. It is not simple as seperatign the Frond End and Back End development. 
-      <br>
-      
-      There are many different way to organize the code in four different pattern. 
+</head>
+
+<body>
+  <div class="container">
+    <h1>Frond-End and Back-End Split Practice</h1>
+    <p class="text-left">
+      Since the development of the Nodejs is more popular now, many companies had applied the Nodejs technologies to their service.
+      <br> For example, Alibaba companies applied the Nodejs on some of the insignificant work on the Back End. Traditionally,
+      most programmers determine the browser to be the Frond End, and determine the operating server to be the Back End.
+      <br> For many people, they just hear about the concept of Frond-End and Back-End Split, there are still a lot of misunderstanding
+      on it. It is not simple as seperatign the Frond End and Back End development.
+      <br> There are many different way to organize the code in four different pattern.
       <h2>Interaction</h2>
-      <img class="img-fluid" src="Article1/article1_1.png" >
-      <p class="text-left">The frond and back end render datas between the interaction on HTTP. Then, Frond End reorganizes the data from back end (API server) and return it back to servce</p>
+      <img class="img-fluid" src="Article1/article1_1.png">
+      <p class="text-left">The frond and back end render datas between the interaction on HTTP. Then, Frond End reorganizes the data from back
+        end (API server) and return it back to servce</p>
       <h2>Code Organization</h2>
-      <img class="img-fluid" src="Article1/article1_2.png" >
-      <p class="text-left">With the traditional <strong>MVC</strong> seperation of frond code and back code, it reduces the risk of the Mock test, and also ensure the usability of the API</p>
+      <img class="img-fluid" src="Article1/article1_2.png">
+      <p class="text-left">With the traditional
+        <strong>MVC</strong> seperation of frond code and back code, it reduces the risk of the Mock test, and also ensure the usability
+        of the API</p>
       <h2>Development model</h2>
-      <img class="img-fluid" src="Article1/article1_3.png" >
+      <img class="img-fluid" src="Article1/article1_3.png">
       <p class="text-left">The process of non using seperation of front and back</p>
-      <img class="img-fluid" src="Article1/article1_33.png" >
+      <img class="img-fluid" src="Article1/article1_33.png">
       <p class="text-left">The process of using seperation of front and back, and it reduces many unnecessary steps</p>
       <h2>Data Interface</h2>
-      <img class="img-fluid" src="Article1/article1_4.png" >
-      <p class="text-left">There are many debate about using seperation on Frond and Back End<br> If the companies want to help programmers to become a prefect team and increase the usability of the code. It is better to have the seperation of Frond/Back End code</p>
+      <img class="img-fluid" src="Article1/article1_4.png">
+      <p class="text-left">There are many debate about using seperation on Frond and Back End
+        <br> If the companies want to help programmers to become a prefect team and increase the usability of the code. It is
+        better to have the seperation of Frond/Back End code</p>
       In conclusion, it provides a better situation for us to maintain the code, and reuse the code in an effectively way.
-      </p>
-</div>
+    </p>
+  </div>
 
-<div class="container">
-  <a onclick="window.history.back()">
-    <div class="bg-back"></div>
-  </a>
-</div>
+  <div class="container">
+    <a onclick="window.history.back()">
+      <div class="bg-back"></div>
+    </a>
+  </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

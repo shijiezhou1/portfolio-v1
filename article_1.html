@@ -12,9 +12,10 @@
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
+  <link rel="stylesheet" type="text/css" href="css/gototop.css" />
 
   <!-- css sprites  -->
-  <style>
+  <!-- <style>
       .bg-back {
         width: 50px;
         height: 50px;
@@ -26,11 +27,17 @@
         height: 50px;
         background: url('sprites/back hover.png') 0 0px;
       }
-    </style>
+
+    </style> -->
 
 </head>
 
 <body>
+
+  <button onclick="topFunction()" id="topBtn" title="go to the top">Top</button>
+  <script src="js/gototop.js"></script>
+  
+  
   <div class="container">
     <h1>Frond-End and Back-End Split Practice</h1>
     <p class="text-left">
@@ -63,11 +70,16 @@
     </p>
   </div>
 
-  <div class="container">
+  <br>
+
+
+  <!-- <div class="container">
     <a onclick="window.history.back()">
       <div class="bg-back"></div>
     </a>
-  </div>
+  </div> -->
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

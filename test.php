@@ -1,29 +1,44 @@
-<?php 
+<?php
 
-session_start();
+// ob_implicit_flush(true);
+// ob_end_flush();
+
+// for ($i=0; $i<5; $i++) {
+//    echo $i.'<br>';
+//    sleep(2);
+// }
+?>
+
+<?php
+/**
+ * sleep函数定时执行动态生成时间段的代码
+ * 琼台博客
+ */
+// 目前时间
+//echo date('Y-m-d H:i:s'); // out:2018-05-26 23:04:00
+echo '<br />';
+ 
+// 动态生成时间 范围在今天下午六点到晚上零点前的任意时间
+// $datetime = date('Y-m-d').' '.rand('18,23').':'.rand('0,59').':'.rand('0,59');  // 2012-05-27 19:20:00
+
+$datetime = date('2018-05-26 23:05:00');
+
+// 算得时间戳
+$a = strtotime($datetime);
+ 
+// 算得时间差
+$reduce = $a-time();
+ 
+// sleep等待
+sleep($reduce);
+ 
+// 执行到时间后执行的代码块
+print_r(date('Y-m-d H:i:s'));  // out:2012-05-27 19:20:00
 
 ?>
 
-<?php 
 
-echo "<html><body>";
-
-echo "<h1>" . "Calendar" . "</h1>";
-
+<?php
+$dt = new DateTime();
+echo $dt->format('Y-m-d H:i:s');
 ?>
-<head>
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-<!-- Ending all the element -->
-<?php echo "</html></body>"; ?>
-

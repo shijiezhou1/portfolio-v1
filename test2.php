@@ -3,6 +3,8 @@
     $timezone = $_SESSION['time'];
 ?>
 
+<html>
+<head>
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
@@ -11,7 +13,7 @@
             var visitortimezone = "GMT " + -visitortime.getTimezoneOffset()/60;
             $.ajax({
                 type: "GET",
-                url: "http://domain.com/timezone.php",
+                url: "http://localhost:8888/timezone.php",
                 data: 'time='+ visitortimezone,
                 success: function(){
                     location.reload();
@@ -20,3 +22,12 @@
         }
     });
 </script>
+</head>
+<body>
+
+
+
+</body>
+
+
+</html>

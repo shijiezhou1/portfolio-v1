@@ -7,8 +7,9 @@ for($i=0;$i<10;$i++) {
 
   flush();
 
-  sleep(1/2);
+  sleep(1);
 
 }
+
 
 ?>

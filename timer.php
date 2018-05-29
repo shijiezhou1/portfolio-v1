@@ -23,12 +23,12 @@
 
 </script>
 
-<!--<h1>Print here: </h1>-->
-<!--<br/>-->
-<!--<div id="timer"></div>-->
-<!---->
-<!--<br/>-->
-<!--<h1>Print Current UTC second</h1>-->
-<!--<div id="timer2"></div>-->
+<h1>Print here: </h1>
+<br/>
+<div id="timer"></div>
+
+<br/>
+<h1>Print Current UTC second</h1>
+<div id="timer2"></div>
 
 

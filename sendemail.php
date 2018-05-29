@@ -7,11 +7,11 @@
  * and variables.
  */
 
-$to =  "cs5129606@gmail.com";  //email receiver
-$from = "cs5129606@gmail.com";  //email sender
-$headers = "From who?: $from\n"; //From who
+$to =  "xxx@gmail.com";  //email receiver
+$from = "shijie@shijiezhou.com";  //email sender
+$headers = "From: $from\n"; //From who
 $message = "Enter the message on the body that you want to send";
-$subject = "This is not Spam, it is test of mail"; //subject of email
+$subject = "This is not Spam, it is test of mail()"; //subject of email
 if ( mail($to,$subject,$message,$headers) ) { //send!
     echo "The email has been sent!";
 } else {

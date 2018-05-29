@@ -19,5 +19,8 @@ var unix = 1353033300;
 var datetime = unix_to_datetime(unix);
 document.write(unix+' 转换后的日期为: '+datetime);
 
+document.getElementById("ans").innerHTML = unix+' 转换后的日期为: '+datetime;
+
+
 
 

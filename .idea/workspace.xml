@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59ed698c-08c6-4843-9665-29d31907dfad" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/phpinfo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sendemail.php" beforeDir="false" afterPath="$PROJECT_DIR$/sendemail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/timer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/timer.php" beforeDir="false" afterPath="$PROJECT_DIR$/timer.php" afterDir="false" />
-    </list>
+    <list default="true" id="59ed698c-08c6-4843-9665-29d31907dfad" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +26,8 @@
       <file leaf-file-name="delay.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/delay.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="56" column="23" lean-forward="true" selection-end-line="69" />
+            <state relative-caret-position="615">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -149,12 +143,12 @@
       <updated>1527520240757</updated>
       <workItem from="1527520242641" duration="1859000" />
       <workItem from="1527528103273" duration="14644000" />
-      <workItem from="1527566168798" duration="2299000" />
+      <workItem from="1527566168798" duration="2652000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18802000" />
+    <option name="totallyTimeSpent" value="19155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="666" y="58" width="746" height="797" extended-state="0" />
@@ -370,8 +364,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/delay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="56" column="23" lean-forward="true" selection-end-line="69" />
+        <state relative-caret-position="615">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>

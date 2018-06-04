@@ -30,5 +30,6 @@
     }
     /* send a JSON encded array to client */
     echo json_encode($result_array);
+
     
     $conn->close();

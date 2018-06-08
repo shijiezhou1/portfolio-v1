@@ -15,6 +15,6 @@ require_once 'config.php';
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>test it</h1>
+    <h1>TEST IT</h1>
 </body>
 </html>

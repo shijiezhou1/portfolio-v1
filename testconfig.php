@@ -1,7 +1,9 @@
 <?php
 
 require_once 'config.php';
-
+$connection = new Connection();
+$connection->setMessage("String only");
+echo $connection->getMessage();
 ?>
 
 <!DOCTYPE html>

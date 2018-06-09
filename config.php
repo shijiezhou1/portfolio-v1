@@ -23,18 +23,14 @@ class Connection{
         } catch (PDOException $error) {
             echo "Connection failed: " . $error->getMessage();
         }
-        return $this->connection;
+                     return $this->connection;
     }
 
     public function setMessage($Message){
         $this->Message = $Message;
     }
-
     public function getMessage(){
         return $this->Message;
     }
-
-    
 }
-
 ?>

@@ -2,112 +2,296 @@
 <html lang="en">
 
 <head>
-  <title>About</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <script type="text/javascript" src="scrollingtop.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/basis.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script type="text/javascript" src="scrollingtop.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/basis.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css"/>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+
+    <style>
+        .lazy {
+            max-width: 50px;
+            min-width: 10px;
+        }
+    </style>
 
 </head>
 <body>
-  <!-- bootstrap container and putting center for -->
-  <div class="container">
+<!-- bootstrap container and putting center for -->
+<div class="container">
     <div class="row justify-content-center">
-      <div class="col-lg-10 col-md-10 col-xs-12 text-center">
+        <div class="col-lg-10 col-md-10 col-xs-12 text-center">
 
-          <h3>About</h3>
-    
-        <!-- personal profile picture -->
-        <p class="text-left" style="float: right;">
-          <img src="images/profile.png" height="150px" width="150px" border="1px">
-        </p>
+            <h3>About</h3>
 
-        <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary Computer in Arts. He is also
-          the member for design and construct web developer at the Worldview project organization.
+            <!-- personal profile picture -->
+            <p class="text-left" style="float: right;">
+                <img src="images/profile.png" height="150px" width="150px" border="1px">
+            </p>
 
-          <br>
-          <br> He was working on programming artist and digital image designer at the Digital Gym Cinema. He obtains Associate
-          degree in Green River College, and also finish the B.A. degree at UCSD.
-          <br> He gained experience in media use and computer art. He also familiar with web design and selling ebay stuffs at
-          leisure time..
-        </p>
+            <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary
+                Computer in Arts. He is also
+                the member for design and construct web developer at the Worldview project organization.
 
-      </div>
+                <br>
+                <br> He was working on programming artist and digital image designer at the Digital Gym Cinema. He
+                obtains Associate
+                degree in Green River College, and also finish the B.A. degree at UCSD.
+                <br> He gained experience in media use and computer art. He also familiar with web design and selling
+                ebay stuffs at
+                leisure time..
+            </p>
+
+        </div>
     </div>
-  </div>
+</div>
 
-  <!--Article-->
-  <!--Article-->
-  <!--Article-->
 
-  <div class="container">
+<!--Article-->
+<!--Article-->
+<!--Article-->
+
+<div class="container">
     <h5>Article:</h5>
     <ul class="list-unstyled">
-      <li><a href="article_1.html" />Frond/End Seperation</li>
-      <li><a href="article_2.html" />Helpful Concepts about PHP</li>
-      <li><a href="article_3.html" />Helpful Links</li>
+        <li><a href="article_1.html"/>Frond/End Seperation</li>
+        <li><a href="article_2.html"/>Helpful Concepts about PHP</li>
+        <li><a href="article_3.html"/>Helpful Links</li>
     </ul>
     <ol>
-      <li>
-        <a href="wordcloud.svg">About me: </a>
-      </li>
+        <li>
+            <a href="wordcloud.svg">Keyword on me: </a>
+        </li>
     </ol>
-  </div>
+    <button type="submit" class="btn btn-default show">Show Conceptions</button>
+</div>
 
-  <!--Article End-->
-  <!--Article End-->
-  <!--Article End-->
+<!--Article End-->
+<!--Article End-->
+<!--Article End-->
 
 
-  <!-- skills list and level  -->
+<!--The function is call but no need to display first-->
+<div class="info" style="display: none"></div>
 
-  <!-- img start here -->
-  <div class="container">
-    <div class="col-lg-2 col-md-2 col-sm-3 r-list">
-    </div>
+<!-- skills list and level  -->
+<script>
 
-    <div class="col-lg-9 col-md-9 col-sm-12 r-list">
-      <div class="row cp-list">
-        <ul class="clearfix">
-          <li class="col-md-4 col-sm-4 col-xs-6">
-            <div class="pic-img">
-              <div class="thumbnail">
-                <a href="images/mb1.PNG" target="_blank">
-                  <img src="images/mb1.PNG" alt="" style="width:100%">
-                  <div class="caption">
-                    <p>figure1</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </li>
 
-          <li class="col-md-4 col-sm-4 col-xs-6">
-            <div class="pic-img">
-              <div class="thumbnail">
-                <a href="images/mb2.PNG" target="_blank">
-                  <img src="images/mb2.PNG" alt="" style="width:100%">
-                  <div class="caption">
-                    <p>figure2</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </li>
+    $( ".show" ).click(function() {
+        $( ".info" ).toggle(500);
+    });
 
-        </ul>
-      </div>
-    </div>
+    showit();//calling this function
+    function showit() {
 
-  </div>
+        var myvars = "";
+        console.log("enter the hsow it now");
+        myvars = '<!-- img start here -->' +
+            '<div class="container">' +
+            '    <div class="col-lg-2 col-md-2 col-sm-3 r-list">' +
+            '    </div>' +
+            '    <div class="col-lg-9 col-md-9 col-sm-12 r-list">' +
+            '        <div class="row cp-list">' +
+            '            <ul class="clearfix">' +
+            '                <li class="col-md-4 col-sm-4 col-xs-6">' +
+            '                    <div class="pic-img">' +
+            '                        <div class="thumbnail">' +
+            '                            <a href="images/mb1.PNG" target="_blank">' +
+            '                                <img src="images/mb1.PNG" alt="1" style="width:100%">' +
+            '                                <div class="caption">' +
+            '                                    <p>figure1</p>' +
+            '                                </div>' +
+            '                            </a>' +
+            '                        </div>' +
+            '                    </div>' +
+            '                </li>' +
+            '' +
+            '                <li class="col-md-4 col-sm-4 col-xs-6">' +
+            '                    <div class="pic-img">' +
+            '                        <div class="thumbnail">' +
+            '                            <a href="images/mb2.PNG" target="_blank">' +
+            '                                <img src="images/mb2.PNG" alt="2" style="width:100%">' +
+            '                                <div class="caption">' +
+            '                                    <p>figure2</p>' +
+            '                                </div>' +
+            '                            </a>' +
+            '                        </div>' +
+            '                    </div>' +
+            '                </li>' +
+            '' +
+            '            </ul>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>';
+        $('.info').html(myvars); //printing out contentItemHTML in id of info
 
-  <!-- end of the boostrap center container -->
+    }
 
-  
+</script>
+<!--&lt;!&ndash; img start here &ndash;&gt;-->
+<!--<div class="container">-->
+<!--<div class="col-lg-2 col-md-2 col-sm-3 r-list">-->
+<!--</div>-->
+<!--<div class="col-lg-9 col-md-9 col-sm-12 r-list">-->
+<!--<div class="row cp-list">-->
+<!--<ul class="clearfix">-->
+<!--<li class="col-md-4 col-sm-4 col-xs-6">-->
+<!--<div class="pic-img">-->
+<!--<div class="thumbnail">-->
+<!--<a href="images/mb1.PNG" target="_blank">-->
+<!--<img src="images/mb1.PNG" alt="1" style="width:100%">-->
+<!--<div class="caption">-->
+<!--<p>figure1</p>-->
+<!--</div>-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
 
+<!--<li class="col-md-4 col-sm-4 col-xs-6">-->
+<!--<div class="pic-img">-->
+<!--<div class="thumbnail">-->
+<!--<a href="images/mb2.PNG" target="_blank">-->
+<!--<img src="images/mb2.PNG" alt="2" style="width:100%">-->
+<!--<div class="caption">-->
+<!--<p>figure2</p>-->
+<!--</div>-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
+
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<div class="container">
+    <div>Technologies support:</div>
+    <table class="">
+        <tbody>
+        <tr>
+            <td><img width="50px" height="50px" class="lazy lazy-loaded"
+                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg ">
+                <noscript><img
+                        src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg ">
+                </noscript>
+            </td>
+            <td><img width="50px" height="50px" class="lazy lazy-loaded"
+                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
+                <noscript><img
+                        src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
+                </noscript>
+            </td>
+            <td><img width="50px" height="50px" class="lazy lazy-loaded"
+                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
+                <noscript><img
+                        src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
+                </noscript>
+            </td>
+            <td><img width="50px" height="50px" class="lazy lazy-loaded"
+                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
+                <noscript><img
+                        src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
+                </noscript>
+            </td>
+            <td><img width="50px" height="50px" class="lazy lazy-loaded"
+                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
+                <noscript><img
+                        src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
+                </noscript>
+            </td>
+            <td><img width="50px" height="50px" class="lazy lazy-loaded"
+                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
+                <noscript><img
+                        src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
+                </noscript>
+            </td>
+
+
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="container">
+    <div>Web page support in:</div>
+    <table class="">
+        <tbody>
+        <tr>
+            <td><img class="lazy lazy-loaded"
+                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
+                <noscript><img
+                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
+                </noscript>
+            </td>
+            <td><img class="lazy lazy-loaded"
+                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
+                <noscript><img
+                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
+                </noscript>
+            </td>
+            <td><img class="lazy lazy-loaded"
+                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
+                <noscript><img
+                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
+                </noscript>
+            </td>
+            <td><img class="lazy lazy-loaded"
+                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
+                <noscript><img
+                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
+                </noscript>
+            </td>
+            <td><img class="lazy lazy-loaded"
+                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
+                <noscript><img
+                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
+                </noscript>
+            </td>
+            <td><img class="lazy lazy-loaded"
+                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
+                     data-lazy-type="image"
+                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
+                <noscript><img
+                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
+                </noscript>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<!-- end of the boostrap center container -->
 
 
 </body>

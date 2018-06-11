@@ -14,12 +14,23 @@
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
         .lazy {
             max-width: 50px;
             min-width: 10px;
         }
+    </style>
+
+    <style>
+        .modal-header, h4, .close {
+            background-color: #5cb85c;
+            color:white !important;
+            text-align: center;
+            font-size: 30px;
+        }
+
     </style>
 
 </head>
@@ -77,12 +88,67 @@
 <!--Article End-->
 <!--Article End-->
 <!--Article End-->
+<div class="container">
+    <button type="button" class="btn btn-default btn-lg" id="myBtn">Show beta modal</button>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
 
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="padding:35px 50px;">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-lock"></span> Under testing...</h4>
+                </div>
+                <div class="modal-body" style="padding:35px 50px;">
+                    <div class="container">
+                    <div class="col-lg-9 col-md-9 col-sm-12 r-list">
+                            <div class="row cp-list">
+                                <ul class="clearfix">
+                                    <li class="col-md-4 col-sm-4 col-xs-6">
+                                        <div class="pic-img">
+                                            <div class="thumbnail">
+                                                <a href="images/mb1.PNG" target="_blank">
+                                                    <img src="images/mb1.PNG" alt="1" style="width:100%">
+                                                    <div class="caption">
+                                                        <p>figure1</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
 
+                                    <li class="col-md-4 col-sm-4 col-xs-6">
+                                        <div class="pic-img">
+                                            <div class="thumbnail">
+                                                <a href="images/mb2.PNG" target="_blank">
+                                                    <img src="images/mb2.PNG" alt="2" style="width:100%">
+                                                    <div class="caption">
+                                                        <p>figure2</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- skills list and level  -->
 <script>
 
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+    });
 
+    //Showing and hiding the image
     $( ".show" ).click(function() {
         $( ".info" ).toggle(500);
     });
@@ -253,8 +319,5 @@
     </table>
 </div>
 <!-- end of the boostrap center container -->
-
-
 </body>
-
 </html>

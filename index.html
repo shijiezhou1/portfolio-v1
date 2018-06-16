@@ -84,21 +84,24 @@ Description: Index page
     <!-- Adjust font  -->
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
     <script>
-        $('.navbar navbar-default navbar-fixed-top hidden-md hidden-lg').on('click', function () {
-            /* $('.sr-only').click(); */
-            $('.navbar-toggle').click();
+        $(document).ready(function () {
+            $("#hide").click(function () {
+                $(".navbar navbar-default navbar-fixed-top hidden-md hidden-lg").hide();
+            });
+            $("#show").click(function () {
+                $("p").show();
+            });
         });
     </script>
 
 </head>
 
 <body>
-
     <iframe name="iframe" width="100%" align="right" frameborder="0" src="/Main.html"></iframe>
-
     <div class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
 
         <div class="container">
@@ -107,9 +110,8 @@ Description: Index page
         </div>
 
         <ul class="nav navmenu-nav">
-
             <li>
-                <a href="/Logo.html" onclick="popupMenu()" target="iframe" onload="scroll(0,0);">Logo Design</a>
+                <a href="/Logo.html" target="iframe" onload="scroll(0,0);">Logo Design</a>
             </li>
             <li>
                 <a href="/Social Credit.html" target="iframe" onload="scroll(0,0);">Triton Credit Design</a>
@@ -188,9 +190,9 @@ Description: Index page
     <!-- Bootstrap core JavaScript
   ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
 
-    <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
     <script src="jasny-bootstrap.min.js"></script>

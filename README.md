@@ -1,7 +1,7 @@
 <h1 ><div align="center"><a href="www.shijiezhou.com" title="React"><img style="float: left" width="240" src="/images/logo%20j.gif" alt="REACT LOGO"/></center></a></div></h1>
 
 <p align="center">Porfolio Site</p>
-<div align="center"><a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/travis/USER/REPO.svg" /></a>
+<div align="center"><a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/travis/USER/REPO/BRANCH.svg" /></a>
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="MIT License" src="https://img.shields.io/packagist/dt/doctrine/orm.svg" /></a>
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="Python 2.7" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" />
 </a>
@@ -12,18 +12,15 @@
 </div><br />
 
 <div align="center">
-<img width="30%" alt="@Shijie Zhou" src="" />
+<img width="50%" src="/screenshoot.png" />
 </div>
 
 ```
-The content is about the portfolio website, and it contains all of projects, works, articles, videos, music and etc. 
-Any copy and usage must state.
+The content is about the portfolio website, and it contains all of projects, works, articles, 
+videos, music and etc. Any copy and usage must state.
 ```
 ```
-Location: Utah
-\
+Location: Salt Lake City, Utah
 Tel: 253-204-3188
-\
 Email : shz145@ucsd.edu
-\
 ```

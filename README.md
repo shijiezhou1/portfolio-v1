@@ -1,6 +1,6 @@
 <h1 ><div align="center"><a href="www.shijiezhou.com" title="React"><img style="float: left" width="240" src="/images/logo%20j.gif" alt="REACT LOGO"/></center></a></div></h1>
 
-<p align="center">Porfolio Site</p>
+<p align="center">Portfolio Site</p>
 <div align="center">
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="Python 2.7" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" />
 </a>

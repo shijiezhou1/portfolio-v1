@@ -1,14 +1,14 @@
 <h1 ><div align="center"><a href="www.shijiezhou.com" title="React"><img style="float: left" width="240" src="/images/logo%20j.gif" alt="REACT LOGO"/></center></a></div></h1>
 
 <p align="center">Porfolio Site</p>
-<div align="center"><a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/travis/USER/REPO/BRANCH.svg" /></a>
-<a href="https://shijiezhou1.github.io/my-app/"><img alt="MIT License" src="https://img.shields.io/packagist/dt/doctrine/orm.svg" /></a>
+<div align="center">
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="Python 2.7" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" />
 </a>
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/travis/php-v/symfony/symfony.svg" /></a>
-  <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter.svg" /></a>
-   <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/badge/Professional-Code-yellow.svg" /></a>
-    <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/badge/Shijie-Portfolio-brightgreen.svg" /></a>
+<a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter.svg" /></a>
+<a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/badge/Professional-Code-yellow.svg" /></a>
+<a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/badge/Shijie-Portfolio-brightgreen.svg" /></a>
+<a href="https://shijiezhou1.github.io/my-app/"><img alt="MIT License" src="https://img.shields.io/packagist/dt/doctrine/orm.svg" /></a>
 </div><br />
 
 <div align="center">

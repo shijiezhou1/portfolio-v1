@@ -12,7 +12,7 @@
 </div><br />
 
 <div align="center">
-<img width="50%" src="/screenshoot.png" />
+<img width="50%" src="/images/screenshoot.png" />
 </div>
 
 ```

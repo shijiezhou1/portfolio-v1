@@ -24,3 +24,13 @@ Location: Salt Lake City, Utah
 Tel: 253-204-3188
 Email : shz145@ucsd.edu
 ```
+## Features
+
+* :gear: **Completely customizable:** It can be used for your portfolio;
+* :pencil2: **Create your own loading:** use the
+  [Shijie Zhou](https://www.shijie.com) for reference to create
+  your own custom loadings easily;
+* :ok_hand: **You can use right now:** there are a lot of presets to use it, see the
+  [examples](#examples);
+* :rocket: **Performance:** it works without any extra scripts,
+  canvas, etc;

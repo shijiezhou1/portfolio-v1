@@ -31,6 +31,6 @@ Email : shz145@ucsd.edu
   [Shijie Zhou](http://www.shijie.com) for reference to create
   your own custom loadings easily;
 * :ok_hand: **You can use right now:** there are a lot of presets to use it, see the
-  [examples](#examples);
+  [examples](examples);
 * :rocket: **Performance:** it works without any extra scripts,
   canvas, etc;

@@ -1,0 +1,2 @@
+[14-Jul-2018 02:03:06 Europe/Berlin] PHP Warning:  require(helloworld.com): failed to open stream: No such file or directory in /Applications/MAMP/htdocs/Portfolio/J/ajaxjquery PHP & MYSQL/index.php on line 8
+[14-Jul-2018 02:03:06 Europe/Berlin] PHP Fatal error:  require(): Failed opening required 'helloworld.com' (include_path='.:/Applications/MAMP/bin/php/php7.1.1/lib/php') in /Applications/MAMP/htdocs/Portfolio/J/ajaxjquery PHP & MYSQL/index.php on line 8

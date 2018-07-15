@@ -1,3 +1,12 @@
+<?php 
+
+ini_set('display_errors',1);
+ini_set('log_errors',1);
+ini_set('error_log', dirname(__FILE__) . '/log.txt');
+error_reporting(E_ALL);
+
+// require 'helloworld.com';
+?>
 <html>
    <head>
       <title>AJAX jQuery Example with PHP MySQL</title>
@@ -15,6 +24,7 @@
          }
       </style>
    </head>
+   
    <body>
       <div class = "container" >
          <h3><u>AJAX jQuery Example with PHP MySQL</u></h3>

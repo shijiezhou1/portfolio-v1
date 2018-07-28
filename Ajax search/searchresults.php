@@ -8,7 +8,6 @@ $selectdb = mysqli_select_db($connection, 'work');
 if(!$selectdb){
 	die("Database Selection Failed" . mysqli_error($connection));
 }
-
 $search = ($_GET['search']);
 function mysql_escape_mimic($inp) { 
 	if(is_array($inp)) 

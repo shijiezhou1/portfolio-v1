@@ -20,6 +20,7 @@ p {
 a, a:hover, a:focus {
     color: inherit;
     text-decoration: none;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -29,11 +30,13 @@ a, a:hover, a:focus {
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-btn {
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     outline: none !important;
     border: none;
 }
@@ -53,8 +56,12 @@ i, span {
     SIDEBAR STYLE
 ----------------------------------------------------- */
 .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 
 }
 
@@ -63,6 +70,7 @@ i, span {
     max-width: 250px;
     background: rgba(255, 112, 0, 0.45); 
     color: #fff;
+    -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
 
@@ -106,7 +114,6 @@ i, span {
     bottom: 5px;
     right: 50%;
     -webkit-transform: translateX(50%);
-    -ms-transform: translateX(50%);
     transform: translateX(50%);
 }
 
@@ -188,6 +195,7 @@ ul.CTAs a {
 #content {
     padding: 20px;
     min-height: 100vh;
+    -webkit-transition: all 0.2s;
     transition: all 0.2s;
 }
 
@@ -207,7 +215,6 @@ ul.CTAs a {
         bottom: 5px;
         right: 50%;
         -webkit-transform: translateX(50%);
-        -ms-transform: translateX(50%);
         transform: translateX(50%);
     }
     #sidebar.active {

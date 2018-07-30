@@ -1,206 +1,182 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shijie Zhou Portfolio Website, he is over 4 years of experience in Web Development using HTML5/4, CSS3/2, JavaScript, TypeScript, jQuery, AJAX, JSON, LESS/SASS, Bootstrap, D3.js and ReactJS, VueJS.
-    Experience on the front end Technologies such as HTML5 and CSS3 properties also have used extensively CSS and Bootstrap with a good look out for. ">
-    <meta name="author" content="Shijie">
-    <meta property="og:title" content="Shijie Zhou Portfolio" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="http://www.shijiezhou.com/" />
-    <meta property="og:image" content="images/logo j.gif" />
-    <meta name="msvalidate.01" content="AAB5B1F5BD3E4BB4044D9C6783605F34" />
-
-    <title>Shijie Zhou Portforlio</title>
-    <!-- Bootstrap core CSS reference to the jasny-bootstrap and bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <!--reference from jasnybootstrap-->
-    <link href="jasny-bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/navmenu.css" rel="stylesheet">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113408753-1"></script>
-
-    <script>
-        {
-            "Version"
-        :
-            "2012-10-17",
-                "Statement"
-        :
-            [
-                {
-                    "Sid": "PublicReadGetObject",
-                    "Effect": "Allow",
-                    "Principal": "*",
-                    "Action": [
-                        "s3:GetObject"
-                    ],
-                    "Resource": [
-                        "arn:aws:s3:::www.shijiezhou.com/*"
-                    ]
-                }
-            ]
-        }
-    </script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'UA-113408753-1');
-    </script>
-
-
-    <!--Google Firebase-->
-    <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyCsjNe80J0i2ZlR5PKJW9EBQMkHZjZM3mQ",
-            authDomain: "website-7b86a.firebaseapp.com",
-            databaseURL: "https://website-7b86a.firebaseio.com",
-            projectId: "website-7b86a",
-            storageBucket: "",
-            messagingSenderId: "577143481839"
-        };
-        firebase.initializeApp(config);
-    </script>
-
-    <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5acbaa0417c3ee0013aed06f&product=custom-share-buttons"></script>
-
-    <!-- Adjust iframe the correct size when refresh -->
-    <link href="css/iframe_style_adjust.css" rel="stylesheet">
-    <!-- Adjust font  -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-    <script>
-        $(document).ready(function () {
-            $("#hide").click(function () {
-                $(".navbar navbar-default navbar-fixed-top hidden-md hidden-lg").hide();
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Shijie Zhou Portfolio Website, he is over 4 years of experience in Web Development using HTML5/4, CSS3/2, JavaScript, TypeScript, jQuery, AJAX, JSON, LESS/SASS, Bootstrap, D3.js and ReactJS, VueJS.
+            Experience on the front end Technologies such as HTML5 and CSS3 properties also have used extensively CSS and Bootstrap with a good look out for. ">
+        <meta name="author" content="Shijie">
+        <meta property="og:title" content="Shijie Zhou Portfolio" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="http://www.shijiezhou.com/" />
+        <meta property="og:image" content="images/logo j.gif" />
+        <meta name="msvalidate.01" content="AAB5B1F5BD3E4BB4044D9C6783605F34" />
+        <title>Shijie Zhou Portforlio</title>
+        <!-- Bootstrap core CSS reference to the jasny-bootstrap and bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+            crossorigin="anonymous">
+        <!--reference from jasnybootstrap-->
+        <link href="jasny-bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/navmenu.css" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113408753-1"></script>
+        <script>
+            {
+                "Version"
+            :
+                "2012-10-17",
+                    "Statement"
+            :
+                [
+                    {
+                        "Sid": "PublicReadGetObject",
+                        "Effect": "Allow",
+                        "Principal": "*",
+                        "Action": [
+                            "s3:GetObject"
+                        ],
+                        "Resource": [
+                            "arn:aws:s3:::www.shijiezhou.com/*"
+                        ]
+                    }
+                ]
+            }
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            
+            gtag('js', new Date());
+            
+            gtag('config', 'UA-113408753-1');
+        </script>
+        <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5acbaa0417c3ee0013aed06f&product=custom-share-buttons"></script>
+        <!-- Adjust iframe the correct size when refresh -->
+        <link href="css/iframe_style_adjust.css" rel="stylesheet">
+        <!-- Adjust font  -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#hide").click(function () {
+                    $(".navbar navbar-default navbar-fixed-top hidden-md hidden-lg").hide();
+                });
+                $("#show").click(function () {
+                    $("p").show();
+                });
+               
             });
-            $("#show").click(function () {
-                $("p").show();
-            });
-           
-        });
-        //remove nav bar after you click, default not responding
-        function RemoveNavBar(){
-            $( "#hanburger" ).trigger( "click" );
-        }
-    </script>
-
-</head>
-
-<body>
-
-    <iframe name="iframe" width="100%" align="right" frameborder="0" src="/Main.html"></iframe>
-    <div id ="navmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
-
-        <div class="container">
-            <a class="col-md-12 visible-md visible-lg col-md-" href="http://www.shijiezhou.com">
-                <img id="logo" src="images/logo%20j.gif" width="100px">
-        </div>
-
-        <ul class="nav navmenu-nav">
+            //remove nav bar after you click, default not responding
+            function RemoveNavBar(){
+                $( "#hanburger" ).trigger( "click" );
+            }
+        </script>
+    </head>
+    <body>
+        <iframe name="iframe" width="100%" align="right" frameborder="0" src="/Main.html"></iframe>
+        <div id ="navmenu" class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+            <div class="container">
+                <a class="col-md-12 visible-md visible-lg col-md-" href="http://www.shijiezhou.com">
+                    <img id="logo" src="images/logo%20j.gif" width="100px">
+            </div>
+            <ul class="nav navmenu-nav">
             <li>
-                <a href="/Logo.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()" >Logo Design</a>
+            <a href="/Logo.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()" >Logo Design</a>
             </li>
             <li>
-                <a href="/Social Credit.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()" >Triton Credit Design</a>
+            <a href="/Social Credit.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()" >Triton Credit Design</a>
             </li>
             <li>
-                <a href="/AR.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">AR Furniture Design</a>
-            </li>
-
-            <li>
-                <a href="/telesignalization.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Telesignalization</a>
+            <a href="/AR.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">AR Furniture Design</a>
             </li>
             <li>
-                <a href="https://hlou29.wixsite.com/coconutfactrory" target="_blank" onload="scroll(0,0);" onclick="RemoveNavBar()">Coconut Factory
-                </a>
+            <a href="/telesignalization.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Telesignalization</a>
             </li>
             <li>
-                <a href="/unitygame.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Unity Design</a>
+            <a href="https://hlou29.wixsite.com/coconutfactrory" target="_blank" onload="scroll(0,0);" onclick="RemoveNavBar()">Coconut Factory
+            </a>
             </li>
             <li>
-                <a href="/music/musicindex.html" target="iframe" height="600px" onload="scroll(0,0);" onclick="RemoveNavBar()">Music</a>
+            <a href="/unitygame.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Unity Design</a>
             </li>
             <li>
-                <a href="https://shijiezhou.tumblr.com" target="_blank">ViDeo Collaboration</a>
+            <a href="/music/musicindex.html" target="iframe" height="600px" onload="scroll(0,0);" onclick="RemoveNavBar()">Music</a>
             </li>
-
+            <li>
+            <a href="https://shijiezhou.tumblr.com" target="_blank">ViDeo Collaboration</a>
+            </li>
             <!--<div id = "myDIV">
-            <li><a href="#" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Electronic Music</a></li>
-            <li><a href="#" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Traditional Music</a></li>
-            </div>-->
-
+                <li><a href="#" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Electronic Music</a></li>
+                <li><a href="#" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Traditional Music</a></li>
+                </div>-->
             <li>
-                <a href="/thecup.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">The Cup</a>
+            <a href="/thecup.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">The Cup</a>
             </li>
             <li>
-                <a href="/Papercage.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Paper Cage</a>
+            <a href="/Papercage.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Paper Cage</a>
             </li>
             <li>
-                <a href="/Bristlebot.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Bristlebot</a>
+            <a href="/Bristlebot.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Bristlebot</a>
             </li>
             <li>
-                <a href="/creativeswitch.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Creative Switch</a>
+            <a href="/creativeswitch.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Creative Switch</a>
             </li>
             <li>
-                <a href="/Collaboration.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Collaboration</a>
+            <a href="/Collaboration.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">Collaboration</a>
             </li>
             <li>
-                <a href="/About.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">About</a>
+            <a href="/About.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">About</a>
             </li>
             <li>
-                <a href="/CV2.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">CV</a>
+            <a href="/CV2.html" target="iframe" onload="scroll(0,0);" onclick="RemoveNavBar()">CV</a>
             </li>
-
-        </ul>
-    </div>
-
-
-
-    <div id="hanburger" class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
-        <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
+            </ul>
+        </div>
+        <div id="hanburger" class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
+            <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
             <span class="icon-bar bottom-bar"></span>
-        </button>
-
-        <a class="navbar-brand" href="http://www.shijiezhou.com">Shijie Zhou</a>
-    </div>
-
-
-    <footer class="page-footer font-small blue pt-4 mt-4">
-        <div id="copyright" class="footer-copyright py-3 text-center">
-            <p>All Rights Reserved © 2016-2017 Shijie Zhou in San Diego</p>
+            </button>
+            <a class="navbar-brand" href="http://www.shijiezhou.com">Shijie Zhou</a>
         </div>
-    </footer>
+        <footer class="page-footer font-small blue pt-4 mt-4">
+            <div id="copyright" class="footer-copyright py-3 text-center">
+                <p>All Rights Reserved © 2016-2017 Shijie Zhou in San Diego</p>
+            </div>
+        </footer>
+        <!-- Bootstrap core JavaScript
+            ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+        <!--Google Firebase-->
 
-    <!-- Bootstrap core JavaScript
-  ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+        <!-- <input id="firebaseinput" type="text">
+        <button id="firebasebutton" onclick="setValue()" >Submit</button>
+        <button id="firebasebutton2" onclick="delValue()" >Delete</button> -->
 
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
-    <script src="jasny-bootstrap.min.js"></script>
-</body>
-
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyD65fh-FEj6Z_reClfIyuMPw3MderFGoJM",
+                authDomain: "jay-a1234.firebaseapp.com",
+                databaseURL: "https://jay-a1234.firebaseio.com",
+                projectId: "jay-a1234",
+                storageBucket: "jay-a1234.appspot.com",
+                messagingSenderId: "616007231427"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <script src="index.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <script src="jasny-bootstrap.min.js"></script>
+    </body>
 </html>

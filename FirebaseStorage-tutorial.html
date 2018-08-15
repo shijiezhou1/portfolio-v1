@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Firebase | Storage</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      width: 100%;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    #uploader {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 50%;
+      margin-bottom: 10px;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Exiting File Lists</h1>
+
+
+
+  <div id="howmuch">0% now</div>
+  <progress value="0" max="100" id="uploader">0%</progress>
+  <input type="file" value="upload" id="fileButton" />
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCsjNe80J0i2ZlR5PKJW9EBQMkHZjZM3mQ",
+      authDomain: "website-7b86a.firebaseapp.com",
+      databaseURL: "https://website-7b86a.firebaseio.com",
+      projectId: "website-7b86a",
+      storageBucket: "website-7b86a.appspot.com",
+      messagingSenderId: "577143481839"
+    };
+    firebase.initializeApp(config);
+
+    var uploader = document.getElementById('uploader');
+    var fileButton = document.getElementById('fileButton');
+
+    fileButton.addEventListener('change', function (e) {
+
+      // Get file
+      var file = e.target.files[0];
+
+      // Create a storage ref
+      var storageRef = firebase.app().storage("gs://website-7b86a.appspot.com").ref('image/' + file.name);
+      var task = storageRef.put(file);
+
+      // Update progress bar 
+      task.on('state_changed', function progress(snapshot) {
+        var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        uploader.value = percentage;
+        document.getElementById('howmuch').innerHTML = 'Upload is ' + percentage + '% done';
+
+        switch (snapshot.state) {
+          case firebase.storage.TaskState.PAUSED: // or 'paused'
+            console.log('Upload is paused');
+            break;
+          case firebase.storage.TaskState.RUNNING: // or 'running'
+            console.log('Upload is running');
+            break;
+        }
+      },
+
+        function error(err) {
+          switch (error.code) {
+            case 'storage/unauthorized':
+              // User doesn't have permission to access the object
+              break;
+
+            case 'storage/canceled':
+              // User canceled the upload
+              break;
+
+            case 'storage/unknown':
+              // Unknown error occurred, inspect error.serverResponse
+              break;
+          }
+        },
+
+        function () {
+          task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
+            console.log('File available at', downloadURL);
+            //insert it to your database so you can fetch them later 
+
+
+          });
+        });
+    });
+  </script>
+
+  <script>
+    var storage = firebase.storage();
+    console.log(storage);
+    var gsReference = storage.refFromURL('gs://website-7b86a.appspot.com/image');
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

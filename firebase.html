@@ -5,8 +5,8 @@
   <title>Firebase | Storage</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
     crossorigin="anonymous">
@@ -29,12 +29,26 @@
       margin-bottom: 10px;
 
     }
+
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    body {
+      position: relative
+    }
   </style>
 </head>
 
 <body>
+  <p style="text-align:center;"><img src="" alt="Logo"></p>
+
   <pre id="showJSON"></pre>
-  <div id="showImg"></div>
+  <div class="container">
+    <div id="showImg"></div>
+  </div>
+
   <p id="demo"></p>
   <h1>Exiting File Lists</h1>
 
@@ -44,6 +58,16 @@
   <input type="file" value="upload" id="fileButton" />
 
 
+  <script>
+    function getSourceAsDOM(url) {
+      url = "https://stackoverflow.com/questions/10691464/is-it-possible-to-read-another-urls-dom-structure";
+      xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("GET", url, false);
+      xmlhttp.send();
+      parser = new DOMParser();
+      return parser.parseFromString(xmlhttp.responseText, "text/html");
+    }
+  </script>
   <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
   <script>
     var database;

@@ -67,19 +67,29 @@
             return parser.parseFromString(xmlhttp.responseText, "text/html");
         }
     </script>
-    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
     <script>
         var database;
         document.getElementById("demo").innerHTML = Math.floor(Math.random() * 100);
         // Initialize Firebase
+        
         var config = {
-            apiKey: "AIzaSyCsjNe80J0i2ZlR5PKJW9EBQMkHZjZM3mQ",
-            authDomain: "website-7b86a.firebaseapp.com",
-            databaseURL: "https://website-7b86a.firebaseio.com",
-            projectId: "website-7b86a",
-            storageBucket: "website-7b86a.appspot.com",
-            messagingSenderId: "577143481839"
-        };
+            apiKey: "AIzaSyBWXEX-7MESezJnngThRPPStui5YYbqZ1A",
+            authDomain: "fir-9dbc2.firebaseapp.com",
+            databaseURL: "https://fir-9dbc2.firebaseio.com",
+            projectId: "fir-9dbc2",
+            storageBucket: "fir-9dbc2.appspot.com",
+            messagingSenderId: "760467057185"
+          };
+
+//         var config = {
+//             apiKey: "AIzaSyCsjNe80J0i2ZlR5PKJW9EBQMkHZjZM3mQ",
+//             authDomain: "website-7b86a.firebaseapp.com",
+//             databaseURL: "https://website-7b86a.firebaseio.com",
+//             projectId: "website-7b86a",
+//             storageBucket: "website-7b86a.appspot.com",
+//             messagingSenderId: "577143481839"
+//         };
         firebase.initializeApp(config);
 
         // Get a reference to the database service

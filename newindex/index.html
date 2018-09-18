@@ -12,7 +12,7 @@
     <meta property="og:url" content="http://www.shijiezhou.com/"/>
     <meta property="og:image" content="images/logo j.gif"/>
     <meta name="msvalidate.01" content="AAB5B1F5BD3E4BB4044D9C6783605F34"/>
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo j.gif"/>
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logo j.gif"/>
     <title>Shijie Zhou | Portforlio</title>
 
     <!-- Bootstrap core CSS -->
@@ -25,23 +25,27 @@
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
+    <style>
+        .selectOpacity {
+            box-shadow: 2px 2px 15px black;
+        }
 
+        .selectOpacity:hover {
+            opacity: .5;
+        }
+
+        a:link {
+            /* Applies to all unvisited links */
+            text-decoration: none;
+        }
+
+        .description {
+            font-size: small;
+        }
+    </style>
 </head>
-
-<style>
-    .selectOpacity:hover {
-        opacity: .5;
-    }
-    a:link {
-        /* Applies to all unvisited links */
-        text-decoration: none;
-    }
-
-    .description {
-        font-size: small;
-    }
-</style>
 <body id="page-top">
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav"
      style="background-color: darkslateblue!important;">
     <a class="" href="#page-top">
@@ -58,7 +62,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#home">HOME</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#projects">PROJECTS</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">PROJECTS</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">EXPERIENCE</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a></li>
             <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a></li>
@@ -79,7 +83,7 @@
                         <div class="container">
                             <div class="row col-sm-12 col-lg-8 col-md-10  mx-auto">
                                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 item zoom-on-hover">
-                                    <a class="lightbox" href="/Bristlebot.html">
+                                    <a class="lightbox" href="#">
                                         <img class="img-fluid image selectOpacity" src="../9images/1.png">
                                         <span class="description">
                                             <span class="description-heading">Bristlebot</span>
@@ -116,7 +120,7 @@
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 item zoom-on-hover">
                                     <a class="lightbox" href="/About.html">
-                                        <img class="img-fluid image bg-white" src="../9images/5.png">
+                                        <img class="img-fluid image selectOpacity bg-white" src="../9images/5.png">
                                         <span class="description">
                                             <span class="description-heading">Personal Information</span>
                                             <span class="description-body">Get to know more about me</span>
@@ -161,6 +165,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <hr class="m-0">
@@ -468,8 +473,7 @@
                                 </li>
                                 <li>
                                     <i class="fa-li fa fa-check"></i>
-                                    Cross Functional
-                                    <Testing></Testing>
+                                    Cross Functional Testing
                                 </li>
                                 <li>
                                     <i class="fa-li fa fa-check"></i>
@@ -487,8 +491,8 @@
                                 Bitcoin Trading, ebay Sale, Solo Adventure, Skydiving, and Arduino Game Design. Those
                                 are my favorite point during my spare time.
                             </p>
-                            <p class="mb-0">Suggesting books for
-                                <success></success>
+                            <p class="mb-0">Suggesting books for success
+
                                 :
                             <ul>
                                 <li>
@@ -512,7 +516,7 @@
                                         Introduction to Algorithms, 3rd Edition (The MIT Press)
                                     </a></li>
                             </ul>
-                            </p>
+
                         </div>
                     </section>
                     <hr class="m-0">
@@ -555,7 +559,6 @@
             </section>
         </div>
     </section>
-
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59ed698c-08c6-4843-9665-29d31907dfad" name="Default" comment="LOGO UPLOAD">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lg.html" beforeDir="false" afterPath="$PROJECT_DIR$/lg.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,7 +29,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="3022" />
+          <entry key="html" value="3024" />
           <entry key="js" value="92" />
           <entry key="php" value="49" />
           <entry key="txt" value="90" />
@@ -38,7 +38,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="3022" />
+          <entry key="HTML" value="3024" />
           <entry key="JavaScript" value="92" />
           <entry key="PHP" value="49" />
           <entry key="PLAIN_TEXT" value="90" />
@@ -92,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="285">
+              <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -214,11 +214,6 @@
             <path>
               <item name="main" type="b2602c69:ProjectViewProjectNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="main" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resume" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -409,7 +404,7 @@
       <workItem from="1538872122335" duration="183000" />
       <workItem from="1538943409332" duration="237000" />
       <workItem from="1539179192300" duration="122000" />
-      <workItem from="1539579041672" duration="1278000" />
+      <workItem from="1539579041672" duration="1364000" />
     </task>
     <task id="LOCAL-00001" summary="organize">
       <created>1537105217389</created>
@@ -579,11 +574,18 @@
       <option name="project" value="LOCAL" />
       <updated>1539583318826</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="LOGO UPLOAD">
+      <created>1539583525101</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1539583525101</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44977000" />
+    <option name="totallyTimeSpent" value="45063000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -596,6 +598,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1394" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18047337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -875,8 +878,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="285">
+          <caret line="19" column="2" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
         </state>
       </provider>
     </entry>

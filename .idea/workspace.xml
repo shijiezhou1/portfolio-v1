@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59ed698c-08c6-4843-9665-29d31907dfad" name="Default" comment="Update space issue">
+    <list default="true" id="59ed698c-08c6-4843-9665-29d31907dfad" name="Default" comment="LOGO UPLOAD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lg.html" beforeDir="false" afterPath="$PROJECT_DIR$/lg.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,19 +29,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="3014" />
+          <entry key="html" value="3022" />
           <entry key="js" value="92" />
           <entry key="php" value="49" />
-          <entry key="txt" value="79" />
+          <entry key="txt" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="3014" />
+          <entry key="HTML" value="3022" />
           <entry key="JavaScript" value="92" />
           <entry key="PHP" value="49" />
-          <entry key="PLAIN_TEXT" value="79" />
+          <entry key="PLAIN_TEXT" value="90" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -93,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lg.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="60">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -215,6 +214,11 @@
             <path>
               <item name="main" type="b2602c69:ProjectViewProjectNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="main" type="b2602c69:ProjectViewProjectNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resume" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,7 +409,7 @@
       <workItem from="1538872122335" duration="183000" />
       <workItem from="1538943409332" duration="237000" />
       <workItem from="1539179192300" duration="122000" />
-      <workItem from="1539579041672" duration="809000" />
+      <workItem from="1539579041672" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="organize">
       <created>1537105217389</created>
@@ -561,11 +565,25 @@
       <option name="project" value="LOCAL" />
       <updated>1539579166179</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="LOGO UPLOAD">
+      <created>1539583163705</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1539583163705</updated>
+    </task>
+    <task id="LOCAL-00024" summary="LOGO UPLOAD">
+      <created>1539583318826</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1539583318826</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44508000" />
+    <option name="totallyTimeSpent" value="44977000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,9 +596,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="46" y="23" width="1394" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22485207" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18047337" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Remote Host" order="3" weight="0.23594674" />
@@ -596,7 +613,7 @@
       <window_info anchor="bottom" id="PHP-CGI Server" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32866243" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003642" side_tool="true" weight="0.32866243" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.3299363" />
+      <window_info anchor="bottom" id="Version Control" order="12" visible="true" weight="0.3299363" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.3293944" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.3299363" />
       <window_info anchor="bottom" id="File Transfer" order="15" weight="0.3299363" />
@@ -657,7 +674,8 @@
     <MESSAGE value="update this file" />
     <MESSAGE value="Update content" />
     <MESSAGE value="Update space issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update space issue" />
+    <MESSAGE value="LOGO UPLOAD" />
+    <option name="LAST_COMMIT_MESSAGE" value="LOGO UPLOAD" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -857,8 +875,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lg.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>

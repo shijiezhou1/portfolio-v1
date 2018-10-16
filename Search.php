@@ -64,8 +64,6 @@ class Search
 //print_r($xml);
 
 
-
-
 $handle = curl_init();
 
 $url = "https://www.baidu.com";

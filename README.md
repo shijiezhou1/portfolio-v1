@@ -2,7 +2,7 @@
 
 <p align="center">Portfolio Site</p>
 <div align="center">
-<a href="https://shijiezhou1.github.io/my-app/"><img alt="Python 2.7" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" />
+<a href="https://shijiezhou1.github.io/my-app/"><img alt="info-apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" />
 </a>
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/travis/php-v/symfony/symfony.svg" /></a>
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter.svg" /></a>
@@ -27,9 +27,9 @@ Email : shz145@ucsd.edu
 ## Features
 * :gear: **Completely customizable:** It can be used for your portfolio;
 * :pencil2: **Create your own loading:** use the
-  [Shijie Zhou](http://www.shijie.com) for reference to create
+  [Shijie Zhou](https://www.shijie.com) for reference to create
   your own custom loadings easily;
-* :ok_hand: **You can use right now:** there are a lot of presets to use it, see the
+* :ok_hand: **You can use right now:** there are a lot of presets and variable to use it, see the
   [examples](examples);
 * :rocket: **Performance:** it works without any extra scripts,
   canvas, etc;

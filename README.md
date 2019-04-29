@@ -27,7 +27,7 @@ Email : shz145@ucsd.edu
 ## Features
 * :gear: **Completely customizable:** It can be used for your portfolio;
 * :pencil2: **Create your own loading:** use the
-  [Shijie Zhou](https://www.shijie.com) for reference to create
+  [Shijie Zhou](https://www.shijie.com) portfolio as example for reference to create
   your own custom loadings easily;
 * :ok_hand: **You can use right now:** there are a lot of presets and variable to use it, see the
   [examples](examples);

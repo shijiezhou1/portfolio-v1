@@ -15,10 +15,10 @@
 <img width="50%" src="/images/screenshoot.png" />
 </div>
 
-```
+---
 The content is about the portfolio website, and it contains all of projects, works, articles, 
 videos, music and etc. Any copy and usage must state.
-```
+---
 ```
 Location: Salt Lake City, Utah
 Tel: 253-204-3188

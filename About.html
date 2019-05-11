@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <title>About</title>
     <meta charset="utf-8">
@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <style>
@@ -47,25 +48,30 @@
                     <img src="images/profile.png" height="150px" width="150px" border="1px">
                 </p>
 
-                <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary Computer in Arts. He
-                    is also the member for design and construct web developer at the Worldview project organization.
+                <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary
+                    Computer in Arts. He
+                    is also the member for design and construct web developer at the Worldview project organization. Currently, 
+                    he is working in Akirix(MMSG department) with software engineer.
 
                     <br>
-                    <br> He was working on programming artist and digital image designer at the Digital Gym Cinema. He obtains
+                    <br> He used to work on programming artist and digital image designer at the Digital Gym Cinema as internet. He
+                    obtains
                     Associate degree in Green River College, and also finish the B.A. degree at UCSD.
-                    <br> He gained experience in media use and computer art. He also familiar with web design and selling ebay
+                    <br> He gained experience in media use and computer art. He also familiar with web design and
+                    customize selling pages on ebay which promote
                     stuffs at leisure time..
                 </p>
-
             </div>
         </div>
     </div>
 
     <!--Article-->
-
     <div class="container">
         <h5>Article:</h5>
         <ul class="list-unstyled">
+            <li>
+                <a href="wordcloud.svg">Keyword on me: </a>
+            </li>
             <li>
                 <a href="article_1.html" />Frond/End Seperation</li>
             <li>
@@ -73,270 +79,169 @@
             <li>
                 <a href="article_3.html" />Helpful Links</li>
         </ul>
-        <ol>
-            <li>
-                <a href="wordcloud.svg">Keyword on me: </a>
-            </li>
-        </ol>
-
-        <!--<button type="submit" class="btn btn-default show">Show Conceptions</button>-->
-
-        <!--The function is called but no need to display first-->
-        <div class="info" style="display: none"></div>
     </div>
-
-    <!--Article End-->
-    <!--Article End-->
-    <!--Article End-->
-    <div class="container">
-        <button type="button" class="btn btn-default btn-lg" id="myBtn">Show Conceptions</button>
-        <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
-                <div class="modal-content">
-                    <div class="modal-header" style="padding:35px 50px;">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4>
-                            <span class="glyphicon glyphicon-lock"></span> Some Conceptual Images</h4>
-                    </div>
-                    <div class="modal-body" style="padding:35px 50px;">
-                        <div class="container">
-                            <div class="col-lg-9 col-md-9 col-sm-12 r-list">
-                                <div class="row cp-list">
-                                    <ul class="clearfix">
-                                        <li class="col-md-4 col-sm-4 col-xs-6">
-                                            <div class="pic-img">
-                                                <div class="thumbnail">
-                                                    <a href="images/mb1.PNG" target="_blank">
-                                                        <img src="images/mb1.PNG" alt="1" style="width:100%">
-                                                        <div class="caption">
-                                                            <p>figure1</p>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li class="col-md-4 col-sm-4 col-xs-6">
-                                            <div class="pic-img">
-                                                <div class="thumbnail">
-                                                    <a href="images/mb2.PNG" target="_blank">
-                                                        <img src="images/mb2.PNG" alt="2" style="width:100%">
-                                                        <div class="caption">
-                                                            <p>figure2</p>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- skills list and level  -->
-    <script>
-
-        $(document).ready(function () {
-            $("#myBtn").click(function () {
-                $("#myModal").modal();
-            });
-        });
-
-        //Showing and hiding the image
-        $(".show").click(function () {
-            $(".info").toggle(500);
-        });
-
-        showit();//calling this function
-        function showit() {
-
-            var myvars = "";
-            console.log("enter the hsow it now");
-            myvars = '<!-- img start here -->' +
-                '<div class="container">' +
-                // '    <div class="col-lg-2 col-md-2 col-sm-3 r-list">' +
-                // '    </div>' +
-                '    <br /> ' +
-                '    <div class="col-lg-9 col-md-9 col-sm-12 r-list">' +
-                '        <div class="row cp-list">' +
-                '            <ul class="clearfix">' +
-                '                <li class="col-md-4 col-sm-4 col-xs-6">' +
-                '                    <div class="pic-img">' +
-                '                        <div class="thumbnail">' +
-                '                            <a href="images/mb1.PNG" target="_blank">' +
-                '                                <img src="images/mb1.PNG" alt="1" style="width:100%">' +
-                '                                <div class="caption">' +
-                '                                    <p>figure1</p>' +
-                '                                </div>' +
-                '                            </a>' +
-                '                        </div>' +
-                '                    </div>' +
-                '                </li>' +
-                '' +
-                '                <li class="col-md-4 col-sm-4 col-xs-6">' +
-                '                    <div class="pic-img">' +
-                '                        <div class="thumbnail">' +
-                '                            <a href="images/mb2.PNG" target="_blank">' +
-                '                                <img src="images/mb2.PNG" alt="2" style="width:100%">' +
-                '                                <div class="caption">' +
-                '                                    <p>figure2</p>' +
-                '                                </div>' +
-                '                            </a>' +
-                '                        </div>' +
-                '                    </div>' +
-                '                </li>' +
-                '' +
-                '            </ul>' +
-                '        </div>' +
-                '    </div>' +
-                '</div>';
-            $('.info').html(myvars); //printing out contentItemHTML in id of info
-
-        }
-
-    </script>
-
+  
     <div class="container">
         <div>Technologies support:</div>
         <table class="">
             <tbody>
                 <tr>
                     <td>
-                        <img width="50px" height="50px" class="lazy lazy-loaded" src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
-                            data-lazy-type="image" data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg ">
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg ">
                         <noscript>
                             <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg ">
                         </noscript>
                     </td>
                     <td>
-                        <img width="50px" height="50px" class="lazy lazy-loaded" src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
-                            data-lazy-type="image" data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
                         <noscript>
                             <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
                         </noscript>
                     </td>
                     <td>
-                        <img width="50px" height="50px" class="lazy lazy-loaded" src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
-                            data-lazy-type="image" data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
                         <noscript>
                             <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
                         </noscript>
                     </td>
                     <td>
-                        <img width="50px" height="50px" class="lazy lazy-loaded" src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
-                            data-lazy-type="image" data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
                         <noscript>
                             <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
                         </noscript>
                     </td>
                     <td>
-                        <img width="50px" height="50px" class="lazy lazy-loaded" src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
-                            data-lazy-type="image" data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
                         <noscript>
                             <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
                         </noscript>
                     </td>
                     <td>
-                        <img width="50px" height="50px" class="lazy lazy-loaded" src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
-                            data-lazy-type="image" data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
                         <noscript>
                             <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
                         </noscript>
                     </td>
-
-
                 </tr>
             </tbody>
         </table>
     </div>
+    <br>
     <div class="container">
         <div>Web page support in:</div>
         <table class="">
             <tbody>
                 <tr>
                     <td>
-                        <img class="lazy lazy-loaded" src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
-                            data-lazy-type="image" data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
                         <noscript>
-                            <img src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
                         </noscript>
                     </td>
                     <td>
-                        <img class="lazy lazy-loaded" src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
-                            data-lazy-type="image" data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
                         <noscript>
-                            <img src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
                         </noscript>
                     </td>
                     <td>
-                        <img class="lazy lazy-loaded" src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
-                            data-lazy-type="image" data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
                         <noscript>
-                            <img src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
                         </noscript>
                     </td>
                     <td>
-                        <img class="lazy lazy-loaded" src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
-                            data-lazy-type="image" data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
                         <noscript>
-                            <img src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
                         </noscript>
                     </td>
                     <td>
-                        <img class="lazy lazy-loaded" src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
-                            data-lazy-type="image" data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
                         <noscript>
-                            <img src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
                         </noscript>
                     </td>
                     <td>
-                        <img class="lazy lazy-loaded" src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
-                            data-lazy-type="image" data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
                         <noscript>
-                            <img src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
                         </noscript>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <br>
     <!-- end of the boostrap center container -->
-<script id="dsq-count-scr" src="//https-www-shijiezhou-com.disqus.com/count.js" async></script>
+    <script id="dsq-count-scr" src="//https-www-shijiezhou-com.disqus.com/count.js" async></script>
 </body>
 
-<!--  <div class="embed-responsive embed-responsive-16by9">
-  <iframe class="embed-responsive-item" src="http://shijiezhou.gearhostpreview.com/" allowfullscreen></iframe>
-</div> -->
-    
-    <div class="container">
+<div class="container">
+    <div id="disqus_thread"></div>
+    <script>
 
-<div id="disqus_thread"></div>
-<script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://https-www-shijiezhou-com.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://https-www-shijiezhou-com.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
-    </div>
+</div>
+
 </html>

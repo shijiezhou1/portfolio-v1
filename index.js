@@ -21,9 +21,3 @@
 // console.log(instance); // true
 
 // ************
-
-const axios = require('axios');
-
-axios.get('https://shijiezhou.herokuapp.com/rss.xml').then(()=>{
-    console.log('work!')
-});

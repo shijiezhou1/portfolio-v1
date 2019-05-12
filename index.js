@@ -21,3 +21,9 @@
 // console.log(instance); // true
 
 // ************
+
+$.ajax({
+    url: "https://shijiezhou.herokuapp.com/post"
+}).done(function( data ) {
+    console.log(data)
+});

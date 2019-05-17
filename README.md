@@ -1,13 +1,16 @@
 <h1 ><div align="center"><a href="www.shijiezhou.com" title="React"><img style="float: left" width="240" src="/images/logo%20j.gif" alt="REACT LOGO"/></center></a></div></h1>
 
 
+
+<p align="center">Portfolio Site</p>
+<div align="center">
+
 [![Build Status](https://travis-ci.com/shijiezhou1/Portfolio.svg?branch=master)](https://travis-ci.com/shijiezhou1/Portfolio)
 [![NPM version](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/portofolio) 
  
 [![GitHub forks](https://img.shields.io/github/forks/shijiezhou1/Portfolio.svg?style=social&label=Fork)](https://github.com/shijiezhou1/Portfolio/fork)
 [![GitHub stars](https://img.shields.io/github/stars/shijiezhou1/Portfolio.svg?style=social&label=Star)](https://github.com/shijiezhou1/Portfolio)
-<p align="center">Portfolio Site</p>
-<div align="center">
+
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="info-apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" />
 </a>
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/travis/php-v/symfony/symfony.svg" /></a>

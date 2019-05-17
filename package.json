@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/shijiezhou1/Portfolio/issues"
   },
-  "homepage": "https://github.com/shijiezhou1/Portfolio#readme"
+  "homepage": "https://github.com/shijiezhou1/Portfolio#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
 }

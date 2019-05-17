@@ -1,0 +1,26 @@
+language: node_js
+
+cache: npm
+
+before_install:
+  - npm install
+
+#install:
+#  - NODE_ENV=dev npm install
+
+#before_script:
+#  - npm run lint
+
+#script:
+#  - npm test
+
+#before_deploy:
+#  - npm run build:prod
+
+#deploy:
+#  provider: npm
+#  email: shz145@ucsd.com
+#  api_key: $NPM_TOKEN
+#  skip_cleanup: true
+#  on:
+#    tags: true

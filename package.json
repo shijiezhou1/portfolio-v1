@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node ./node_modules/mocha/bin/mocha"
+    "test": "node test/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,6 @@
   },
   "homepage": "https://github.com/shijiezhou1/Portfolio#readme",
   "dependencies": {
-    "axios": "^0.18.0",
-    "mocha": "^6.1.4",
-    "sinon": "^7.3.2",
-    "store": "^2.0.12"
+    "axios": "^0.18.0"
   }
 }

@@ -22,18 +22,9 @@
 
 // ************
 
-var sinon = require('sinon');
-
 // $.ajax({
 //     url: "https://shijiezhou.herokuapp.com/post"
 // }).done(function( data ) {
 //     console.log(data)
 // });
 
-// test here
-
-var spy = sinon.spy();
-
-//We can call a spy like a function
-spy('Hello', 'World');
-console.log(spy.firstCall.args); //output: ['Hello', 'World']

@@ -11,6 +11,8 @@
 [![GitHub forks](https://img.shields.io/github/forks/shijiezhou1/Portfolio.svg?style=social&label=Fork)](https://github.com/shijiezhou1/Portfolio/fork)
 [![GitHub stars](https://img.shields.io/github/stars/shijiezhou1/Portfolio.svg?style=social&label=Star)](https://github.com/shijiezhou1/Portfolio)
 
+[![BCH compliance](https://bettercodehub.com/edge/badge/shijiezhou1/Portfolio?branch=master)](https://bettercodehub.com/)
+
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="info-apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" />
 </a>
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/travis/php-v/symfony/symfony.svg" /></a>

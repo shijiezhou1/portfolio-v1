@@ -14,11 +14,8 @@ describe('something', function () {
 
 
     it('get full name', function () {
-
         var spy_getName = sinon.spy(Store, 'getName');
-
         Store.getName('Jay', 'Zhou');
-
         sinon.assert.calledOnce(spy_getName);
         sinon.assert.calledWith(spy_getName, 'Jay', 'Zhou')
 
@@ -36,8 +33,6 @@ describe('something', function () {
     });
 
     it('get lastname mock', function () {
-
-
         var overrideObj = {
             methods: function (first, middle, last) {
                 return `${first} ${middle} ${last}`
@@ -46,9 +41,7 @@ describe('something', function () {
                 return 'dick test';
             }
         };
-
         var mock_getName = sinon.mock(overrideObj);
-
         // overrideObj.methods();
         mock_getName.expects("methods").once();
         mock_getName.expects("dick").once();
@@ -57,7 +50,6 @@ describe('something', function () {
         overrideObj.dick();
 
         mock_getName.verify();
-
         // sinon.assert.calledOnce(mock_getName);
 
     });

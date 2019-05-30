@@ -52,7 +52,8 @@
                 <!-- personal profile picture -->
                 <p class="text-left" style="float: right;">
                     <img src="images/profile.png" height="150px" width="150px" border="1px">
-                    <button class="btn btn-info" style="margin: 10px 10px 10px 0px;position: absolute;">Contact Me</button>
+                    <button class="btn btn-info" style="margin: 10px 10px 10px 0px;position: absolute;">Contact
+                        Me</button>
                 </p>
 
                 <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary
@@ -78,7 +79,7 @@
     <div class="container">
         <canvas id="line-chart" width="500px" height="100px"></canvas>
     </div>
-    
+
     <!-- <button onclick="getGitStatic()">getGitStatic</button> -->
 
     <!--Article-->
@@ -253,7 +254,7 @@
 
         function getCurrentMonth(arr) {
             var month = /2019-01/g;
-            if(arr.date.match(month)){
+            if (arr.date.match(month)) {
                 // console.log('arr :', arr);
                 return arr.count;
             }
@@ -261,11 +262,11 @@
 
         function getGitStatic() {
             var url = 'https://github-contributions-api.now.sh/v1/shijiezhou1';
-            $.ajax(url).done((object)=>{
+            $.ajax(url).done((object) => {
                 var year = /2019/g;
                 var totalCount = 0;
                 for (const iterator of object.contributions) {
-                    if(iterator.date.match(year)){
+                    if (iterator.date.match(year)) {
                         totalCount = totalCount + getCurrentMonth(iterator);
                     };
                 }
@@ -279,7 +280,7 @@
                 labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
                 datasets: [{
                     data: dataset,
-                    label: "Github Commit", 
+                    label: "Github Commit",
                     borderColor: "#c45850",
                     fill: false
                 }

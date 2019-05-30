@@ -1,5 +1,3 @@
-//code is referece to the simple W3school code 
-
 window.onscroll = function () {
     scrollFunction()
 };

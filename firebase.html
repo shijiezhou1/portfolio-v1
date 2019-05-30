@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
     <style>
         body {
@@ -54,7 +54,7 @@
 
     <div id="howmuch">0% now</div>
     <progress value="0" max="100" id="uploader">0%</progress>
-    <input type="file" value="upload" id="fileButton" multiple/>
+    <input type="file" value="upload" id="fileButton" multiple />
 
 
     <script>
@@ -72,7 +72,7 @@
         var database;
         document.getElementById("demo").innerHTML = Math.floor(Math.random() * 100);
         // Initialize Firebase
-        
+
         var config = {
             apiKey: "AIzaSyBWXEX-7MESezJnngThRPPStui5YYbqZ1A",
             authDomain: "fir-9dbc2.firebaseapp.com",
@@ -80,16 +80,16 @@
             projectId: "fir-9dbc2",
             storageBucket: "fir-9dbc2.appspot.com",
             messagingSenderId: "760467057185"
-          };
+        };
 
-//         var config = {
-//             apiKey: "AIzaSyCsjNe80J0i2ZlR5PKJW9EBQMkHZjZM3mQ",
-//             authDomain: "website-7b86a.firebaseapp.com",
-//             databaseURL: "https://website-7b86a.firebaseio.com",
-//             projectId: "website-7b86a",
-//             storageBucket: "website-7b86a.appspot.com",
-//             messagingSenderId: "577143481839"
-//         };
+        //         var config = {
+        //             apiKey: "AIzaSyCsjNe80J0i2ZlR5PKJW9EBQMkHZjZM3mQ",
+        //             authDomain: "website-7b86a.firebaseapp.com",
+        //             databaseURL: "https://website-7b86a.firebaseio.com",
+        //             projectId: "website-7b86a",
+        //             storageBucket: "website-7b86a.appspot.com",
+        //             messagingSenderId: "577143481839"
+        //         };
         firebase.initializeApp(config);
 
         // Get a reference to the database service
@@ -240,11 +240,14 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
 </body>
 

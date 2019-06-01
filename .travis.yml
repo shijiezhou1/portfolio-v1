@@ -10,12 +10,16 @@ before_install:
 #before_script:
 #  - npm run lint
 
-install:
- - npm install -g codecov
 script:
- - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
- - codecov
- - npm run test
+- npm run test
+- npm run report-coverage
+
+# install:
+#  - npm install -g codecov
+# script:
+#  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
+#  - codecov
+#  - npm run test
  
 # c448f245-27a0-4f18-b3b3-60ddc98b2350
 #before_deploy:

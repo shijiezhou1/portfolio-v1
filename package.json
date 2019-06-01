@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "nyc mocha",
+    "test:dev": "nyc report --reporter=html > coverage.lcov && codecov",
+    "test": "nyc mocha src/",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
@@ -20,12 +21,12 @@
   },
   "homepage": "https://github.com/shijiezhou1/Portfolio#readme",
   "dependencies": {
-    "axios": "^0.18.0",
-    "nyc": "^14.1.1"
+    "axios": "^0.18.0"
   },
   "devDependencies": {
     "codecov": "^3.5.0",
     "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
     "sinon": "^7.3.2"
   }
 }

@@ -7,5 +7,3 @@ var person = {
       value: "okok"
   });
   console.log(person.name);   // "小生方勤"
-  person.name = "方勤";
-  

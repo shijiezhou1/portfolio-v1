@@ -1,12 +1,11 @@
-function Student(){
-    this.title = 'Student'
-}
-
-function Girl(){
-    Student.call(this)
-    this.sex = 'female'
-}
-
-let femaleStudent = new Girl()
-
-console.log(femaleStudent)
+var person = {
+    name: '',
+  };
+  // 不能修改属性的值
+  Object.defineProperty(person, "name",{
+      writable: false,
+      value: "okok"
+  });
+  console.log(person.name);   // "小生方勤"
+  person.name = "方勤";
+  

@@ -272,28 +272,31 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">@</span>
+                    <div id="sucessEmail">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="from_email" placeholder="your email address"
+                                aria-label="from" aria-describedby="basic-addon1" required>
                         </div>
-                        <input type="text" class="form-control" id="from_email" placeholder="your email address"
-                            aria-label="from" aria-describedby="basic-addon1" required>
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">&</span>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">&</span>
+                            </div>
+                            <input type="text" class="form-control" id="from_subject" placeholder="subject"
+                                aria-label="subject" aria-describedby="basic-addon1" required>
                         </div>
-                        <input type="text" class="form-control" id="from_subject" placeholder="subject"
-                            aria-label="subject" aria-describedby="basic-addon1" required>
+                        <div class="input-group">
+                            <textarea class="form-control" id="from_body" aria-label="message"
+                                placeholder="message to me ... " required></textarea>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
+                            <button type="button" class="btn btn-primary" onclick="sendEmail();">Send Email</button>
+                        </div>
                     </div>
-                    <div class="input-group">
-                        <textarea class="form-control" id="from_body" aria-label="message"
-                            placeholder="message to me ... " required></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
-                    <button type="button" class="btn btn-primary" onclick="sendEmail();">Send Email</button>
                 </div>
             </div>
         </div>
@@ -317,10 +320,18 @@
             $.ajax({
                 url: url,
                 type: 'POST',
-                data: { subject: from_subject, message: from_body, from: from_email },
-                contentType: 'application/json; charset=utf-8',
+                headers: {
+                    'Accept': 'application/json;',
+                },
+                data: {
+                    "subject": from_subject,
+                    "message": from_body,
+                    "from": from_email
+                },
             }).done(function (res) {
-                console.log(res);
+                if (res == "email sent sucessfully") {
+                    $('#sucessEmail').html(`<h3>${res}</h3>`);
+                }
             });
         }
 

@@ -310,12 +310,13 @@
             const from_email = document.getElementById('from_email').value;
             const from_subject = document.getElementById('from_subject').value;
             const from_body = document.getElementById('from_body').value;
+
             if (!from_email || !from_subject || !from_body) {
                 alert('Please fill up all fields');
                 return;
             }
-            // const formatMessage = `Sender: ${from_email} \n Message body: ${from_body}`;
-            const url = 'https://shijiezhou.herokuapp.com/email';
+
+            const url = 'https://shijiezhou.herokuapp.com/email'; // can be changed due to developer
 
             $.ajax({
                 url: url,

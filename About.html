@@ -6,19 +6,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="css/basis.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
-    <script src="https://code.jquery.com/jquery-3.3.1.js"
-        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-        </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
     <!-- Include the library. -->
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
-
-
     <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
     <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
     <style>
@@ -52,7 +63,8 @@
                 <!-- personal profile picture -->
                 <p class="text-left" style="float: right;">
                     <img src="images/profile.png" height="150px" width="150px" border="1px">
-                    <button class="btn btn-info" style="margin: 10px 10px 10px 0px;position: absolute;">Contact
+                    <button class="btn btn-primary" style="margin: 10px 10px 10px 0px;position: absolute;"
+                        data-toggle="modal" data-target="#emailMeModal">Contact
                         Me</button>
                 </p>
 
@@ -248,9 +260,69 @@
         </table>
     </div>
     <br>
+    <!-- Modal -->
+    <div class="modal fade" id="emailMeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">✉️ Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="from_email" placeholder="your email address"
+                            aria-label="from" aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">&</span>
+                        </div>
+                        <input type="text" class="form-control" id="from_subject" placeholder="subject"
+                            aria-label="subject" aria-describedby="basic-addon1" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea class="form-control" id="from_body" aria-label="message"
+                            placeholder="message to me ... " required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-primary" onclick="sendEmail();">Send Email</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- end of the boostrap center container -->
     <script id="dsq-count-scr" src="//https-www-shijiezhou-com.disqus.com/count.js" async></script>
     <script>
+
+        function sendEmail() {
+            const from_email = document.getElementById('from_email').value;
+            const from_subject = document.getElementById('from_subject').value;
+            const from_body = document.getElementById('from_body').value;
+            if (!from_email || !from_subject || !from_body) {
+                alert('Please fill up all fields');
+                return;
+            }
+            // const formatMessage = `Sender: ${from_email} \n Message body: ${from_body}`;
+            const url = 'https://shijiezhou.herokuapp.com/email';
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: { subject: from_subject, message: from_body, from: from_email },
+                contentType: 'application/json; charset=utf-8',
+            }).done(function (res) {
+                console.log(res);
+            });
+        }
 
         function getCurrentMonth(arr) {
             var month = /2019-01/g;

@@ -241,7 +241,7 @@ hr {
   height: 0;
 }
 
-a {
+a:focus {
   color: #bd5248;
   text-decoration: none;
   outline: 0;

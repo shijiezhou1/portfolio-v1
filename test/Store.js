@@ -11,3 +11,12 @@ module.exports = {
         return `${this.firstName} ${this.lastName}`;
     }
 };
+
+const first = 'shijie';
+const last = 'zhou';
+
+const fullname = () => {
+    return first + ' ' + last;
+};
+
+fullname();

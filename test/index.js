@@ -1,5 +1,5 @@
 var sinon = require('sinon');
-var { describe } = require('mocha');
+var {describe} = require('mocha');
 var Store = require('./Store'); // Store is a object
 
 describe('something', function () {
@@ -24,7 +24,7 @@ describe('something', function () {
     it('get firstname use stub', function () {
         var stub_getName = sinon.stub(Store, 'getName');
 
-        var testData = { first: 'Jay', last: 'Zhou' };
+        var testData = {first: 'Jay', last: 'Zhou'};
 
         Store.getName(testData.first, testData.last);
 
@@ -37,17 +37,17 @@ describe('something', function () {
             methods: function (first, middle, last) {
                 return `${first} ${middle} ${last}`
             },
-            dick: function () {
-                return 'dick test';
+            random: function () {
+                return 'random test';
             }
         };
         var mock_getName = sinon.mock(overrideObj);
         // overrideObj.methods();
         mock_getName.expects("methods").once();
-        mock_getName.expects("dick").once();
+        mock_getName.expects("random").once();
 
         overrideObj.methods();
-        overrideObj.dick();
+        overrideObj.random();
 
         mock_getName.verify();
         // sinon.assert.calledOnce(mock_getName);

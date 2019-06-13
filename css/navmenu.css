@@ -5,6 +5,7 @@ body {
 /* This is navmenu without on the desktop style */
 .navmenu {
   padding-top: 50px;
+  overflow-x: hidden
 }
 
 .navbar {

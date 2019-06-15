@@ -1,254 +1,296 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Firebase | Storage</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+            integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+            crossorigin="anonymous"
+        />
 
-<head>
-    <title>Firebase | Storage</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
-        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-
-    <style>
-        body {
-            display: flex;
-            min-height: 100vh;
-            width: 100%;
-            margin: 0;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        #uploader {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 50%;
-            margin-bottom: 10px;
-
-        }
-
-        html,
-        body {
-            overflow-x: hidden;
-        }
-
-        body {
-            position: relative
-        }
-    </style>
-</head>
-
-<body>
-    <p class="d-none" style="text-align:center;"><img src="" alt="Logo"></p>
-
-    <pre id="showJSON"></pre>
-    <div class="container">
-        <div id="showImg"></div>
-    </div>
-
-    <p id="demo"></p>
-    <h1>Exiting File Lists</h1>
-
-
-    <div id="howmuch">0% now</div>
-    <progress value="0" max="100" id="uploader">0%</progress>
-    <input type="file" value="upload" id="fileButton" multiple />
-
-
-    <script>
-        function getSourceAsDOM(url) {
-            url = "https://stackoverflow.com/questions/10691464/is-it-possible-to-read-another-urls-dom-structure";
-            xmlhttp = new XMLHttpRequest();
-            xmlhttp.open("GET", url, false);
-            xmlhttp.send();
-            parser = new DOMParser();
-            return parser.parseFromString(xmlhttp.responseText, "text/html");
-        }
-    </script>
-    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
-    <script>
-        var database;
-        document.getElementById("demo").innerHTML = Math.floor(Math.random() * 100);
-        // Initialize Firebase
-
-        var config = {
-            apiKey: "AIzaSyBWXEX-7MESezJnngThRPPStui5YYbqZ1A",
-            authDomain: "fir-9dbc2.firebaseapp.com",
-            databaseURL: "https://fir-9dbc2.firebaseio.com",
-            projectId: "fir-9dbc2",
-            storageBucket: "fir-9dbc2.appspot.com",
-            messagingSenderId: "760467057185"
-        };
-
-        //         var config = {
-        //             apiKey: "AIzaSyCsjNe80J0i2ZlR5PKJW9EBQMkHZjZM3mQ",
-        //             authDomain: "website-7b86a.firebaseapp.com",
-        //             databaseURL: "https://website-7b86a.firebaseio.com",
-        //             projectId: "website-7b86a",
-        //             storageBucket: "website-7b86a.appspot.com",
-        //             messagingSenderId: "577143481839"
-        //         };
-        firebase.initializeApp(config);
-
-        // Get a reference to the database service
-        var realtimedata = firebase.database();
-        var uploader = document.getElementById('uploader');
-        var fileButton = document.getElementById('fileButton');
-
-        database = firebase.database();
-        var refPosts = database.ref('posts');  //retrieve all data from posts
-        refPosts.on('value', gotData, errData); //read all data when update
-        // refPosts.once('value', gotData, errData); //read the only update data
-
-        function pushData() {
-            // var data = {
-            //   name: "JAY",
-            //   score: 43
-            // }
-            // ref.push(data);
-        }
-
-        function gotData(data) {
-            var posts = data.val();
-            var pictureLinks = Object.keys(posts);
-            var picArr = [];
-            var picArrTotal = [];
-            // replace starting point
-            picArrTotal.push("<div id='showImg' class='text-center'>");
-            for (var i = 0; i < pictureLinks.length; i++) {
-                var p = pictureLinks[i];
-                var pictureLink = posts[p].imageUrl;
-                var pictureList = '<img src="' + pictureLink + '" class="img-fluid m-1" style="width:320px; height:180px" alt="" />';
-                picArrTotal.push(pictureList);
-            }
-            picArrTotal.push('</div>');
-            console.log(picArrTotal.toString().replace(/>,</g, "><"));
-            // replace now
-            $("#showImg").replaceWith(picArrTotal.toString().replace(/>,</g, "><"));
-        }
-
-        function errData(errData) {
-            console.log("There is a error on:" + errData);
-        }
-
-        function writeNewPost(uid, username, picture, title, body) {
-            var updates = {};
-            // A post entry.
-            var postData = {
-                author: username,
-                uid: uid,
-                body: body,
-                title: title,
-                starCount: 0,
-                likeCount: 0,
-                imageUrl: picture
+        <style>
+            body {
+                display: flex;
+                min-height: 100vh;
+                width: 100%;
+                margin: 0;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
             }
 
-            // Get a key for a new Post.
-            var newPostKey = firebase.database().ref().child('posts').push().key;
-            // Write the new post's data simultaneously in the posts list and the user's post list.
-            updates['/posts/' + newPostKey] = postData;
-            // updates['/user-posts/' + uid + '/' + newPostKey] = postData;
-            // updates['/posts/' + newPostKey2] = postData;
-            var ok = firebase.database().ref().update(updates);
-            return ok;
-        }
-
-        function getSingleFile() {
-            // Get single file
-            // var file = e.target.files[0];
-            // // Create a storage ref
-            // var storageRef = firebase.app().storage("gs://website-7b86a.appspot.com").ref('image/' + file.name);
-            // var task = storageRef.put(file);
-            // Update progress bar 
-            // task.on('state_changed', function progress(snapshot) {
-            //     var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-            //     uploader.value = percentage;
-            //     document.getElementById('howmuch').innerHTML = 'Upload is ' + percentage + '% done';
-
-            //     switch (snapshot.state) {
-            //         case firebase.storage.TaskState.PAUSED: // or 'paused'
-            //             console.log('Upload is paused');
-            //             break;
-            //         case firebase.storage.TaskState.RUNNING: // or 'running'
-            //             console.log('Upload is running');
-            //             break;
-            //     }
-            // },
-
-            //     function error(err) {
-            //         switch (error.code) {
-            //             case 'storage/unauthorized':
-            //                 // User doesn't have permission to access the object
-            //                 break;
-
-            //             case 'storage/canceled':
-            //                 // User canceled the upload
-            //                 break;
-
-            //             case 'storage/unknown':
-            //                 // Unknown error occurred, inspect error.serverResponse
-            //                 break;
-            //         }
-            //     },
-
-            //     function () {
-            //         task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
-            //             //insert it to your realtime database so you can fetch them later 
-            //             var userID = 1000;
-            //             writeNewPost(userID, "jay", downloadURL, "title", "body");
-            //         });
-            //     });
-        }
-
-        fileButton.addEventListener('change', function (e) {
-            //Get multiple files
-            for (var i = 0; i < e.target.files.length; i++) {
-                // GET THE FILE
-                var imageFile = e.target.files[i];
-                uploadImageAsPromise(imageFile);
+            #uploader {
+                -webkit-appearance: none;
+                appearance: none;
+                width: 50%;
+                margin-bottom: 10px;
             }
 
-            //Handle waiting to upload each file using promise
-            function uploadImageAsPromise(imageFile) {
-                return new Promise(function (resolve, reject) {
-                    var storageRef = firebase.storage().ref("image/" + imageFile.name);
-                    //Upload file
-                    var task = storageRef.put(imageFile);
-                    //Update progress bar
-                    task.on('state_changed', function progress(snapshot) {
-                        var percentage = Math.floor(snapshot.bytesTransferred / snapshot.totalBytes * 100);
-                        uploader.value = percentage;
-                        document.getElementById('howmuch').innerHTML = 'Upload is ' + uploader.value + '% done';
-                    }, function error(err) {
-                        console.log(err);
-                    }, function complete() {
-                        task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
-                            //insert it to your realtime database so you can fetch them later 
-                            console.log(downloadURL);
-                            var userID = 1000;
-                            writeNewPost(userID, "jay", downloadURL, "title", "body");
-                        });
-                    }
-                    );
-                });
+            html,
+            body {
+                overflow-x: hidden;
             }
-        });
-    </script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
-        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
-</body>
+            body {
+                position: relative;
+            }
+        </style>
+    </head>
 
+    <body>
+        <p class="d-none" style="text-align:center;">
+            <img src="" alt="Logo" />
+        </p>
+
+        <pre id="showJSON"></pre>
+        <div class="container">
+            <div id="showImg"></div>
+        </div>
+
+        <p id="demo"></p>
+        <h1>Exiting File Lists</h1>
+
+        <div id="howmuch">0% now</div>
+        <progress value="0" max="100" id="uploader">0%</progress>
+        <input type="file" value="upload" id="fileButton" multiple />
+
+        <script>
+            function getSourceAsDOM(url) {
+                url =
+                    "https://stackoverflow.com/questions/10691464/is-it-possible-to-read-another-urls-dom-structure";
+                xmlhttp = new XMLHttpRequest();
+                xmlhttp.open("GET", url, false);
+                xmlhttp.send();
+                parser = new DOMParser();
+                return parser.parseFromString(
+                    xmlhttp.responseText,
+                    "text/html"
+                );
+            }
+        </script>
+        <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+        <script>
+            var database;
+            document.getElementById("demo").innerHTML = Math.floor(
+                Math.random() * 100
+            );
+            // Initialize Firebase
+
+            var config = {
+                apiKey: "AIzaSyBWXEX-7MESezJnngThRPPStui5YYbqZ1A",
+                authDomain: "fir-9dbc2.firebaseapp.com",
+                databaseURL: "https://fir-9dbc2.firebaseio.com",
+                projectId: "fir-9dbc2",
+                storageBucket: "fir-9dbc2.appspot.com",
+                messagingSenderId: "760467057185",
+            };
+
+            //         var config = {
+            //             apiKey: "AIzaSyCsjNe80J0i2ZlR5PKJW9EBQMkHZjZM3mQ",
+            //             authDomain: "website-7b86a.firebaseapp.com",
+            //             databaseURL: "https://website-7b86a.firebaseio.com",
+            //             projectId: "website-7b86a",
+            //             storageBucket: "website-7b86a.appspot.com",
+            //             messagingSenderId: "577143481839"
+            //         };
+            firebase.initializeApp(config);
+
+            // Get a reference to the database service
+            var realtimedata = firebase.database();
+            var uploader = document.getElementById("uploader");
+            var fileButton = document.getElementById("fileButton");
+
+            database = firebase.database();
+            var refPosts = database.ref("posts"); //retrieve all data from posts
+            refPosts.on("value", gotData, errData); //read all data when update
+            // refPosts.once('value', gotData, errData); //read the only update data
+
+            function pushData() {
+                // var data = {
+                //   name: "JAY",
+                //   score: 43
+                // }
+                // ref.push(data);
+            }
+
+            function gotData(data) {
+                var posts = data.val();
+                var pictureLinks = Object.keys(posts);
+                var picArr = [];
+                var picArrTotal = [];
+                // replace starting point
+                picArrTotal.push("<div id='showImg' class='text-center'>");
+                for (var i = 0; i < pictureLinks.length; i++) {
+                    var p = pictureLinks[i];
+                    var pictureLink = posts[p].imageUrl;
+                    var pictureList =
+                        '<img src="' +
+                        pictureLink +
+                        '" class="img-fluid m-1" style="width:320px; height:180px" alt="" />';
+                    picArrTotal.push(pictureList);
+                }
+                picArrTotal.push("</div>");
+                console.log(picArrTotal.toString().replace(/>,</g, "><"));
+                // replace now
+                $("#showImg").replaceWith(
+                    picArrTotal.toString().replace(/>,</g, "><")
+                );
+            }
+
+            function errData(errData) {
+                console.log("There is a error on:" + errData);
+            }
+
+            function writeNewPost(uid, username, picture, title, body) {
+                var updates = {};
+                // A post entry.
+                var postData = {
+                    author: username,
+                    uid: uid,
+                    body: body,
+                    title: title,
+                    starCount: 0,
+                    likeCount: 0,
+                    imageUrl: picture,
+                };
+
+                // Get a key for a new Post.
+                var newPostKey = firebase
+                    .database()
+                    .ref()
+                    .child("posts")
+                    .push().key;
+                // Write the new post's data simultaneously in the posts list and the user's post list.
+                updates["/posts/" + newPostKey] = postData;
+                // updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+                // updates['/posts/' + newPostKey2] = postData;
+                var ok = firebase
+                    .database()
+                    .ref()
+                    .update(updates);
+                return ok;
+            }
+
+            function getSingleFile() {
+                // Get single file
+                // var file = e.target.files[0];
+                // // Create a storage ref
+                // var storageRef = firebase.app().storage("gs://website-7b86a.appspot.com").ref('image/' + file.name);
+                // var task = storageRef.put(file);
+                // Update progress bar
+                // task.on('state_changed', function progress(snapshot) {
+                //     var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                //     uploader.value = percentage;
+                //     document.getElementById('howmuch').innerHTML = 'Upload is ' + percentage + '% done';
+                //     switch (snapshot.state) {
+                //         case firebase.storage.TaskState.PAUSED: // or 'paused'
+                //             console.log('Upload is paused');
+                //             break;
+                //         case firebase.storage.TaskState.RUNNING: // or 'running'
+                //             console.log('Upload is running');
+                //             break;
+                //     }
+                // },
+                //     function error(err) {
+                //         switch (error.code) {
+                //             case 'storage/unauthorized':
+                //                 // User doesn't have permission to access the object
+                //                 break;
+                //             case 'storage/canceled':
+                //                 // User canceled the upload
+                //                 break;
+                //             case 'storage/unknown':
+                //                 // Unknown error occurred, inspect error.serverResponse
+                //                 break;
+                //         }
+                //     },
+                //     function () {
+                //         task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
+                //             //insert it to your realtime database so you can fetch them later
+                //             var userID = 1000;
+                //             writeNewPost(userID, "jay", downloadURL, "title", "body");
+                //         });
+                //     });
+            }
+
+            fileButton.addEventListener("change", function(e) {
+                //Get multiple files
+                for (var i = 0; i < e.target.files.length; i++) {
+                    // GET THE FILE
+                    var imageFile = e.target.files[i];
+                    uploadImageAsPromise(imageFile);
+                }
+
+                //Handle waiting to upload each file using promise
+                function uploadImageAsPromise(imageFile) {
+                    return new Promise(function(resolve, reject) {
+                        var storageRef = firebase
+                            .storage()
+                            .ref("image/" + imageFile.name);
+                        //Upload file
+                        var task = storageRef.put(imageFile);
+                        //Update progress bar
+                        task.on(
+                            "state_changed",
+                            function progress(snapshot) {
+                                var percentage = Math.floor(
+                                    (snapshot.bytesTransferred /
+                                        snapshot.totalBytes) *
+                                        100
+                                );
+                                uploader.value = percentage;
+                                document.getElementById("howmuch").innerHTML =
+                                    "Upload is " + uploader.value + "% done";
+                            },
+                            function error(err) {
+                                console.log(err);
+                            },
+                            function complete() {
+                                task.snapshot.ref
+                                    .getDownloadURL()
+                                    .then(function(downloadURL) {
+                                        //insert it to your realtime database so you can fetch them later
+                                        console.log(downloadURL);
+                                        var userID = 1000;
+                                        writeNewPost(
+                                            userID,
+                                            "jay",
+                                            downloadURL,
+                                            "title",
+                                            "body"
+                                        );
+                                    });
+                            }
+                        );
+                    });
+                }
+            });
+        </script>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>

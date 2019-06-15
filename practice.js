@@ -10,9 +10,8 @@
 //     return this.property;
 // }
 
-
 // // 这里是关键，创建SuperType的实例，并将该实例赋值给SubType.prototype
-// SubType.prototype = new SuperType(); 
+// SubType.prototype = new SuperType();
 // SubType.prototype.getSubValue = function() {
 //     return this.subproperty;
 // }

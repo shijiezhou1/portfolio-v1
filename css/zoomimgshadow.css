@@ -1,40 +1,40 @@
 #test h2 {
-  margin-top: 25px;
-  padding: 0px 0px 100px 0px; font-size: 22px;
-  animation: fadein 4s;
-  -moz-animation: fadein 4s;
-  /* Firefox */
-  -webkit-animation: fadein 4s;
-  /* Safari and Chrome */
-  -o-animation: fadein 4s;
-  /* Opera */
+    margin-top: 25px;
+    padding: 0px 0px 100px 0px;
+    font-size: 22px;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    /* Firefox */
+    -webkit-animation: fadein 4s;
+    /* Safari and Chrome */
+    -o-animation: fadein 4s;
+    /* Opera */
 }
 
 @keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 body {
-  margin: 0px;
-
+    margin: 0px;
 }
 
 .center-block {
-  -webkit-box-shadow: 6px 6px 11px 0px rgba(0, 0, 0, 0.75);
-          box-shadow: 6px 6px 11px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 6px 6px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px 6px 11px 0px rgba(0, 0, 0, 0.75);
 }

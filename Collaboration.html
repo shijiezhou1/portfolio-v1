@@ -1,53 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>All Collaboration</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script type="text/javascript" src="scrollingtop.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-  var images = [
-      {caption: "Red Slate Mountain", alt: "Mountain", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Red_Slate_Mountain_1.jpg/320px-Red_Slate_Mountain_1.jpg"},
-      {caption: "St. Petersburg River", alt: "River", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Saint-petersburg-river-march-24-2016.jpg/320px-Saint-petersburg-river-march-24-2016.jpg"},
-      {caption: "Lybian Desert", alt: "Desert", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Libyan_Desert_-_2006.jpg/320px-Libyan_Desert_-_2006.jpg"},
-      {caption: "Azerbaijan Forest", alt: "Forest", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Azerbaijan_forest_3.JPG/320px-Azerbaijan_forest_3.JPG"},
-      {caption: "Indonesian Jungle", alt: "Jungle", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Indonesian_jungle3%2C_Zoo_Prague.jpg/320px-Indonesian_jungle3%2C_Zoo_Prague.jpg"}
-  ];
-  
-  window.onload = function(){
-      var figure = "<figure>";
-      for(var i = 0; i < images.length; i++){
-          figure += '<img src="'+ images[i].url + '" ' + 'alt="' + images[i].alt + '">' 
-          + '<figcaption>' + images[i].caption + "</figcaption>"   
-      }figure += "</figure>";
-  
-      var myContainer = document.querySelector("#image").innerHTML = figure;
-  }
-  </script>
-  
+    <head>
+        <title>All Collaboration</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript" src="scrollingtop.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+            var images = [
+                {
+                    caption: "Red Slate Mountain",
+                    alt: "Mountain",
+                    url:
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Red_Slate_Mountain_1.jpg/320px-Red_Slate_Mountain_1.jpg",
+                },
+                {
+                    caption: "St. Petersburg River",
+                    alt: "River",
+                    url:
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Saint-petersburg-river-march-24-2016.jpg/320px-Saint-petersburg-river-march-24-2016.jpg",
+                },
+                {
+                    caption: "Lybian Desert",
+                    alt: "Desert",
+                    url:
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Libyan_Desert_-_2006.jpg/320px-Libyan_Desert_-_2006.jpg",
+                },
+                {
+                    caption: "Azerbaijan Forest",
+                    alt: "Forest",
+                    url:
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Azerbaijan_forest_3.JPG/320px-Azerbaijan_forest_3.JPG",
+                },
+                {
+                    caption: "Indonesian Jungle",
+                    alt: "Jungle",
+                    url:
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Indonesian_jungle3%2C_Zoo_Prague.jpg/320px-Indonesian_jungle3%2C_Zoo_Prague.jpg",
+                },
+            ];
 
-</head>
-<body>
-  <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-12 col-md-12 col-sm-12 r-list text-center">
-      <img src="images/inc/digitalgym.png" alt="DIGITALGYM" style="width: 250px; padding: 10px;" >
-      <img src="images/inc/ucsd.png" alt="UCSD" style="width:250px; padding: 10px;">
-      <img src="images/inc/hksu.png" alt="HKSU" style="width:250px; padding: 10px;">
-      <img src="images/inc/vrclub.png" alt="VR CLUB" style="width:250px; padding: 10px;">
-      <img src="images/inc/grcc.png" alt="GRCC" style="width:250px; padding: 10px;">
-      <img src="images/inc/revelle.png" alt="REVELLE" style="width:250px; padding: 10px;">
-      <img src="images/inc/cu.png" alt="CHINESE UNION" style="width:250px; padding: 10px;">
-      <img src="images/inc/wwp.png" alt="WORLDVIEW PROJECT" style="width:250px; padding: 10px;">
-      <img src="images/inc/uctid.png" alt="UCTID" style="width:250px; padding: 10px;">
-    </div>
-  </div>
-</div>
+            window.onload = function() {
+                var figure = "<figure>";
+                for (var i = 0; i < images.length; i++) {
+                    figure +=
+                        '<img src="' +
+                        images[i].url +
+                        '" ' +
+                        'alt="' +
+                        images[i].alt +
+                        '">' +
+                        "<figcaption>" +
+                        images[i].caption +
+                        "</figcaption>";
+                }
+                figure += "</figure>";
 
-
-
-</body>
+                var myContainer = (document.querySelector(
+                    "#image"
+                ).innerHTML = figure);
+            };
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 r-list text-center">
+                    <img
+                        src="images/inc/digitalgym.png"
+                        alt="DIGITALGYM"
+                        style="width: 250px; padding: 10px;"
+                    />
+                    <img
+                        src="images/inc/ucsd.png"
+                        alt="UCSD"
+                        style="width:250px; padding: 10px;"
+                    />
+                    <img
+                        src="images/inc/hksu.png"
+                        alt="HKSU"
+                        style="width:250px; padding: 10px;"
+                    />
+                    <img
+                        src="images/inc/vrclub.png"
+                        alt="VR CLUB"
+                        style="width:250px; padding: 10px;"
+                    />
+                    <img
+                        src="images/inc/grcc.png"
+                        alt="GRCC"
+                        style="width:250px; padding: 10px;"
+                    />
+                    <img
+                        src="images/inc/revelle.png"
+                        alt="REVELLE"
+                        style="width:250px; padding: 10px;"
+                    />
+                    <img
+                        src="images/inc/cu.png"
+                        alt="CHINESE UNION"
+                        style="width:250px; padding: 10px;"
+                    />
+                    <img
+                        src="images/inc/wwp.png"
+                        alt="WORLDVIEW PROJECT"
+                        style="width:250px; padding: 10px;"
+                    />
+                    <img
+                        src="images/inc/uctid.png"
+                        alt="UCTID"
+                        style="width:250px; padding: 10px;"
+                    />
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

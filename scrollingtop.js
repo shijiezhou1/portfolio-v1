@@ -1,1 +1,1 @@
-window.top.scroll(0,0);
+window.top.scroll(0, 0);

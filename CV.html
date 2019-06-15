@@ -1,337 +1,274 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Resume</title>
-        <script type="text/javascript" src="scrollingtop.js"></script>
-        <style type="text/css">
-            * {
-                margin: 0;
-                padding: 0;
-            }
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Resume</title>
+    <script type="text/javascript" src="scrollingtop.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-            body {
-                font: 16px Helvetica, Sans-Serif;
-                line-height: 24px;
-                background: url(images/noise.jpg);
-            }
+        body {
+            font: 16px Helvetica, Sans-Serif;
+            line-height: 24px;
+            background: url(images/noise.jpg);
+        }
 
-            .clear {
-                clear: both;
-            }
+        .clear {
+            clear: both;
+        }
 
-            #page-wrap {
-                width: 800px;
-                margin: 40px auto 60px;
-            }
+        #page-wrap {
+            width: 800px;
+            margin: 40px auto 60px;
+        }
 
-            #pic {
-                float: right;
-                margin: -30px 0 0 0;
-                max-width: 100px;
-                height: auto;
-                width: auto \9;
-            }
+        #pic {
+            float: right;
+            margin: -30px 0 0 0;
+            max-width: 100px;
+            height: auto;
+            width: auto \9;
+        }
 
-            h1 {
-                margin: 0 0 16px 0;
-                padding: 0 0 16px 0;
-                font-size: 42px;
-                font-weight: bold;
-                letter-spacing: -2px;
-                border-bottom: 1px solid #999;
-            }
+        h1 {
+            margin: 0 0 16px 0;
+            padding: 0 0 16px 0;
+            font-size: 42px;
+            font-weight: bold;
+            letter-spacing: -2px;
+            border-bottom: 1px solid #999;
+        }
 
-            h2 {
-                font-size: 20px;
-                margin: 0 0 6px 0;
-                position: relative;
-            }
+        h2 {
+            font-size: 20px;
+            margin: 0 0 6px 0;
+            position: relative;
+        }
 
-            h2 span {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                font-style: italic;
-                font-family: Georgia, Serif;
-                font-size: 16px;
-                color: #999;
-                font-weight: normal;
-            }
+        h2 span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-style: italic;
+            font-family: Georgia, Serif;
+            font-size: 16px;
+            color: #999;
+            font-weight: normal;
+        }
 
-            p {
-                margin: 0 0 16px 0;
-            }
+        p {
+            margin: 0 0 16px 0;
+        }
 
-            a {
-                color: #999;
-                text-decoration: none;
-                border-bottom: 1px dotted #999;
-            }
+        a {
+            color: #999;
+            text-decoration: none;
+            border-bottom: 1px dotted #999;
+        }
 
-            a:hover {
-                border-bottom-style: solid;
-                color: black;
-            }
+        a:hover {
+            border-bottom-style: solid;
+            color: black;
+        }
 
-            ul {
-                margin: 0 0 32px 17px;
-            }
+        ul {
+            margin: 0 0 32px 17px;
+        }
 
-            #objective {
-                width: 500px;
-                float: left;
-            }
+        #objective {
+            width: 500px;
+            float: left;
+        }
 
-            #objective p {
-                font-family: Georgia, Serif;
-                font-style: italic;
-                color: #666;
-            }
+        #objective p {
+            font-family: Georgia, Serif;
+            font-style: italic;
+            color: #666;
+        }
 
-            dt {
-                font-style: italic;
-                font-weight: bold;
-                font-size: 18px;
-                text-align: right;
-                padding: 0 26px 0 0;
-                width: 150px;
-                float: left;
-                height: 180px;
-                border-right: 1px solid #999;
-            }
+        dt {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 150px;
+            float: left;
+            height: 180px;
+            border-right: 1px solid #999;
+        }
 
-            dt30 {
-                font-style: italic;
-                font-weight: bold;
-                font-size: 18px;
-                text-align: right;
-                padding: 0 26px 0 0;
-                width: 150px;
-                float: left;
-                height: 30px;
-                border-right: 1px solid #999;
-            }
+        dt30 {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 150px;
+            float: left;
+            height: 30px;
+            border-right: 1px solid #999;
+        }
 
-            dt800 {
-                font-style: italic;
-                font-weight: bold;
-                font-size: 18px;
-                text-align: right;
-                padding: 0 26px 0 0;
-                width: 150px;
-                float: left;
-                height: 900px;
-                border-right: 1px solid #999;
-            }
+        dt800 {
+            font-style: italic;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: right;
+            padding: 0 26px 0 0;
+            width: 150px;
+            float: left;
+            height: 900px;
+            border-right: 1px solid #999;
+        }
 
-            dd {
-                width: 600px;
-                float: right;
-            }
+        dd {
+            width: 600px;
+            float: right;
+        }
 
-            dd.clear {
-                float: none;
-                margin: 0;
-                height: 12px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="page-wrap">
-            <img src="images/logo j.gif" alt="Photo of Shijie Zhou" id="pic" />
-            <div id="contact-info" class="vcard">
-                <!-- Microformats! -->
-                <h1 class="fn">Shijie Zhou</h1>
-                <p>
-                    Cell: <span class="tel"> 253-204-3188</span><br />
-                    Email:
-                    <a class="email" href="shz145@ucsd.edu"> shz145@ucsd.edu</a
-                    ><br />
-                    Portfolio Web:<a
-                        class="link"
-                        href="http://www.shijiezhou.com"
-                    >
-                        www.shijiezhou.com</a
-                    ><br />
-                    Address:
-                    <a class="link" href="www.google.com">
-                        8308 Regents Rd 2H, San Diego CA, 92122</a
-                    >
-                </p>
-            </div>
+        dd.clear {
+            float: none;
+            margin: 0;
+            height: 12px;
+        }
+    </style>
+</head>
+<body>
 
-            <div id="objective">
-                <p>
-                    Design and edit case projects over art practices,
-                    performative practices, and programs art. Have a specialized
-                    background in constructing two-dimensional surfaces and
-                    blend typography, movement, static images and sound to
-                    create visceral experience. Produce effective projects in
-                    medias, and processed a thematic approach through courses
-                    production experience and student organization.
-                </p>
-            </div>
+<div id="page-wrap">
+    <img src="images/logo j.gif" alt="Photo of Shijie Zhou" id="pic"/>
+    <div id="contact-info" class="vcard">
+        <!-- Microformats! -->
+        <h1 class="fn">Shijie Zhou</h1>
+        <p>
+            Cell: <span class="tel"> 253-204-3188</span><br/>
+            Email: <a class="email" href="shz145@ucsd.edu"> shz145@ucsd.edu</a><br/>
+            Portfolio Web:<a class="link" href="http://www.shijiezhou.com"> www.shijiezhou.com</a><br/>
+            Address: <a class="link" href="www.google.com"> 8308 Regents Rd 2H, San Diego CA, 92122</a>
+        </p>
+    </div>
 
-            <div class="clear"></div>
+    <div id="objective">
+        <p>
+            Design and edit case projects over art practices, performative practices, and programs art. Have a
+            specialized background in constructing two-dimensional surfaces and blend typography, movement, static
+            images and sound to create visceral experience. Produce effective projects in medias, and processed a
+            thematic approach through courses production experience and student organization.
+        </p>
+    </div>
 
-            <dl>
-                <dd class="clear"></dd>
+    <div class="clear"></div>
 
-                <dt>Education</dt>
-                <dd>
-                    <h2>University of California, San Diego</h2>
-                    <p>
-                        <strong>Major:</strong> Bachelor of Arts in The
-                        Disciplinary Computer & Arts <br />La Jolla, California
-                        (Sept 2015 – Expected March 2018)
-                        <br />
-                        ● Relevant Coursework: [Digital Media series, Computer
-                        Art & Music, 2D/3D-Practices, Visual Environment]
-                    </p>
-                    <h2>Green River Community College</h2>
-                    <p>
-                        <strong>Major:</strong> Associated of Arts <br />Auburn,
-                        Washington(Sept 2012 – June 2015)
-                        <br />
-                        ● Relevant Coursework: [Art Appreciation, Creating
-                        Writing, Statistics]
-                    </p>
-                </dd>
+    <dl>
+        <dd class="clear"></dd>
 
-                <dd class="clear"></dd>
+        <dt>Education</dt>
+        <dd>
+            <h2>University of California, San Diego</h2>
+            <p><strong>Major:</strong> Bachelor of Arts in The Disciplinary Computer & Arts <br/>La Jolla, California
+                (Sept 2015 – Expected March 2018)
+                <br/>
+                ● Relevant Coursework: [Digital Media series, Computer Art & Music, 2D/3D-Practices, Visual Environment]
+            </p>
+            <h2>Green River Community College</h2>
+            <p><strong>Major:</strong> Associated of Arts <br/>Auburn, Washington(Sept 2012 – June 2015)
+                <br/>
+                ● Relevant Coursework: [Art Appreciation, Creating Writing, Statistics]</p>
+        </dd>
 
-                <dt>Skills</dt>
-                <dd>
-                    <h2>Programs skills</h2>
-                    <p>
-                        Adobe After Effect, Adobe Premiere, Adobe Photoshop,
-                        Adobe Illustrator, Meshmixer, Unity, 123D Design, Max 7
-                        - Cycling, Processing, Pure Datam
-                    </p>
+        <dd class="clear"></dd>
 
-                    <h2>Computer skills</h2>
-                    <p>
-                        Adobe Creative Suite, HTML5 & CSS3, PHP/Java/Javascript
-                    </p>
-                </dd>
+        <dt>Skills</dt>
+        <dd>
+            <h2>Programs skills</h2>
+            <p>Adobe After Effect, Adobe Premiere, Adobe Photoshop, Adobe Illustrator, Meshmixer, Unity, 123D Design,
+                Max 7 - Cycling, Processing, Pure Datam
+            </p>
 
-                <dd class="clear"></dd>
-                <dt800>WORK & LEADERSHIP EXPERIENCE</dt800>
-                <dd>
-                    <h2>
-                        Foundation for Success Program - Mentor Coordinator
-                        <br /><br />
-                        <span>Auburn, Washington Jan. 2014 – Feb. 2015</span>
-                    </h2>
-                    <ul>
-                        <li>
-                            Provided interactive videos to first-year college
-                            students through effective peer-to-peer mentoring.
-                            Established students structural learning strategies
-                            by reviewing their the past experience
-                        </li>
-                        <li>
-                            Assisted students’ knowledge of various trivia
-                            categories and promote social and cultural
-                            integration by using an application on multiple
-                            platforms
-                        </li>
-                        <li>
-                            Prepared inspirational PowerPoint to help students
-                            resolve academic issues and enhanced networking
-                            skills
-                        </li>
-                    </ul>
+            <h2>Computer skills</h2>
+            <p>Adobe Creative Suite, HTML5 & CSS3, PHP/Java/Javascript</p>
+        </dd>
 
-                    <h2>
-                        Worldview Project Organization - Web Developer
-                        <br /><br />
-                        <span>San Diego, California June.2017 – Present</span>
-                    </h2>
-                    <ul>
-                        <li>
-                            Produced detailed specification website by using
-                            SQL/PHP to optimize website content with page update
-                        </li>
-                        <li>
-                            Built SEO optimizational codes to integrate data
-                            from back-end database
-                        </li>
-                        <li>
-                            Experience full stack of web development tools to
-                            create friendly-interfaces by using HTML5, CSS3 and
-                            JSON
-                        </li>
-                    </ul>
+        <dd class="clear"></dd>
+        <dt800>WORK & LEADERSHIP EXPERIENCE</dt800>
+        <dd>
+            <h2>Foundation for Success Program - Mentor Coordinator <br/><br/>
+                <span>Auburn, Washington Jan. 2014 – Feb. 2015</span></h2>
+            <ul>
+                <li>Provided interactive videos to first-year college students through effective peer-to-peer mentoring.
+                    Established students structural learning strategies by reviewing their the past experience
+                </li>
+                <li>Assisted students’ knowledge of various trivia categories and promote social and cultural
+                    integration by using an application on multiple platforms
+                </li>
+                <li>Prepared inspirational PowerPoint to help students resolve academic issues and enhanced networking
+                    skills
+                </li>
+            </ul>
 
-                    <h2>
-                        Digital Gym Cinema - Graphic Design <br /><br />
-                        <span>El Cajon, California May.2017 – Sept.2017</span>
-                    </h2>
-                    <ul>
-                        <li>
-                            Designed movies posters for movies created seductive
-                            web banner on screen poster, and outreached
-                            promoting emails to specific a community
-                        </li>
-                    </ul>
+            <h2>Worldview Project Organization - Web Developer <br/><br/>
+                <span>San Diego, California June.2017 – Present</span></h2>
+            <ul>
+                <li>Produced detailed specification website by using SQL/PHP to optimize website content with page
+                    update
+                </li>
+                <li>Built SEO optimizational codes to integrate data from back-end database</li>
+                <li>Experience full stack of web development tools to create friendly-interfaces by using HTML5, CSS3
+                    and JSON
+                </li>
+            </ul>
 
-                    <h2>
-                        Green River College Volunteer - Participant Group
-                        leader<br /><br />
-                        <span>Auburn, Washington Jan.2014 – December.2014</span>
-                    </h2>
-                    <ul>
-                        <li>
-                            Demonstrated the concept through personal
-                            presentation and reposed all the university life
-                            issues by providing a solution like inspirational
-                            videos or images to help student with success
-                        </li>
-                        <li>
-                            Created organizational worksheets for students to
-                            improved their problems solving skills in academic
-                        </li>
-                    </ul>
+            <h2>Digital Gym Cinema - Graphic Design <br/><br/>
+                <span>El Cajon, California May.2017 – Sept.2017</span></h2>
+            <ul>
+                <li>Designed movies posters for movies created seductive web banner on screen poster, and outreached
+                    promoting emails to specific a community
+                </li>
+            </ul>
 
-                    <h2>
-                        Chinese Union Organization - Photography coordinator<br /><br />
-                        <span>La Jolla, California Oct.2016 – Present</span>
-                    </h2>
-                    <ul>
-                        <li>
-                            Designed creative and imaginative videos and flies
-                            respond to the trend of social media
-                        </li>
-                    </ul>
-                </dd>
+            <h2>Green River College Volunteer - Participant Group leader<br/><br/>
+                <span>Auburn, Washington Jan.2014 – December.2014</span></h2>
+            <ul>
+                <li>Demonstrated the concept through personal presentation and reposed all the university life issues by
+                    providing a solution like inspirational videos or images to help student with success
+                </li>
+                <li>Created organizational worksheets for students to improved their problems solving skills in
+                    academic
+                </li>
 
-                <dd></dd>
+            </ul>
 
-                <dd class="clear"></dd>
+            <h2>Chinese Union Organization - Photography coordinator<br/><br/>
+                <span>La Jolla, California Oct.2016 – Present</span></h2>
+            <ul>
+                <li>Designed creative and imaginative videos and flies respond to the trend of social media</li>
+            </ul>
+        <dd>
 
-                <dt30>Hobbies</dt30>
-                <dd>
-                    Stock Trading, EBay Sale, Solo Adventure, Web markup,
-                    Skydiving
-                </dd>
+        <dd class="clear"></dd>
 
-                <dd class="clear"></dd>
-                <dt30>Languages:</dt30>
-                <dd>
-                    Conversational Proficiency in Mandarin and Cantonese; Fluent
-                    in English;
-                </dd>
+        <dt30>Hobbies</dt30>
+        <dd>Stock Trading, EBay Sale, Solo Adventure, Web markup, Skydiving</dd>
 
-                <dd class="clear"></dd>
+        <dd class="clear"></dd>
+        <dt30>Languages:</dt30>
+        <dd>Conversational Proficiency in Mandarin and Cantonese; Fluent in English;</dd>
 
-                <dt30>References</dt30>
-                <dd>---</dd>
+        <dd class="clear"></dd>
 
-                <dd class="clear"></dd>
-            </dl>
+        <dt30>References</dt30>
+        <dd>---</dd>
 
-            <div class="clear"></div>
-        </div>
-    </body>
+        <dd class="clear"></dd>
+    </dl>
+
+    <div class="clear"></div>
+
+</div>
+
+</body>
+
 </html>

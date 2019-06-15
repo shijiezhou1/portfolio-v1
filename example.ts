@@ -10,7 +10,7 @@ export default class example implements Iexample {
     public name: string;
 
     constructor(id, name) {
-        this.id = id;
+        this.id = id; 
         this.name = name;
     }
 
@@ -19,15 +19,16 @@ export default class example implements Iexample {
     }
 }
 
-const test = new example("123", "jay");
+const test = new example('123', 'jay');
 
-const a = test.getName();
+const a  =test.getName();
 const ooo = a.charAt(0);
 
 var i = 0;
 var gg;
 for (const iterator of a) {
-    gg = iterator.charAt(i);
+    gg = iterator.charAt(i)
     i++;
-    gg;
+    gg
 }
+

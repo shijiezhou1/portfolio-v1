@@ -6,6 +6,6 @@ exports.FIREBASE_CONFIG = {
     databaseURL: "https://website-7b86a.firebaseio.com",
     projectId: "website-7b86a",
     storageBucket: "website-7b86a.appspot.com",
-    messagingSenderId: "577143481839",
+    messagingSenderId: "577143481839"
 };
 //# sourceMappingURL=firebase.config.js.map

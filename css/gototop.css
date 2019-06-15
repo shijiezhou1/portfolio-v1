@@ -1,23 +1,26 @@
 #topBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-
-    /* circle radius half of the width */
-    width: 34px;
-    height: 34px;
-    -moz-border-radius: 17px;
-    -webkit-border-radius: 17px;
-    border-radius: 17px;
-    font-size: 50%;
-}
-#topBtn:hover {
-    background-color: #555;
-}
+      display: none; 
+      position: fixed;
+      bottom: 20px;
+      right : 20px;
+      z-index: 99;
+      border: none;
+      outline: none;
+      background-color: red;
+      color: white;
+      cursor: pointer;
+      
+     
+      /* circle radius half of the width */
+      width: 34px;
+      height: 34px;
+      -moz-border-radius: 17px; 
+      -webkit-border-radius: 17px; 
+      border-radius: 17px;
+      font-size: 50%;
+    
+      
+    }
+    #topBtn:hover {
+      background-color: #555;
+    }

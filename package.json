@@ -7,8 +7,7 @@
     "start": "node index.js",
     "test:dev": "nyc report --reporter=html > coverage.lcov && codecov",
     "test": "nyc mocha src/",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "prettier": "prettier --print-width 80 --trailing-comma --prefer-void-tags=true es5 --write '**/*.{ts,js,css,html}'"
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
     "type": "git",

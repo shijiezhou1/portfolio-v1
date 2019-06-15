@@ -1,581 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>About</title>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link rel="stylesheet" type="text/css" href="css/basis.css" />
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Raleway"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
 
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/basis.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/Ralewayfont.css" />
+
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script> -->
 
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-        <!-- Include the library. -->
-        <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
-        <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-        <link
-            rel="stylesheet"
-            href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-        />
-        <style>
-            .lazy {
-                max-width: 50px;
-                min-width: 10px;
-            }
-        </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Include the library. -->
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <style>
+        .lazy {
+            max-width: 50px;
+            min-width: 10px;
+        }
+    </style>
 
-        <style>
-            .modal-header,
-            h4,
-            .close {
-                background-color: #5cb85c;
-                color: white !important;
-                text-align: center;
-                font-size: 30px;
-            }
-        </style>
-    </head>
+    <style>
+        .modal-header,
+        h4,
+        .close {
+            background-color: #5cb85c;
+            color: white !important;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
 
-    <body>
-        <!-- bootstrap container and putting center for -->
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10 col-md-10 col-xs-12 text-center">
-                    <h3>About</h3>
+</head>
 
-                    <!-- personal profile picture -->
-                    <p class="text-left" style="float: right;">
-                        <img
-                            src="images/profile.png"
-                            height="150px"
-                            width="150px"
-                            border="1px"
-                        />
-                        <button
-                            class="btn btn-primary"
-                            style="margin: 10px 10px 10px 0px;position: absolute;"
-                            data-toggle="modal"
-                            data-target="#emailMeModal"
-                        >
-                            Contact Me
-                        </button>
-                    </p>
+<body>
+    <!-- bootstrap container and putting center for -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-10 col-xs-12 text-center">
 
-                    <p class="text-left">
-                        Shijie Zhou studies at University of California, San
-                        Diego in the Interdisciplinary Computer in Arts. He is
-                        also the member for design and construct web developer
-                        at the Worldview project organization. Currently, he is
-                        working in Akirix(MMSG department) with software
-                        engineer.
+                <h3>About</h3>
 
-                        <br />
-                        <br />
-                        He used to work on programming artist and digital image
-                        designer at the Digital Gym Cinema as internet. He
-                        obtains Associate degree in Green River College, and
-                        also finish the B.A. degree at UCSD. <br />
-                        He gained experience in media use and computer art. He
-                        also familiar with web design and customize selling
-                        pages on ebay which promote stuffs at leisure time..
-                    </p>
+                <!-- personal profile picture -->
+                <p class="text-left" style="float: right;">
+                    <img src="images/profile.png" height="150px" width="150px" border="1px">
+                    <button class="btn btn-primary" style="margin: 10px 10px 10px 0px;position: absolute;"
+                        data-toggle="modal" data-target="#emailMeModal">Contact
+                        Me</button>
+                </p>
+
+                <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary
+                    Computer in Arts. He
+                    is also the member for design and construct web developer at the Worldview project organization.
+                    Currently,
+                    he is working in Akirix(MMSG department) with software engineer.
+
+                    <br>
+                    <br> He used to work on programming artist and digital image designer at the Digital Gym Cinema as
+                    internet. He
+                    obtains
+                    Associate degree in Green River College, and also finish the B.A. degree at UCSD.
+                    <br> He gained experience in media use and computer art. He also familiar with web design and
+                    customize selling pages on ebay which promote
+                    stuffs at leisure time..
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--about the chart js-->
+    <div class="container">
+        <canvas id="line-chart" width="500px" height="100px"></canvas>
+    </div>
+
+    <!-- <button onclick="getGitStatic()">getGitStatic</button> -->
+
+    <!--Article-->
+    <div class="container">
+        <h5>Article:</h5>
+        <ul class="list-unstyled">
+            <li>
+                <a href="wordcloud.svg">Keyword on me: </a>
+            </li>
+            <li>
+                <a href="article_1.html">Frond/End Seperation</a></li>
+            <li>
+                <a href="article_2.html">Helpful Concepts about PHP</a></li>
+            <li>
+                <a href="article_3.html">Helpful Links</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h5>Contribution: </h5>
+        <!-- Prepare a container for your calendar. -->
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "shijiezhou1");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "shijiezhou1", { responsive: true });
+        </script>
+        <br>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=ShijieZhou&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-text="Hi" data-url="https://www.shijiezhou.com" data-related="shijiezhou5" data-show-count="false">Tweet #ShijieZhou</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <div class="container">
+        <div>Technologies support:</div>
+        <table class="">
+            <tbody>
+                <tr>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg " alt="">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
+                        </noscript>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="container">
+        <div>Web page support in:</div>
+        <table class="">
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
+                        </noscript>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <!-- Modal -->
+    <div class="modal fade" id="emailMeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">✉️ Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-            </div>
-        </div>
-
-        <!--about the chart js-->
-        <div class="container">
-            <canvas id="line-chart" width="500px" height="100px"></canvas>
-        </div>
-
-        <!-- <button onclick="getGitStatic()">getGitStatic</button> -->
-
-        <!--Article-->
-        <div class="container">
-            <h5>Article:</h5>
-            <ul class="list-unstyled">
-                <li>
-                    <a href="wordcloud.svg">Keyword on me: </a>
-                </li>
-                <li>
-                    <a href="article_1.html">Frond/End Seperation</a>
-                </li>
-                <li>
-                    <a href="article_2.html">Helpful Concepts about PHP</a>
-                </li>
-                <li>
-                    <a href="article_3.html">Helpful Links</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="container">
-            <h5>Contribution:</h5>
-            <!-- Prepare a container for your calendar. -->
-            <div class="calendar">
-                <!-- Loading stuff -->
-                Loading the data just for you.
-            </div>
-
-            <script>
-                GitHubCalendar(".calendar", "shijiezhou1");
-                // or enable responsive functionality
-                GitHubCalendar(".calendar", "shijiezhou1", {
-                    responsive: true,
-                });
-            </script>
-            <br />
-            <a
-                href="https://twitter.com/intent/tweet?button_hashtag=ShijieZhou&ref_src=twsrc%5Etfw"
-                class="twitter-hashtag-button"
-                data-text="Hi"
-                data-url="https://www.shijiezhou.com"
-                data-related="shijiezhou5"
-                data-show-count="false"
-                >Tweet #ShijieZhou</a
-            ><script
-                async
-                src="https://platform.twitter.com/widgets.js"
-                charset="utf-8"
-            ></script>
-        </div>
-
-        <div class="container">
-            <div>Technologies support:</div>
-            <table class="">
-                <tbody>
-                    <tr>
-                        <td>
-                            <img
-                                width="50px"
-                                height="50px"
-                                class="lazy lazy-loaded"
-                                src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
-                                alt=""
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                width="50px"
-                                height="50px"
-                                class="lazy lazy-loaded"
-                                src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                width="50px"
-                                height="50px"
-                                class="lazy lazy-loaded"
-                                src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                width="50px"
-                                height="50px"
-                                class="lazy lazy-loaded"
-                                src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                width="50px"
-                                height="50px"
-                                class="lazy lazy-loaded"
-                                src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                width="50px"
-                                height="50px"
-                                class="lazy lazy-loaded"
-                                src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
-                                />
-                            </noscript>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <br />
-        <div class="container">
-            <div>Web page support in:</div>
-            <table class="">
-                <tbody>
-                    <tr>
-                        <td>
-                            <img
-                                class="lazy lazy-loaded"
-                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                class="lazy lazy-loaded"
-                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                class="lazy lazy-loaded"
-                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                class="lazy lazy-loaded"
-                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                class="lazy lazy-loaded"
-                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
-                                />
-                            </noscript>
-                        </td>
-                        <td>
-                            <img
-                                class="lazy lazy-loaded"
-                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
-                                data-lazy-type="image"
-                                data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
-                            />
-                            <noscript>
-                                <img
-                                    src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
-                                />
-                            </noscript>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <br />
-        <!-- Modal -->
-        <div
-            class="modal fade"
-            id="emailMeModal"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-        >
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                            ✉️ Contact me
-                        </h5>
-                        <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                        >
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="sucessEmail">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span
-                                        class="input-group-text"
-                                        id="basic-addon1"
-                                        >@</span
-                                    >
-                                </div>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="from_email"
-                                    placeholder="your email address"
-                                    aria-label="from"
-                                    aria-describedby="basic-addon1"
-                                    required
-                                />
+                <div class="modal-body">
+                    <div id="sucessEmail">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
                             </div>
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <span
-                                        class="input-group-text"
-                                        id="basic-addon1"
-                                        >&</span
-                                    >
-                                </div>
-                                <input
-                                    type="text"
-                                    class="form-control"
-                                    id="from_subject"
-                                    placeholder="subject"
-                                    aria-label="subject"
-                                    aria-describedby="basic-addon1"
-                                    required
-                                />
+                            <input type="text" class="form-control" id="from_email" placeholder="your email address"
+                                aria-label="from" aria-describedby="basic-addon1" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">&</span>
                             </div>
-                            <div class="input-group">
-                                <textarea
-                                    class="form-control"
-                                    id="from_body"
-                                    aria-label="message"
-                                    placeholder="message to me ... "
-                                    required
-                                ></textarea>
-                            </div>
+                            <input type="text" class="form-control" id="from_subject" placeholder="subject"
+                                aria-label="subject" aria-describedby="basic-addon1" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea class="form-control" id="from_body" aria-label="message"
+                                placeholder="message to me ... " required></textarea>
+                        </div>
 
-                            <div class="modal-footer">
-                                <button
-                                    type="button"
-                                    class="btn btn-default"
-                                    data-dismiss="modal"
-                                >
-                                    Discard
-                                </button>
-                                <button
-                                    type="button"
-                                    class="btn btn-primary"
-                                    onclick="sendEmail();"
-                                >
-                                    Send Email
-                                </button>
-                            </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
+                            <button type="button" class="btn btn-primary" onclick="sendEmail();">Send Email</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- end of the boostrap center container -->
-        <script
-            id="dsq-count-scr"
-            src="//https-www-shijiezhou-com.disqus.com/count.js"
-            async
-        ></script>
-        <script>
-            function sendEmail() {
-                const from_email = document.getElementById("from_email").value;
-                const from_subject = document.getElementById("from_subject")
-                    .value;
-                const from_body = document.getElementById("from_body").value;
 
-                if (!from_email || !from_subject || !from_body) {
-                    alert("Please fill up all fields");
-                    return;
-                }
+    <!-- end of the boostrap center container -->
+    <script id="dsq-count-scr" src="//https-www-shijiezhou-com.disqus.com/count.js" async></script>
+    <script>
 
-                const url = "https://shijiezhou.herokuapp.com/email"; // can be changed due to developer
+        function sendEmail() {
+            const from_email = document.getElementById('from_email').value;
+            const from_subject = document.getElementById('from_subject').value;
+            const from_body = document.getElementById('from_body').value;
 
-                $.ajax({
-                    url: url,
-                    type: "POST",
-                    headers: {
-                        Accept: "application/json;",
-                    },
-                    data: {
-                        subject: from_subject,
-                        message: from_body,
-                        from: from_email,
-                    },
-                }).done(function(res) {
-                    if (res == "email sent sucessfully") {
-                        $("#sucessEmail").html(`<h3>${res}</h3>`);
-                    }
-                });
+            if (!from_email || !from_subject || !from_body) {
+                alert('Please fill up all fields');
+                return;
             }
 
-            function getCurrentMonth(arr) {
-                var month = /2019-01/g;
-                if (arr.date.match(month)) {
-                    // console.log('arr :', arr);
-                    return arr.count;
-                }
-            }
+            const url = 'https://shijiezhou.herokuapp.com/email'; // can be changed due to developer
 
-            function getGitStatic() {
-                var url =
-                    "https://github-contributions-api.now.sh/v1/shijiezhou1";
-                $.ajax(url).done(object => {
-                    var year = /2019/g;
-                    var totalCount = 0;
-                    for (const iterator of object.contributions) {
-                        if (iterator.date.match(year)) {
-                            totalCount = totalCount + getCurrentMonth(iterator);
-                        }
-                    }
-                });
-            }
-            let dataset = [69, 39, 88, 122, 234, 326, 5, 11, 20, 10, 0, 0];
-
-            new Chart(document.getElementById("line-chart"), {
-                type: "line",
+            $.ajax({
+                url: url,
+                type: 'POST',
+                headers: {
+                    'Accept': 'application/json;',
+                },
                 data: {
-                    labels: [
-                        "January",
-                        "February",
-                        "March",
-                        "April",
-                        "May",
-                        "June",
-                        "July",
-                        "August",
-                        "September",
-                        "October",
-                        "November",
-                        "December",
-                    ],
-                    datasets: [
-                        {
-                            data: dataset,
-                            label: "Github Commit",
-                            borderColor: "#c45850",
-                            fill: false,
-                        },
-                    ],
+                    "subject": from_subject,
+                    "message": from_body,
+                    "from": from_email
                 },
-                options: {
-                    title: {
-                        display: true,
-                        text: "Github Contribution Per Year",
-                    },
-                },
+            }).done(function (res) {
+                if (res == "email sent sucessfully") {
+                    $('#sucessEmail').html(`<h3>${res}</h3>`);
+                }
             });
-        </script>
-    </body>
+        }
 
-    <div class="container">
-        <div id="disqus_thread"></div>
-        <script>
-            /**
-             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-            /*
+        function getCurrentMonth(arr) {
+            var month = /2019-01/g;
+            if (arr.date.match(month)) {
+                // console.log('arr :', arr);
+                return arr.count;
+            }
+        }
+
+        function getGitStatic() {
+            var url = 'https://github-contributions-api.now.sh/v1/shijiezhou1';
+            $.ajax(url).done((object) => {
+                var year = /2019/g;
+                var totalCount = 0;
+                for (const iterator of object.contributions) {
+                    if (iterator.date.match(year)) {
+                        totalCount = totalCount + getCurrentMonth(iterator);
+                    };
+                }
+            })
+        }
+        let dataset = [69, 39, 88, 122, 234, 326, 5, 11, 20, 10, 0, 0];
+
+        new Chart(document.getElementById("line-chart"), {
+            type: 'line',
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                datasets: [{
+                    data: dataset,
+                    label: "Github Commit",
+                    borderColor: "#c45850",
+                    fill: false
+                }
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Github Contribution Per Year'
+                }
+            }
+        });
+    </script>
+
+</body>
+
+<div class="container">
+    <div id="disqus_thread"></div>
+    <script>
+
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
         var disqus_config = function () {
         this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
         this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
         };
         */
-            (function() {
-                // DON'T EDIT BELOW THIS LINE
-                var d = document,
-                    s = d.createElement("script");
-                s.src = "https://https-www-shijiezhou-com.disqus.com/embed.js";
-                s.setAttribute("data-timestamp", +new Date());
-                (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript
-            >Please enable JavaScript to view the
-            <a href="https://disqus.com/?ref_noscript"
-                >comments powered by Disqus.</a
-            ></noscript
-        >
-    </div>
+        (function () { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://https-www-shijiezhou-com.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+
+</div>
+
 </html>

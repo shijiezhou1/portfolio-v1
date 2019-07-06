@@ -26,7 +26,11 @@
 The content is about the portfolio website, and it contains all of projects, works, articles, 
 videos, music and etc. Any copy and usage must state.
 ---
+
+### Contact info: 
+
 ```
+Author: Shijie Zhou
 Location: Salt Lake City, Utah
 Tel: 253-204-3188
 Email : shz145@ucsd.edu
@@ -40,3 +44,4 @@ Email : shz145@ucsd.edu
   [examples](examples);
 * :rocket: **Performance:** it works without any extra scripts,
   canvas, etc;
+* :gear: **Google Analystics:** the basic data collect for the project.

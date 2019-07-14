@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "lint": "",
     "test:dev": "nyc report --reporter=html > coverage.lcov && codecov",
     "test": "nyc mocha src/",
     "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"

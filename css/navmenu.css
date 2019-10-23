@@ -62,3 +62,49 @@ body {
     display: none !important; /* IE8 fix */
   }
 }
+
+   /* after click */
+
+   .navbar-toggle:hover {
+    background: transparent !important;
+}
+
+.navbar-toggle .icon-bar {
+    width: 22px;
+    border: 1px solid black;
+    transition: all 0.5s;
+}
+
+.navbar-toggle .top-bar {
+    padding-left: 10px;
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggle .bottom-bar {
+    padding-left: 10px;
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+/* Original */
+.navbar-toggle.collapsed .icon-bar {
+    width: 20px;
+    transition: all 0.5s;
+}
+
+.navbar-toggle.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0);
+}

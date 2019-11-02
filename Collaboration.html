@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="scrollingtop.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
@@ -16,18 +16,18 @@
       {caption: "Azerbaijan Forest", alt: "Forest", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Azerbaijan_forest_3.JPG/320px-Azerbaijan_forest_3.JPG"},
       {caption: "Indonesian Jungle", alt: "Jungle", url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Indonesian_jungle3%2C_Zoo_Prague.jpg/320px-Indonesian_jungle3%2C_Zoo_Prague.jpg"}
   ];
-  
+
   window.onload = function(){
       var figure = "<figure>";
       for(var i = 0; i < images.length; i++){
-          figure += '<img src="'+ images[i].url + '" ' + 'alt="' + images[i].alt + '">' 
-          + '<figcaption>' + images[i].caption + "</figcaption>"   
+          figure += '<img src="'+ images[i].url + '" ' + 'alt="' + images[i].alt + '">'
+          + '<figcaption>' + images[i].caption + "</figcaption>"
       }figure += "</figure>";
-  
+
       var myContainer = document.querySelector("#image").innerHTML = figure;
   }
   </script>
-  
+
 
 </head>
 <body>

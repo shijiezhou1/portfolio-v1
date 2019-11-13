@@ -73,3 +73,14 @@ $(function () {
     js.src = "https://makerwidget.com/js/embed.js";
     fjs.parentNode.insertBefore(js, fjs)
 }(document, "script", "dhm"))
+
+// Extra test
+$.ajax({
+    url: 'http://122.51.161.100:3000/users'
+})
+    .done(function (res) {
+        console.log(res);
+    })
+    .fail(function (err) {
+        console.log('Error: ' + err.status);
+    });

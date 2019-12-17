@@ -31,4 +31,4 @@ exclude_patterns:
   - "blueprints/**"
   - "**/tests/**"
   - "**/node-tests/**"
- 
+  - "jasny-bootstrap/**"

@@ -5,9 +5,13 @@
 
 [![Build Status](https://travis-ci.com/shijiezhou1/Portfolio.svg?branch=master)](https://travis-ci.com/shijiezhou1/Portfolio)
 [![NPM version](https://img.shields.io/npm/v/npm.svg)](https://www.npmjs.com/package/portofolio) 
+
  
 [![GitHub forks](https://img.shields.io/github/forks/shijiezhou1/Portfolio.svg?style=social&label=Fork)](https://github.com/shijiezhou1/Portfolio/fork)
 [![GitHub stars](https://img.shields.io/github/stars/shijiezhou1/Portfolio.svg?style=social&label=Star)](https://github.com/shijiezhou1/Portfolio)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/d25ff2d77f5067e9bee5/maintainability)](https://codeclimate.com/github/shijiezhou1/Portfolio/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/d25ff2d77f5067e9bee5/test_coverage)](https://codeclimate.com/github/shijiezhou1/Portfolio/test_coverage)
 
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="info-apache" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" />
 </a>
@@ -17,6 +21,8 @@
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="MIT License" src="https://img.shields.io/packagist/dt/doctrine/orm.svg" /></a>
 <a href="https://shijiezhou1.github.io/my-app/"><img alt="@Shijie Zhou" src="https://img.shields.io/badge/Professional-Code-yellow.svg" /></a>
 </div><br />
+
+
 
 <div align="center">
 <img width="50%" src="/images/screenshoot.png" />

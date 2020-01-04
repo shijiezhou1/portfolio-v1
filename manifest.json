@@ -1,0 +1,17 @@
+{
+    "short_name": "ShijieZhou",
+    "name": "Shijie Zhou | Portfolio",
+    "description": "information about how to explore myself",
+    "icons": [
+      {
+        "src": "./images/logo j.gif",
+        "type": "image/gif",
+        "sizes": "100x100"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#3367D6"
+  }

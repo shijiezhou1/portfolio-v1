@@ -28,6 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
     <link href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" rel="stylesheet"/>
+    <script src="lazysizes.min.js" async></script>
     <style>
         .lazy {
             max-width: 50px;
@@ -61,7 +62,7 @@
 
             <!-- personal profile picture -->
             <p class="text-left" style="float: right;">
-                <img src="images/profile.png" height="150px" width="150px" border="1px" alt="profile image">
+                <img src="images/profile.png" height="150px" width="150px" border="1px" class="lazyload" alt="profile image">
                 <button class="btn btn-primary" style="margin: 10px 10px 10px 0px;position: absolute;"
                         data-toggle="modal" data-target="#emailMeModal">Contact Me
                 </button>

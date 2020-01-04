@@ -6,7 +6,7 @@
       {
         "src": "./images/logo j.gif",
         "type": "image/gif",
-        "sizes": "100x100"
+        "sizes": "144x144"
       }
     ],
     "start_url": "/?source=pwa",

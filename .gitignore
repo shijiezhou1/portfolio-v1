@@ -17,8 +17,8 @@ npm-debug.log
 /.idea
 package-lock.json
 
-
 # test
 .nyc_output
 coverage
 *.lcov
+.idea/

@@ -466,7 +466,8 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
             return;
         }
 
-        const url = 'https://shijiezhou.herokuapp.com/email'; // can be changed due to developer
+        const url = 'https://shijiezhou.herokuapp.com/redis'; // can be changed due to developer
+        // const url = 'http://localhost:3000/redis'; // can be changed due to developer
 
         $.ajax({
             url: url,
@@ -480,7 +481,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                 "from": from_email
             },
         }).done(function (res) {
-            if (res == "email sent sucessfully") {
+            if (res) {
                 $('#sucessEmail').html(`<h3>${res}</h3>`);
             }
         });

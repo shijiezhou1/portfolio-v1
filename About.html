@@ -5,29 +5,28 @@
     <title>About</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="css/basis.css"/>
+    <link rel="stylesheet" type="text/css" href="css/basis.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link href="css/Ralewayfont.css" rel="stylesheet" type="text/css"/>
+    <link href="css/Ralewayfont.css" rel="stylesheet" type="text/css" />
 
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script> -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script crossorigin="anonymous"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <!-- Include the library. -->
     <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" rel="stylesheet"/>
+    <link href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" rel="stylesheet" />
     <script src="lazysizes.min.js" async></script>
     <style>
         .lazy {
@@ -48,111 +47,123 @@
             width: 50px;
             height: 50px;
         }
+
+        .img_profile {
+            border-radius: 50%;
+            border: 1px solid blue;
+            border-style: dotted;
+        }
+        .img-holder {
+            position: relative;
+        }
+        .img-holder .link {
+            position: absolute;
+            right: 27px;
+            top: 138px;
+        }
     </style>
 
 </head>
 
 <body>
-<!-- bootstrap container and putting center for -->
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-lg-10 col-md-10 col-xs-12 text-center">
+    <!-- bootstrap container and putting center for -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-md-10 col-xs-12 text-center">
+                <h3>About</h3>
+                <!-- personal profile picture -->
+                <div class="text-left img-holder" style="float: right;">
+                    <img src="images/profile.png" height="150px" width="150px" class="lazyload img_profile"
+                        alt="profile image">
+                    <button class="btn btn-primary btn-sm link" data-toggle="modal"
+                        data-target="#emailMeModal">Contact Me
+                    </button>
+                </div>
 
-            <h3>About</h3>
+                <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary
+                    Computer in Arts. He
+                    is also the member for design and construct web developer at the Worldview project organization.
+                    Currently,
+                    he is working in Akirix(MMSG department) with software engineer.
 
-            <!-- personal profile picture -->
-            <p class="text-left" style="float: right;">
-                <img src="images/profile.png" height="150px" width="150px" border="1px" class="lazyload" alt="profile image">
-                <button class="btn btn-primary" style="margin: 10px 10px 10px 0px;position: absolute;"
-                        data-toggle="modal" data-target="#emailMeModal">Contact Me
-                </button>
-            </p>
-
-            <p class="text-left">Shijie Zhou studies at University of California, San Diego in the Interdisciplinary
-                Computer in Arts. He
-                is also the member for design and construct web developer at the Worldview project organization.
-                Currently,
-                he is working in Akirix(MMSG department) with software engineer.
-
-                <br>
-                <br> He used to work on programming artist and digital image designer at the Digital Gym Cinema as
-                internet. He
-                obtains
-                Associate degree in Green River College, and also finish the B.A. degree at UCSD.
-                <br> He gained experience in media use and computer art. He also familiar with web design and
-                customize selling pages on ebay which promote
-                stuffs at leisure time..
-            </p>
+                    <br>
+                    <br> He used to work on programming artist and digital image designer at the Digital Gym Cinema as
+                    internet. He
+                    obtains
+                    Associate degree in Green River College, and also finish the B.A. degree at UCSD.
+                    <br> He gained experience in media use and computer art. He also familiar with web design and
+                    customize selling pages on ebay which promote
+                    stuffs at leisure time..
+                </p>
+            </div>
         </div>
-    </div>
-    <canvas id="line-chart" width="500px" height="100px"></canvas>
-</div>
-
-
-<div class="container">
-    <h5>Article:</h5>
-    <ul class="list-unstyled">
-        <li>
-            <a href="wordcloud.svg">Keyword on me: </a>
-        </li>
-        <li>
-            <a href="article_1.html">Frond/End Seperation</a></li>
-        <li>
-            <a href="article_2.html">Helpful Concepts about PHP</a></li>
-        <li>
-            <a href="article_3.html">Helpful Links</a></li>
-    </ul>
-
-    <h5>Contribution: </h5>
-    <!-- Prepare a container for your calendar. -->
-    <div class="calendar">
-        <!-- Loading stuff -->
-        Loading the data just for you.
+        <canvas id="line-chart" width="500px" height="100px"></canvas>
     </div>
 
-    <script>
-        GitHubCalendar(".calendar", "shijiezhou1");
-        // or enable responsive functionality
-        GitHubCalendar(".calendar", "shijiezhou1", {responsive: true});
-    </script>
-    <br>
-    <a href="https://twitter.com/intent/tweet?button_hashtag=ShijieZhou&ref_src=twsrc%5Etfw"
-       class="twitter-hashtag-button" data-text="Hi" data-url="https://www.shijiezhou.com"
-       data-related="shijiezhou5" data-show-count="false">Tweet #ShijieZhou</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    <br>
-    <!-- <a href="https://dev.to/shijiezhou1">
+
+    <div class="container">
+        <h5>Article:</h5>
+        <ul class="list-unstyled">
+            <li>
+                <a href="wordcloud.svg">Keyword on me: </a>
+            </li>
+            <li>
+                <a href="article_1.html">Frond/End Seperation</a></li>
+            <li>
+                <a href="article_2.html">Helpful Concepts about PHP</a></li>
+            <li>
+                <a href="article_3.html">Helpful Links</a></li>
+        </ul>
+
+        <h5>Contribution: </h5>
+        <!-- Prepare a container for your calendar. -->
+        <div class="calendar">
+            <!-- Loading stuff -->
+            Loading the data just for you.
+        </div>
+
+        <script>
+            GitHubCalendar(".calendar", "shijiezhou1");
+            // or enable responsive functionality
+            GitHubCalendar(".calendar", "shijiezhou1", { responsive: true });
+        </script>
+        <br>
+        <a href="https://twitter.com/intent/tweet?button_hashtag=ShijieZhou&ref_src=twsrc%5Etfw"
+            class="twitter-hashtag-button" data-text="Hi" data-url="https://www.shijiezhou.com"
+            data-related="shijiezhou5" data-show-count="false">Tweet #ShijieZhou</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <br>
+        <!-- <a href="https://dev.to/shijiezhou1">
         <img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Shijie Zhou's DEV Profile" height="30" width="30">
     </a> -->
-    <p class="social">
-        <a href="https://twitter.com/ShijieZhou5" target="_blank" rel="noopener me">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" viewBox="0 0 612 612" role="img"
-                 aria-labelledby="acu2hq3cher2x7dp2fn7g9bp51ifj8v3">
-                <title id="acu2hq3cher2x7dp2fn7g9bp51ifj8v3">Twitter logo</title>
-                <path
-                    d="M612 116.258c-22.525 9.98-46.694 16.75-72.088 19.772 25.93-15.527 45.777-40.155 55.184-69.41-24.322 14.378-51.17 24.82-79.775 30.48-22.906-24.438-55.49-39.66-91.63-39.66-69.333 0-125.55 56.218-125.55 125.514 0 9.828 1.11 19.427 3.25 28.606-104.325-5.24-196.834-55.223-258.75-131.174-10.822 18.51-16.98 40.078-16.98 63.1 0 43.56 22.182 81.994 55.836 104.48-20.575-.688-39.926-6.348-56.867-15.756v1.568c0 60.806 43.29 111.554 100.692 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.2 117.253 87.194-42.946 33.655-97.098 53.656-155.915 53.656-10.134 0-20.116-.612-29.944-1.72 55.568 35.68 121.537 56.484 192.44 56.484 230.947 0 357.187-191.29 357.187-357.188l-.42-16.253C573.87 163.525 595.21 141.42 612 116.257z">
-                </path>
-            </svg>
+        <p class="social">
+            <a href="https://twitter.com/ShijieZhou5" target="_blank" rel="noopener me">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" viewBox="0 0 612 612" role="img"
+                    aria-labelledby="acu2hq3cher2x7dp2fn7g9bp51ifj8v3">
+                    <title id="acu2hq3cher2x7dp2fn7g9bp51ifj8v3">Twitter logo</title>
+                    <path
+                        d="M612 116.258c-22.525 9.98-46.694 16.75-72.088 19.772 25.93-15.527 45.777-40.155 55.184-69.41-24.322 14.378-51.17 24.82-79.775 30.48-22.906-24.438-55.49-39.66-91.63-39.66-69.333 0-125.55 56.218-125.55 125.514 0 9.828 1.11 19.427 3.25 28.606-104.325-5.24-196.834-55.223-258.75-131.174-10.822 18.51-16.98 40.078-16.98 63.1 0 43.56 22.182 81.994 55.836 104.48-20.575-.688-39.926-6.348-56.867-15.756v1.568c0 60.806 43.29 111.554 100.692 123.104-10.517 2.83-21.607 4.398-33.08 4.398-8.107 0-15.947-.803-23.634-2.333 15.985 49.907 62.336 86.2 117.253 87.194-42.946 33.655-97.098 53.656-155.915 53.656-10.134 0-20.116-.612-29.944-1.72 55.568 35.68 121.537 56.484 192.44 56.484 230.947 0 357.187-191.29 357.187-357.188l-.42-16.253C573.87 163.525 595.21 141.42 612 116.257z">
+                    </path>
+                </svg>
 
-        </a>
-        <a href="https://github.com/shijiezhou1" target="_blank" rel="noopener me">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" width="438.549" height="438.549"
-                 viewBox="0 0 438.549 438.549" role="img" aria-labelledby="a7c011di0m03v03vz108r74na448ar3y"
-            >
-                <title id="a7c011di0m03v03vz108r74na448ar3y">GitHub logo</title>
-                <path
-                    d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736 15.166 259.057 5.365 219.27 5.365c-39.78 0-76.47 9.804-110.062 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.853 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.42-1.996 2.474-2.282 3.71-5.14 3.71-8.562 0-.57-.05-5.708-.144-15.417-.098-9.71-.144-18.18-.144-25.406l-6.567 1.136c-4.187.767-9.47 1.092-15.846 1-6.375-.09-12.992-.757-19.843-2-6.854-1.23-13.23-4.085-19.13-8.558-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.9-9.233-8.992-14.56-4.093-5.33-8.232-8.944-12.42-10.847l-1.998-1.43c-1.332-.952-2.568-2.1-3.71-3.43-1.143-1.33-1.998-2.663-2.57-3.997-.57-1.335-.097-2.43 1.428-3.29 1.525-.858 4.28-1.275 8.28-1.275l5.708.853c3.807.763 8.516 3.042 14.133 6.85 5.615 3.807 10.23 8.755 13.847 14.843 4.38 7.807 9.657 13.755 15.846 17.848 6.184 4.093 12.42 6.136 18.7 6.136 6.28 0 11.703-.476 16.273-1.423 4.565-.95 8.848-2.382 12.847-4.284 1.713-12.758 6.377-22.56 13.988-29.41-10.847-1.14-20.6-2.857-29.263-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.98-3.9-12.373-5.852-26.647-5.852-42.825 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.38-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.284 18.794 7.953 23.84 10.995 5.046 3.04 9.09 5.618 12.135 7.708 17.706-4.947 35.977-7.42 54.82-7.42s37.116 2.473 54.822 7.42l10.85-6.85c7.418-4.57 16.18-8.757 26.26-12.564 10.09-3.806 17.803-4.854 23.135-3.14 8.562 21.51 9.325 40.923 2.28 58.24 15.035 16.18 22.558 35.788 22.558 58.818 0 16.178-1.958 30.497-5.853 42.966-3.9 12.47-8.94 22.457-15.125 29.98-6.19 7.52-13.9 13.85-23.13 18.985-9.233 5.14-18.183 8.85-26.84 11.135-8.663 2.286-18.416 4.004-29.264 5.146 9.894 8.563 14.842 22.078 14.842 40.54v60.237c0 3.422 1.19 6.28 3.572 8.562 2.38 2.278 6.136 2.95 11.276 1.994 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.16 41.826-81.126 41.826-128.906-.01-39.77-9.818-76.454-29.414-110.05z">
-                </path>
-            </svg>
+            </a>
+            <a href="https://github.com/shijiezhou1" target="_blank" rel="noopener me">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" width="438.549" height="438.549"
+                    viewBox="0 0 438.549 438.549" role="img" aria-labelledby="a7c011di0m03v03vz108r74na448ar3y">
+                    <title id="a7c011di0m03v03vz108r74na448ar3y">GitHub logo</title>
+                    <path
+                        d="M409.132 114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736 15.166 259.057 5.365 219.27 5.365c-39.78 0-76.47 9.804-110.062 29.408-33.596 19.605-60.192 46.204-79.8 79.8C9.803 148.168 0 184.853 0 224.63c0 47.78 13.94 90.745 41.827 128.906 27.884 38.164 63.906 64.572 108.063 79.227 5.14.954 8.945.283 11.42-1.996 2.474-2.282 3.71-5.14 3.71-8.562 0-.57-.05-5.708-.144-15.417-.098-9.71-.144-18.18-.144-25.406l-6.567 1.136c-4.187.767-9.47 1.092-15.846 1-6.375-.09-12.992-.757-19.843-2-6.854-1.23-13.23-4.085-19.13-8.558-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.9-9.233-8.992-14.56-4.093-5.33-8.232-8.944-12.42-10.847l-1.998-1.43c-1.332-.952-2.568-2.1-3.71-3.43-1.143-1.33-1.998-2.663-2.57-3.997-.57-1.335-.097-2.43 1.428-3.29 1.525-.858 4.28-1.275 8.28-1.275l5.708.853c3.807.763 8.516 3.042 14.133 6.85 5.615 3.807 10.23 8.755 13.847 14.843 4.38 7.807 9.657 13.755 15.846 17.848 6.184 4.093 12.42 6.136 18.7 6.136 6.28 0 11.703-.476 16.273-1.423 4.565-.95 8.848-2.382 12.847-4.284 1.713-12.758 6.377-22.56 13.988-29.41-10.847-1.14-20.6-2.857-29.263-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.98-3.9-12.373-5.852-26.647-5.852-42.825 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.38-36.732 1.997-58.24 5.52-1.715 13.706-.428 24.554 3.853 10.85 4.284 18.794 7.953 23.84 10.995 5.046 3.04 9.09 5.618 12.135 7.708 17.706-4.947 35.977-7.42 54.82-7.42s37.116 2.473 54.822 7.42l10.85-6.85c7.418-4.57 16.18-8.757 26.26-12.564 10.09-3.806 17.803-4.854 23.135-3.14 8.562 21.51 9.325 40.923 2.28 58.24 15.035 16.18 22.558 35.788 22.558 58.818 0 16.178-1.958 30.497-5.853 42.966-3.9 12.47-8.94 22.457-15.125 29.98-6.19 7.52-13.9 13.85-23.13 18.985-9.233 5.14-18.183 8.85-26.84 11.135-8.663 2.286-18.416 4.004-29.264 5.146 9.894 8.563 14.842 22.078 14.842 40.54v60.237c0 3.422 1.19 6.28 3.572 8.562 2.38 2.278 6.136 2.95 11.276 1.994 44.163-14.653 80.185-41.062 108.068-79.226 27.88-38.16 41.826-81.126 41.826-128.906-.01-39.77-9.818-76.454-29.414-110.05z">
+                    </path>
+                </svg>
 
-        </a>
-        <a href="https://www.linkedin.com/in/shijiezhouwebdeveloper/" target="_blank" rel="noopener me">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" style="enable-background:new 0 0 76 76;"
-                 version="1.1" viewBox="0 0 76 76" xml:space="preserve" role="img"
-                 aria-labelledby="ah9c61lcf5c6t6ou8kouh55rxyhd625b">
+            </a>
+            <a href="https://www.linkedin.com/in/shijiezhouwebdeveloper/" target="_blank" rel="noopener me">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" style="enable-background:new 0 0 76 76;"
+                    version="1.1" viewBox="0 0 76 76" xml:space="preserve" role="img"
+                    aria-labelledby="ah9c61lcf5c6t6ou8kouh55rxyhd625b">
                     <title id="ah9c61lcf5c6t6ou8kouh55rxyhd625b">LinkedIn logo</title>
-                <style type="text/css">
+                    <style type="text/css">
                         .st0 {
                             fill: #2A445D;
                         }
@@ -165,101 +176,98 @@
                             fill: #213B51;
                         }
                     </style>
-                <g>
+                    <g>
                         <path class="st0"
-                              d="M68.3,1H7.7C4,1,1,4,1,7.7v60.6C1,72,4,75,7.7,75h60.6c3.7,0,6.7-3,6.7-6.7V7.7C75,4,72,1,68.3,1z M23.9,64.9   c0,1.1-0.9,1.9-1.9,1.9h-8.3c-1.1,0-1.9-0.9-1.9-1.9V30.1c0-1.1,0.9-1.9,1.9-1.9H22c1.1,0,1.9,0.9,1.9,1.9V64.9z M17.8,24.9   c-4.4,0-7.9-3.5-7.9-7.9s3.5-7.9,7.9-7.9s7.9,3.5,7.9,7.9S22.2,24.9,17.8,24.9z M67.2,65.1c0,1-0.8,1.8-1.8,1.8h-8.9   c-1,0-1.8-0.8-1.8-1.8V48.7c0-2.4,0.7-10.7-6.4-10.7c-5.5,0-6.6,5.6-6.8,8.2v18.8c0,1-0.8,1.8-1.8,1.8h-8.6c-1,0-1.8-0.8-1.8-1.8   V30c0-1,0.8-1.8,1.8-1.8h8.6c1,0,1.8,0.8,1.8,1.8v3c2-3.1,5.1-5.4,11.5-5.4c14.2,0,14.2,13.3,14.2,20.6L67.2,65.1L67.2,65.1z">
+                            d="M68.3,1H7.7C4,1,1,4,1,7.7v60.6C1,72,4,75,7.7,75h60.6c3.7,0,6.7-3,6.7-6.7V7.7C75,4,72,1,68.3,1z M23.9,64.9   c0,1.1-0.9,1.9-1.9,1.9h-8.3c-1.1,0-1.9-0.9-1.9-1.9V30.1c0-1.1,0.9-1.9,1.9-1.9H22c1.1,0,1.9,0.9,1.9,1.9V64.9z M17.8,24.9   c-4.4,0-7.9-3.5-7.9-7.9s3.5-7.9,7.9-7.9s7.9,3.5,7.9,7.9S22.2,24.9,17.8,24.9z M67.2,65.1c0,1-0.8,1.8-1.8,1.8h-8.9   c-1,0-1.8-0.8-1.8-1.8V48.7c0-2.4,0.7-10.7-6.4-10.7c-5.5,0-6.6,5.6-6.8,8.2v18.8c0,1-0.8,1.8-1.8,1.8h-8.6c-1,0-1.8-0.8-1.8-1.8   V30c0-1,0.8-1.8,1.8-1.8h8.6c1,0,1.8,0.8,1.8,1.8v3c2-3.1,5.1-5.4,11.5-5.4c14.2,0,14.2,13.3,14.2,20.6L67.2,65.1L67.2,65.1z">
                         </path>
                     </g>
                 </svg>
 
-        </a>
-        <a href="https://www.behance.net/cs51296066e1c" target="_blank" rel="noopener me">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" width="2500" height="1583"
-                 viewBox="0.5 94.187 511 323.626" role="img" aria-labelledby="apw81ewjljrldpip0ubqhx4uc6wb33pw"
-            >
-                <title id="apw81ewjljrldpip0ubqhx4uc6wb33pw">Behance logo</title>
-                <path
-                    d="M206.729 238.87s48.358-3.59 48.358-60.297c0-56.711-39.563-84.387-89.678-84.387H.5v316.909h164.909s100.671 3.18 100.671-93.537c0 .001 4.389-78.688-59.351-78.688zm-53.19-88.357h11.87s22.416 0 22.416 32.973c0 32.969-13.183 37.749-28.136 37.749H73.161v-70.722h80.378zm7.21 204.257H73.161v-84.69h92.248s33.41-.438 33.41 43.522c0 37.068-24.954 40.888-38.07 41.168zm239.593-179.953c-121.873 0-121.765 121.766-121.765 121.766s-8.362 121.141 121.765 121.141c0 0 108.438 6.195 108.438-84.271h-55.768s1.86 34.068-50.81 34.068c0 0-55.777 3.738-55.777-55.135H510.64c0-.001 17.968-137.569-110.298-137.569zm-54.53 95.263s6.81-48.846 55.769-48.846c48.949 0 48.336 48.846 48.336 48.846H345.812zm117.096-118.199H332.159v-39.025h130.749v39.025z">
-                </path>
-            </svg>
+            </a>
+            <a href="https://www.behance.net/cs51296066e1c" target="_blank" rel="noopener me">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" width="2500" height="1583"
+                    viewBox="0.5 94.187 511 323.626" role="img" aria-labelledby="apw81ewjljrldpip0ubqhx4uc6wb33pw">
+                    <title id="apw81ewjljrldpip0ubqhx4uc6wb33pw">Behance logo</title>
+                    <path
+                        d="M206.729 238.87s48.358-3.59 48.358-60.297c0-56.711-39.563-84.387-89.678-84.387H.5v316.909h164.909s100.671 3.18 100.671-93.537c0 .001 4.389-78.688-59.351-78.688zm-53.19-88.357h11.87s22.416 0 22.416 32.973c0 32.969-13.183 37.749-28.136 37.749H73.161v-70.722h80.378zm7.21 204.257H73.161v-84.69h92.248s33.41-.438 33.41 43.522c0 37.068-24.954 40.888-38.07 41.168zm239.593-179.953c-121.873 0-121.765 121.766-121.765 121.766s-8.362 121.141 121.765 121.141c0 0 108.438 6.195 108.438-84.271h-55.768s1.86 34.068-50.81 34.068c0 0-55.777 3.738-55.777-55.135H510.64c0-.001 17.968-137.569-110.298-137.569zm-54.53 95.263s6.81-48.846 55.769-48.846c48.949 0 48.336 48.846 48.336 48.846H345.812zm117.096-118.199H332.159v-39.025h130.749v39.025z">
+                    </path>
+                </svg>
 
-        </a>
-        <a href="https://stackoverflow.com/users/10987485/vue-javascript" target="_blank" rel="noopener me">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" viewBox="0 0 120 120" role="img"
-                 aria-labelledby="aci96szm3wvasal4x491fk8dle9h8jcn">
-                <title id="aci96szm3wvasal4x491fk8dle9h8jcn">StackOverflow logo</title>
-                <style>
-                    .st0 {
-                        fill: #bcbbbb
-                    }
+            </a>
+            <a href="https://stackoverflow.com/users/10987485/vue-javascript" target="_blank" rel="noopener me">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" viewBox="0 0 120 120" role="img"
+                    aria-labelledby="aci96szm3wvasal4x491fk8dle9h8jcn">
+                    <title id="aci96szm3wvasal4x491fk8dle9h8jcn">StackOverflow logo</title>
+                    <style>
+                        .st0 {
+                            fill: #bcbbbb
+                        }
 
-                    .st1 {
-                        fill: #f48023
-                    }
-                </style>
-                <path class="st0" d="M84.4 93.8V70.6h7.7v30.9H22.6V70.6h7.7v23.2z"></path>
-                <path class="st1"
-                      d="M38.8 68.4l37.8 7.9 1.6-7.6-37.8-7.9-1.6 7.6zm5-18l35 16.3 3.2-7-35-16.4-3.2 7.1zm9.7-17.2l29.7 24.7 4.9-5.9-29.7-24.7-4.9 5.9zm19.2-18.3l-6.2 4.6 23 31 6.2-4.6-23-31zM38 86h38.6v-7.7H38V86z">
-                </path>
-            </svg>
+                        .st1 {
+                            fill: #f48023
+                        }
+                    </style>
+                    <path class="st0" d="M84.4 93.8V70.6h7.7v30.9H22.6V70.6h7.7v23.2z"></path>
+                    <path class="st1"
+                        d="M38.8 68.4l37.8 7.9 1.6-7.6-37.8-7.9-1.6 7.6zm5-18l35 16.3 3.2-7-35-16.4-3.2 7.1zm9.7-17.2l29.7 24.7 4.9-5.9-29.7-24.7-4.9 5.9zm19.2-18.3l-6.2 4.6 23 31 6.2-4.6-23-31zM38 86h38.6v-7.7H38V86z">
+                    </path>
+                </svg>
 
-        </a>
-        <a href="https://dribbble.com/shijiezhou" target="_blank" rel="noopener me">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style"
-                 xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512"
-                 viewBox="0 0 512 512" role="img" aria-labelledby="a5wc5o2yggz2ifqz159xyprm2ta42lbl"
-            >
-                <title id="a5wc5o2yggz2ifqz159xyprm2ta42lbl">Dribbble logo</title>
-                <path
-                    d="M464.313 255.99c0 114.873-93.44 208.313-208.281 208.313-114.893 0-208.313-93.44-208.313-208.313 0-114.873 93.43-208.313 208.313-208.313 114.841 0 208.281 93.44 208.281 208.313zM256.031 19.845c-130.274 0-236.196 105.933-236.196 236.144 0 130.232 105.922 236.175 236.196 236.175 130.181 0 236.144-105.943 236.144-236.175-0.010-130.222-105.964-236.144-236.144-236.144z"
-                    fill="#000000"></path>
-                <path
-                    d="M160.297 53.504v0c1.638 2.007 165.509 202.66 173.394 404.572l27.863-1.086c-8.295-211.415-172.769-412.795-179.763-421.202l-21.494 17.715z"
-                    fill="#000000"></path>
-                <path
-                    d="M28.907 229.089c2.407 0.655 239.442 64.563 388.045-122.532l-21.842-17.316c-137.165 172.718-356.454 113.644-358.646 112.999l-7.557 26.85z"
-                    fill="#000000"></path>
-                <path
-                    d="M115.978 426.783v0.041c4.915-9.523 123.136-231.239 353.26-141.957l10.127-25.979c-253.675-98.468-386.806 152.586-388.168 155.136l24.781 12.759z"
-                    fill="#000000"></path>
-            </svg>
+            </a>
+            <a href="https://dribbble.com/shijiezhou" target="_blank" rel="noopener me">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="512" height="512"
+                    viewBox="0 0 512 512" role="img" aria-labelledby="a5wc5o2yggz2ifqz159xyprm2ta42lbl">
+                    <title id="a5wc5o2yggz2ifqz159xyprm2ta42lbl">Dribbble logo</title>
+                    <path
+                        d="M464.313 255.99c0 114.873-93.44 208.313-208.281 208.313-114.893 0-208.313-93.44-208.313-208.313 0-114.873 93.43-208.313 208.313-208.313 114.841 0 208.281 93.44 208.281 208.313zM256.031 19.845c-130.274 0-236.196 105.933-236.196 236.144 0 130.232 105.922 236.175 236.196 236.175 130.181 0 236.144-105.943 236.144-236.175-0.010-130.222-105.964-236.144-236.144-236.144z"
+                        fill="#000000"></path>
+                    <path
+                        d="M160.297 53.504v0c1.638 2.007 165.509 202.66 173.394 404.572l27.863-1.086c-8.295-211.415-172.769-412.795-179.763-421.202l-21.494 17.715z"
+                        fill="#000000"></path>
+                    <path
+                        d="M28.907 229.089c2.407 0.655 239.442 64.563 388.045-122.532l-21.842-17.316c-137.165 172.718-356.454 113.644-358.646 112.999l-7.557 26.85z"
+                        fill="#000000"></path>
+                    <path
+                        d="M115.978 426.783v0.041c4.915-9.523 123.136-231.239 353.26-141.957l10.127-25.979c-253.675-98.468-386.806 152.586-388.168 155.136l24.781 12.759z"
+                        fill="#000000"></path>
+                </svg>
 
-        </a>
-        <a href="https://medium.com/@cs5129606" target="_blank" rel="noopener nofollow me">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" viewBox="0 0 448 512" role="img"
-                 aria-labelledby="a6g4sj0ycocrqm5hyv81c40r5u7hroh0">
-                <title id="a6g4sj0ycocrqm5hyv81c40r5u7hroh0">Medium logo</title>
-                <path
-                    d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z">
-                </path>
-            </svg>
+            </a>
+            <a href="https://medium.com/@cs5129606" target="_blank" rel="noopener nofollow me">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" viewBox="0 0 448 512" role="img"
+                    aria-labelledby="a6g4sj0ycocrqm5hyv81c40r5u7hroh0">
+                    <title id="a6g4sj0ycocrqm5hyv81c40r5u7hroh0">Medium logo</title>
+                    <path
+                        d="M0 32v448h448V32H0zm372.2 106.1l-24 23c-2.1 1.6-3.1 4.2-2.7 6.7v169.3c-.4 2.6.6 5.2 2.7 6.7l23.5 23v5.1h-118V367l24.3-23.6c2.4-2.4 2.4-3.1 2.4-6.7V199.8l-67.6 171.6h-9.1L125 199.8v115c-.7 4.8 1 9.7 4.4 13.2l31.6 38.3v5.1H71.2v-5.1l31.6-38.3c3.4-3.5 4.9-8.4 4.1-13.2v-133c.4-3.7-1-7.3-3.8-9.8L75 138.1V133h87.3l67.4 148L289 133.1h83.2v5z">
+                    </path>
+                </svg>
 
-        </a>
-        <a href="https://gitlab.com/shijiezhou1" target="_blank" rel="noopener nofollow me">
-            <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" viewBox="0 0 512 512" role="img"
-                 aria-labelledby="a5v11ayzjlesncrju82zjw5bwwgqitg1">
-                <title id="a5v11ayzjlesncrju82zjw5bwwgqitg1">GitLab logo</title>
-                <path
-                    d="M29.782 199.732L256 493.714 8.074 309.699c-6.856-5.142-9.712-13.996-7.141-21.993l28.849-87.974zm75.405-174.806c-3.142-8.854-15.709-8.854-18.851 0L29.782 199.732h131.961L105.187 24.926zm56.556 174.806L256 493.714l94.257-293.982H161.743zm349.324 87.974l-28.849-87.974L256 493.714l247.926-184.015c6.855-5.142 9.711-13.996 7.141-21.993zm-85.404-262.78c-3.142-8.854-15.709-8.854-18.851 0l-56.555 174.806h131.961L425.663 24.926z">
-                </path>
-            </svg>
-            <!--
+            </a>
+            <a href="https://gitlab.com/shijiezhou1" target="_blank" rel="noopener nofollow me">
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style" viewBox="0 0 512 512" role="img"
+                    aria-labelledby="a5v11ayzjlesncrju82zjw5bwwgqitg1">
+                    <title id="a5v11ayzjlesncrju82zjw5bwwgqitg1">GitLab logo</title>
+                    <path
+                        d="M29.782 199.732L256 493.714 8.074 309.699c-6.856-5.142-9.712-13.996-7.141-21.993l28.849-87.974zm75.405-174.806c-3.142-8.854-15.709-8.854-18.851 0L29.782 199.732h131.961L105.187 24.926zm56.556 174.806L256 493.714l94.257-293.982H161.743zm349.324 87.974l-28.849-87.974L256 493.714l247.926-184.015c6.855-5.142 9.711-13.996 7.141-21.993zm-85.404-262.78c-3.142-8.854-15.709-8.854-18.851 0l-56.555 174.806h131.961L425.663 24.926z">
+                    </path>
+                </svg>
+                <!--
 Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
 -->
 
-        </a>
-        <a href="https://www.shijiezhou.com" target="_blank" rel="noopener nofollow me">
+            </a>
+            <a href="https://www.shijiezhou.com" target="_blank" rel="noopener nofollow me">
 
-            <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-            <svg
-                xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style"
-                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
-                width="511.626px" height="511.627px" viewBox="0 0 511.626 511.627"
-                style="enable-background:new 0 0 511.626 511.627;" xml:space="preserve" role="img"
-                aria-labelledby="a27m1l5zu0h95ejeqtnrz7hg5udnu409">
+                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="social_media_icon_style"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                    width="511.626px" height="511.627px" viewBox="0 0 511.626 511.627"
+                    style="enable-background:new 0 0 511.626 511.627;" xml:space="preserve" role="img"
+                    aria-labelledby="a27m1l5zu0h95ejeqtnrz7hg5udnu409">
                     <title id="a27m1l5zu0h95ejeqtnrz7hg5udnu409">external link icon</title>
-                <g>
+                    <g>
                         <g>
                             <path
                                 d="M392.857,292.354h-18.274c-2.669,0-4.859,0.855-6.563,2.573c-1.718,1.708-2.573,3.897-2.573,6.563v91.361    c0,12.563-4.47,23.315-13.415,32.262c-8.945,8.945-19.701,13.414-32.264,13.414H82.224c-12.562,0-23.317-4.469-32.264-13.414    c-8.945-8.946-13.417-19.698-13.417-32.262V155.31c0-12.562,4.471-23.313,13.417-32.259c8.947-8.947,19.702-13.418,32.264-13.418    h200.994c2.669,0,4.859-0.859,6.57-2.57c1.711-1.713,2.566-3.9,2.566-6.567V82.221c0-2.662-0.855-4.853-2.566-6.563    c-1.711-1.713-3.901-2.568-6.57-2.568H82.224c-22.648,0-42.016,8.042-58.102,24.125C8.042,113.297,0,132.665,0,155.313v237.542    c0,22.647,8.042,42.018,24.123,58.095c16.086,16.084,35.454,24.13,58.102,24.13h237.543c22.647,0,42.017-8.046,58.101-24.13    c16.085-16.077,24.127-35.447,24.127-58.095v-91.358c0-2.669-0.856-4.859-2.574-6.57    C397.709,293.209,395.519,292.354,392.857,292.354z">
@@ -271,266 +279,266 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
                     </g>
                 </svg>
 
-        </a>
-    </p>
-</div>
+            </a>
+        </p>
+    </div>
 
-<div class="container">
-    <div>Technologies support:</div>
-    <table class="">
-        <tbody>
-        <tr>
-            <td>
-                <img width="50px" height="50px" class="lazy lazy-loaded"
-                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg " alt="">
-                <noscript>
-                    <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg ">
-                </noscript>
-            </td>
-            <td>
-                <img width="50px" height="50px" class="lazy lazy-loaded"
-                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
-                <noscript>
-                    <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
-                </noscript>
-            </td>
-            <td>
-                <img width="50px" height="50px" class="lazy lazy-loaded"
-                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
-                <noscript>
-                    <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
-                </noscript>
-            </td>
-            <td>
-                <img width="50px" height="50px" class="lazy lazy-loaded"
-                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
-                <noscript>
-                    <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
-                </noscript>
-            </td>
-            <td>
-                <img width="50px" height="50px" class="lazy lazy-loaded"
-                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
-                <noscript>
-                    <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
-                </noscript>
-            </td>
-            <td>
-                <img width="50px" height="50px" class="lazy lazy-loaded"
-                     src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
-                <noscript>
-                    <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
-                </noscript>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-<br>
-<div class="container">
-    <div>Web page support in:</div>
-    <table class="">
-        <tbody>
-        <tr>
-            <td>
-                <img class="lazy lazy-loaded"
-                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
-                <noscript>
-                    <img
-                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
-                </noscript>
-            </td>
-            <td>
-                <img class="lazy lazy-loaded"
-                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
-                <noscript>
-                    <img
-                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
-                </noscript>
-            </td>
-            <td>
-                <img class="lazy lazy-loaded"
-                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
-                <noscript>
-                    <img
-                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
-                </noscript>
-            </td>
-            <td>
-                <img class="lazy lazy-loaded"
-                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
-                <noscript>
-                    <img
-                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
-                </noscript>
-            </td>
-            <td>
-                <img class="lazy lazy-loaded"
-                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
-                <noscript>
-                    <img
-                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
-                </noscript>
-            </td>
-            <td>
-                <img class="lazy lazy-loaded"
-                     src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
-                     data-lazy-type="image"
-                     data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
-                <noscript>
-                    <img
-                        src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
-                </noscript>
-            </td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-<br>
-<!-- Modal -->
-<div class="modal fade" id="emailMeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">✉️ Contact me</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div id="sucessEmail">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">@</span>
+    <div class="container">
+        <div>Technologies support:</div>
+        <table class="">
+            <tbody>
+                <tr>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg " alt="">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/html5.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/css3.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/javascript.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/github.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/freecodecamp.svg ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img width="50px" height="50px" class="lazy lazy-loaded"
+                            src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
+                        <noscript>
+                            <img src=" https://cdn.jsdelivr.net/npm/simple-icons@1.6.3/icons/laravel.svg ">
+                        </noscript>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="container">
+        <div>Web page support in:</div>
+        <table class="">
+            <tbody>
+                <tr>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/ie-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/firefox-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/chrome-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/edge-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/safari-true.png ">
+                        </noscript>
+                    </td>
+                    <td>
+                        <img class="lazy lazy-loaded"
+                            src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png "
+                            data-lazy-type="image"
+                            data-lazy-src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
+                        <noscript>
+                            <img
+                                src=" https://html.com/wp-content/plugins/htmlcodetutorial-plugin/assets/images/opera-true.png ">
+                        </noscript>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <!-- Modal -->
+    <div class="modal fade" id="emailMeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">✉️ Contact me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="sucessEmail">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="from_email" placeholder="your email address"
+                                aria-label="from" aria-describedby="basic-addon1" required>
                         </div>
-                        <input type="text" class="form-control" id="from_email" placeholder="your email address"
-                               aria-label="from" aria-describedby="basic-addon1" required>
-                    </div>
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">&</span>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">&</span>
+                            </div>
+                            <input type="text" class="form-control" id="from_subject" placeholder="subject"
+                                aria-label="subject" aria-describedby="basic-addon1" required>
                         </div>
-                        <input type="text" class="form-control" id="from_subject" placeholder="subject"
-                               aria-label="subject" aria-describedby="basic-addon1" required>
-                    </div>
-                    <div class="input-group">
+                        <div class="input-group">
                             <textarea class="form-control" id="from_body" aria-label="message"
-                                      placeholder="message to me ... " required></textarea>
-                    </div>
+                                placeholder="message to me ... " required></textarea>
+                        </div>
 
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
-                        <button type="button" class="btn btn-primary" onclick="sendEmail();">Send Email</button>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Discard</button>
+                            <button type="button" class="btn btn-primary" onclick="sendEmail();">Send Email</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 
-<!-- end of the boostrap center container -->
-<script id="dsq-count-scr" src="//https-www-shijiezhou-com.disqus.com/count.js" async></script>
-<script>
+    <!-- end of the boostrap center container -->
+    <script id="dsq-count-scr" src="//https-www-shijiezhou-com.disqus.com/count.js" async></script>
+    <script>
 
-    function sendEmail() {
-        const from_email = document.getElementById('from_email').value;
-        const from_subject = document.getElementById('from_subject').value;
-        const from_body = document.getElementById('from_body').value;
+        function sendEmail() {
+            const from_email = document.getElementById('from_email').value;
+            const from_subject = document.getElementById('from_subject').value;
+            const from_body = document.getElementById('from_body').value;
 
-        if (!from_email || !from_subject || !from_body) {
-            alert('Please fill up all fields');
-            return;
+            if (!from_email || !from_subject || !from_body) {
+                alert('Please fill up all fields');
+                return;
+            }
+
+            const url = 'https://shijiezhou.herokuapp.com/redis'; // can be changed due to developer
+            // const url = 'http://localhost:3000/redis'; // can be changed due to developer
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                headers: {
+                    'Accept': 'application/json;',
+                },
+                data: {
+                    "subject": from_subject,
+                    "message": from_body,
+                    "from": from_email
+                },
+            }).done(function (res) {
+                if (res) {
+                    $('#sucessEmail').html(`<h3>${res}</h3>`);
+                }
+            });
         }
 
-        const url = 'https://shijiezhou.herokuapp.com/redis'; // can be changed due to developer
-        // const url = 'http://localhost:3000/redis'; // can be changed due to developer
+        function getCurrentMonth(arr) {
+            var month = /2019-01/g;
+            if (arr.date.match(month)) {
+                // console.log('arr :', arr);
+                return arr.count;
+            }
+        }
 
-        $.ajax({
-            url: url,
-            type: 'POST',
-            headers: {
-                'Accept': 'application/json;',
-            },
+        function getGitStatic() {
+            var url = 'https://github-contributions-api.now.sh/v1/shijiezhou1';
+            $.ajax(url).done((object) => {
+                var year = /2019/g;
+                var totalCount = 0;
+                for (const iterator of object.contributions) {
+                    if (iterator.date.match(year)) {
+                        totalCount = totalCount + getCurrentMonth(iterator);
+                    }
+                    ;
+                }
+            })
+        }
+
+        let dataset = [69, 39, 88, 122, 234, 326, 5, 11, 20, 10, 0, 0];
+
+        new Chart(document.getElementById("line-chart"), {
+            type: 'line',
             data: {
-                "subject": from_subject,
-                "message": from_body,
-                "from": from_email
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+                datasets: [{
+                    data: dataset,
+                    label: "Github Commit",
+                    borderColor: "#c45850",
+                    fill: false
+                }
+                ]
             },
-        }).done(function (res) {
-            if (res) {
-                $('#sucessEmail').html(`<h3>${res}</h3>`);
+            options: {
+                title: {
+                    display: true,
+                    text: 'Github Contribution Per Year'
+                }
             }
         });
-    }
-
-    function getCurrentMonth(arr) {
-        var month = /2019-01/g;
-        if (arr.date.match(month)) {
-            // console.log('arr :', arr);
-            return arr.count;
-        }
-    }
-
-    function getGitStatic() {
-        var url = 'https://github-contributions-api.now.sh/v1/shijiezhou1';
-        $.ajax(url).done((object) => {
-            var year = /2019/g;
-            var totalCount = 0;
-            for (const iterator of object.contributions) {
-                if (iterator.date.match(year)) {
-                    totalCount = totalCount + getCurrentMonth(iterator);
-                }
-                ;
-            }
-        })
-    }
-
-    let dataset = [69, 39, 88, 122, 234, 326, 5, 11, 20, 10, 0, 0];
-
-    new Chart(document.getElementById("line-chart"), {
-        type: 'line',
-        data: {
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-            datasets: [{
-                data: dataset,
-                label: "Github Commit",
-                borderColor: "#c45850",
-                fill: false
-            }
-            ]
-        },
-        options: {
-            title: {
-                display: true,
-                text: 'Github Contribution Per Year'
-            }
-        }
-    });
-</script>
+    </script>
 
 </body>
 
@@ -555,7 +563,7 @@ License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>
+            Disqus.</a></noscript>
 
 </div>
 

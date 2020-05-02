@@ -16,6 +16,6 @@ jobs:
             npm i
 
       - run:
-          name: "TEST"
+          name: "LINT"
           command: |
-            npm run test
+            npm run lint

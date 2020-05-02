@@ -4,8 +4,9 @@ jobs:
     docker:
       - image: circleci/node:latest
     steps:
-      - checkout
-      - install:
-          name: install
+      - run:
+          name: "Checking Node and Npm Versions"
           command: |
-            npm install
+            node --version
+            npm --version
+

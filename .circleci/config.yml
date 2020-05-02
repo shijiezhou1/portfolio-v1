@@ -5,7 +5,8 @@ jobs:
       - image: node:10.0
     steps:
       - run:
-          name: "Checking Versions"
+          name: "Checking Node and Npm Versions"
           command: |
             node --version
             npm --version
+

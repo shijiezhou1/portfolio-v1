@@ -1,5 +1,6 @@
 {
   "name": "Portfolio",
+  "author": "SHIJIE ZHOU",
   "version": "1.0.0",
   "description": "<h1 ><div align=\"center\"><a href=\"www.shijiezhou.com\" title=\"React\"><img style=\"float: left\" width=\"240\" src=\"/images/logo%20j.gif\" alt=\"REACT LOGO\"/></center></a></div></h1>",
   "main": "index.js",
